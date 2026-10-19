@@ -693,16 +693,16 @@
       if (colSec) {
         const cH2 = colSec.querySelector('.section-heading h2');
         if (cH2) cH2.innerHTML = isEn
-          ? 'Seven Flagship Series.<br><span>Axial & Lateral Carry Personalities.</span>'
-          : '七大旗艦系列。<br><span>縱向與側滑三種收納性格。</span>';
+          ? 'Nine Flagship Series.<br><span>Axial, Lateral Slide & Open Spine Personalities.</span>'
+          : '九大旗艦系列。<br><span>縱向、側滑與開脊三種收納性格。</span>';
         const cP = colSec.querySelector('.section-heading p');
         if (cP) cP.textContent = isEn
-          ? 'AERIS, VERTEX, ECLIPSE and ZEPHYR explore axial layouts; AURA, NEXUS and AXIS lateral slide series expand outward draw dimensions. From full-wrap protection to instant quick-clip and precision rails.'
-          : 'AERIS、VERTEX、ECLIPSE 與 ZEPHYR 探索縱向軸心佈局；AURA、NEXUS 與 AXIS 側滑系列則拓展側翼外擴取筆維度。從極致包覆、瞬拆快取到極簡導軌，回應多元書寫姿態。';
+          ? 'AERIS, VERTEX, ECLIPSE and ZEPHYR explore axial layouts; AURA, NEXUS and AXIS lateral slide series expand outward draw dimensions; the all-new ORBIT and STRATOS open spine series introduce flex C-clips with open backbones for tilt-and-release agility.'
+          : 'AERIS、VERTEX、ECLIPSE 與 ZEPHYR 探索縱向軸心佈局；AURA、NEXUS 與 AXIS 側滑系列拓展側翼外擴取筆維度；全新 ORBIT 與 STRATOS 開脊系列以微彈 C 夾與開放式背骨，帶來「微傾即取」的極致靈活，回應多元書寫姿態。';
         const cCaption = colSec.querySelector('.caption');
         if (cCaption) cCaption.textContent = isEn
-          ? 'All seven views rendered from actual CAD geometry. Material colors are for visual preview; physical surface finish to be confirmed via test prints.'
-          : '七款畫面均由實際 CAD 幾何生成，材質顏色僅供視覺預覽；實際表面與手感需以打印樣件確認。';
+          ? 'All nine views rendered from actual CAD geometry. Material colors are for visual preview; physical surface finish to be confirmed via test prints.'
+          : '九款畫面均由實際 CAD 幾何生成，材質顏色僅供視覺預覽；實際表面與手感需以打印樣件確認。';
       }
 
       // Re-run calculator labels
