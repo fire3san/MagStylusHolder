@@ -356,21 +356,6 @@
       button.addEventListener('click', () => loadModel(key)); 
       options.appendChild(button);
     });
-
-    // Add Random / Shuffle button to easily discover all models
-    if (entries.length > 1) {
-      const randomBtn = document.createElement('button');
-      randomBtn.className = 'model-btn model-btn-random';
-      randomBtn.dataset.action = 'random';
-      randomBtn.title = isEn ? 'Randomly pick another design' : '隨機切換另一款設計原型';
-      randomBtn.setAttribute('aria-label', isEn ? 'Pick a random model' : '隨機切換設計原型');
-      randomBtn.textContent = isEn ? '🎲 Random' : '🎲 隨機';
-      randomBtn.addEventListener('click', () => {
-        const nextKey = getRandomModelKey(device, currentModelKey);
-        if (nextKey) loadModel(nextKey);
-      });
-      options.appendChild(randomBtn);
-    }
   }
 
   function setupControls() {

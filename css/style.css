@@ -277,8 +277,6 @@
 /* 7-Product Lab Bar & Collection Grid Enhancements */
 .lab-bar{flex-wrap:wrap;row-gap:14px}
 #model-options{flex-wrap:wrap;row-gap:6px}
-.model-btn.model-btn-random{border:1px dashed #93a384;border-radius:2px;color:#465a39;transition:all .2s ease}
-.model-btn.model-btn-random:hover{background:#dfe5d6;border-style:solid;border-color:#5a753a;color:var(--ink);transform:scale(1.03)}
 .collection-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 @media(max-width:880px){
   .collection-grid{grid-template-columns:1fr;gap:24px}
