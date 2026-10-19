@@ -206,7 +206,200 @@
     });
   }
 
-  // --- 3. Bilingual Language Switcher (ZH / EN) ---
+  // --- 3. Full-Screen Interactive Lightbox Modal (Drafting & Kickstarter Lifestyle) ---
+  const GALLERIES = {
+    drafting: [
+      {
+        src: 'assets/renders/sketch-design1.png',
+        tag: { zh: 'STAGE 01 / CONCEPT SKETCH', en: 'STAGE 01 / CONCEPT SKETCH' },
+        title: { zh: '初探 Ø9 mm 筆徑與 34° 傾角手繪草稿', en: 'Initial Ø9 mm Bore & 34° Diagonal Tilt Draft' },
+        desc: {
+          zh: '以鉛筆手繪推演斜向收納的可行性，首次定義「免拆保護殼、單手順拔、磁吸導向」的原型架構。',
+          en: 'Initial graphite exploration calculating diagonal containment, establishing the core architecture: case-free removal, one-handed draw, and magnetic guidance.'
+        }
+      },
+      {
+        src: 'assets/renders/sketch-design2.png',
+        tag: { zh: 'STAGE 02 / SECTION STUDY', en: 'STAGE 02 / SECTION STUDY' },
+        title: { zh: '側邊按鍵避空槽與 0.8 mm 壁厚剖面手稿', en: 'Side Button Clearance & 0.8 mm Wall Thickness Study' },
+        desc: {
+          zh: '手繪細部剖面標註下置盲孔與側鍵避空槽，精確計算 PA12 尼龍收縮比，消除插拔干涉。',
+          en: 'Hand-drawn section drafts defining blind bottom wells and button clearance channels, tuned for PA12 nylon shrinkage to eliminate insertion friction.'
+        }
+      },
+      {
+        src: 'assets/renders/v2-sections.png',
+        tag: { zh: 'STAGE 03 / CAD BLUEPRINT', en: 'STAGE 03 / CAD BLUEPRINT' },
+        title: { zh: '58.4 mm 磁環槽與 3 顆 N52 磁穴二維藍圖', en: '58.4 mm MagSafe Ring & 3× N52 Magnet Sockets Blueprint' },
+        desc: {
+          zh: '轉換為 CAD 幾何剖面，驗證 MagSafe 磁吸環與三顆垂直下置強磁的磁通隔絕，確立雙磁力系統。',
+          en: 'Translating sketches into 2D CAD profiles to isolate MagSafe magnetic flux from pen retention magnets, establishing the dual-magnetic system.'
+        }
+      },
+      {
+        src: 'assets/images/engineering-exploded-view.jpg',
+        tag: { zh: 'STAGE 04 / EXPLODED ASSEMBLY', en: 'STAGE 04 / EXPLODED ASSEMBLY' },
+        title: { zh: '六層物理裝配分解圖', en: '6-Layer Physical Stack Exploded Diagram' },
+        desc: {
+          zh: '完整呈現設備背板、引磁環、PA12 尼龍一體外殼、N52 釹鐵硼磁鐵、3D 密封蓋及手寫筆的六層精密層疊。',
+          en: 'Full layer explosion detailing device backplate, MagSafe ring, PA12 nylon unibody chassis, N52 magnets, 3D printed seals, and the stylus.'
+        }
+      }
+    ],
+    realworld: [
+      {
+        src: 'assets/photos/lifestyle-commute-reading.jpg',
+        tag: { zh: '01 / COMMUTE CARRY', en: '01 / COMMUTE CARRY' },
+        title: { zh: '捷運通勤 · 單手速讀隨拔', en: 'Subway Commute · One-Handed Quick Draw' },
+        desc: {
+          zh: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；手寫筆穩固伏貼於背殼磁座，隨時抽拔標註重點，無需在公事包裡翻箱倒櫃。',
+          en: 'On a swaying subway commute, holding the BOOX with one hand to turn pages. The stylus stays securely docked on the back, ready to draw and annotate instantly without digging through a bag.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-cafe-draw.jpg',
+        tag: { zh: '02 / CAFE INSPIRATION', en: '02 / CAFE INSPIRATION' },
+        title: { zh: '午後咖啡 · 靈感隨抽隨寫', en: 'Afternoon Cafe · Instant Spark & Sketch' },
+        desc: {
+          zh: '木質咖啡桌畔，點一杯黑咖啡攤開筆記。順著圓弧導引槽輕輕一抽，立即落筆記錄閃現的靈感，不讓翻找手寫筆打斷思路。',
+          en: 'Beside an oak table with black coffee and open notes. A natural slide out of the sculpted groove captures spontaneous thoughts before they vanish.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-desk-stand.jpg',
+        tag: { zh: '03 / ERGONOMIC ANGLE', en: '03 / ERGONOMIC ANGLE' },
+        title: { zh: '桌面閱讀 · 人體工學微傾角', en: 'Desk Stand · Natural Ergonomic Tilt' },
+        desc: {
+          zh: '平置辦公桌面時，背部筆座恰如其分地抬升機身微幅仰角，避開室內頂燈刺眼眩光，手腕書寫也更自然放鬆。',
+          en: 'Resting flat on a desk, the rear holder spine creates a gentle ergonomic angle that deflects overhead ceiling glare and eases wrist strain during long writing sessions.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-edc-flatlay.jpg',
+        tag: { zh: '04 / EVERYDAY CARRY', en: '04 / EVERYDAY CARRY' },
+        title: { zh: '極簡隨身 · EDC 零勾扯收納', en: 'Everyday Carry · Pocket-Friendly Flat Lay' },
+        desc: {
+          zh: '與皮夾、機械錶及無線耳機並列。整體外型無銳角突出，放進西裝口袋或帆布背包內袋順暢無阻，不刮擦織物內襯。',
+          en: 'Arranged seamlessly alongside a wallet, watch, and earbuds. Smooth radiused nylon edges slide effortlessly into jacket pockets and backpacks without snagging delicate linings.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-magnetic-snap.jpg',
+        tag: { zh: '05 / MODULAR SNAP', en: '05 / MODULAR SNAP' },
+        title: { zh: '一秒快拆 · MagSafe 模組磁吸', en: 'Modular Snap · Instant MagSafe Alignment' },
+        desc: {
+          zh: '在家享受純粹輕薄閱讀時一撥即卸；出門差旅時靠近背板「喀嗒」緊貼。標準 MagSafe 磁吸系統，隨時切換形態。',
+          en: 'Detach effortlessly for featherlight bare-device reading at home; snap firmly with a crisp magnetic click when heading outdoors. True modular versatility.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-ipad-extension.jpg',
+        tag: { zh: '06 / IPAD MINI EXPANSION', en: '06 / IPAD MINI EXPANSION' },
+        title: { zh: '跨界延伸 · iPad mini 靈動創作', en: 'Cross-Device Extension · iPad mini & Apple Pencil' },
+        desc: {
+          zh: '設計概念進一步延伸至 iPad mini 與 Apple Pencil。徹底解決原廠側邊磁吸容易在包袋中被意外撞落遺失的痛點。',
+          en: 'Expanding the system to iPad mini with Apple Pencil, eliminating the perpetual fear of side-mounted pencils getting bumped off inside tight commute bags.'
+        }
+      }
+    ]
+  };
+
+  let activeGallery = null;
+  let activeIndex = 0;
+
+  const lightboxModal = document.getElementById('image-lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTag = document.getElementById('lightbox-tag');
+  const lightboxCounter = document.getElementById('lightbox-counter');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxDesc = document.getElementById('lightbox-desc');
+  const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+  const lightboxPrevBtn = document.getElementById('lightbox-prev-btn');
+  const lightboxNextBtn = document.getElementById('lightbox-next-btn');
+  const lightboxBackdrop = document.querySelector('.lightbox-backdrop');
+
+  function updateLightboxContent() {
+    if (!activeGallery || !GALLERIES[activeGallery]) return;
+    const items = GALLERIES[activeGallery];
+    const item = items[activeIndex];
+    const isEn = window.currentLang === 'en';
+
+    if (lightboxImg) {
+      lightboxImg.style.opacity = '0.4';
+      lightboxImg.src = item.src;
+      lightboxImg.alt = isEn ? item.title.en : item.title.zh;
+      lightboxImg.onload = () => {
+        lightboxImg.style.opacity = '1';
+      };
+    }
+    if (lightboxTag) lightboxTag.textContent = isEn ? item.tag.en : item.tag.zh;
+    if (lightboxCounter) lightboxCounter.textContent = `${activeIndex + 1} / ${items.length}`;
+    if (lightboxTitle) lightboxTitle.textContent = isEn ? item.title.en : item.title.zh;
+    if (lightboxDesc) lightboxDesc.textContent = isEn ? item.desc.en : item.desc.zh;
+  }
+
+  function openLightbox(galleryName, index) {
+    if (!GALLERIES[galleryName]) return;
+    activeGallery = galleryName;
+    activeIndex = Math.max(0, Math.min(index, GALLERIES[galleryName].length - 1));
+    updateLightboxContent();
+
+    if (lightboxModal) {
+      lightboxModal.classList.add('active');
+      lightboxModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (lightboxCloseBtn) lightboxCloseBtn.focus();
+    }
+  }
+
+  function closeLightbox() {
+    if (lightboxModal) {
+      lightboxModal.classList.remove('active');
+      lightboxModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function navigateLightbox(dir) {
+    if (!activeGallery || !GALLERIES[activeGallery]) return;
+    const total = GALLERIES[activeGallery].length;
+    activeIndex = (activeIndex + dir + total) % total;
+    updateLightboxContent();
+  }
+
+  document.querySelectorAll('[data-gallery]').forEach(el => {
+    el.addEventListener('click', () => {
+      const gallery = el.dataset.gallery;
+      const idx = parseInt(el.dataset.index, 10) || 0;
+      openLightbox(gallery, idx);
+    });
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const gallery = el.dataset.gallery;
+        const idx = parseInt(el.dataset.index, 10) || 0;
+        openLightbox(gallery, idx);
+      }
+    });
+  });
+
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+  if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+  if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', () => navigateLightbox(-1));
+  if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', () => navigateLightbox(1));
+
+  window.addEventListener('keydown', (e) => {
+    if (!lightboxModal || !lightboxModal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      closeLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      navigateLightbox(-1);
+    } else if (e.key === 'ArrowRight') {
+      navigateLightbox(1);
+    }
+  });
+
+  // --- 4. Bilingual Language Switcher (ZH / EN) ---
   window.currentLang = 'zh';
 
   const langToggleBtn = document.getElementById('lang-toggle');
@@ -226,7 +419,16 @@
 
       // Update nav links
       const navLinks = document.querySelectorAll('.nav-links a');
-      if (navLinks.length >= 7) {
+      if (navLinks.length >= 8) {
+        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
+        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
+        navLinks[2].textContent = isEn ? 'Real World' : '真實場景';
+        navLinks[3].textContent = isEn ? 'Origin Math' : '尺寸研究';
+        navLinks[4].textContent = isEn ? 'Fit Lab' : '幾何適配';
+        navLinks[5].textContent = isEn ? 'The Collection' : '設計系列';
+        navLinks[6].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
+        navLinks[7].textContent = isEn ? 'Evolution' : '開發演進';
+      } else if (navLinks.length >= 7) {
         navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
         navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
         navLinks[2].textContent = isEn ? 'Origin Math' : '尺寸研究';
@@ -300,6 +502,59 @@
           c3.querySelector('h3').textContent = isEn ? '6-Layer Physical Stack Breakdown' : '六層物理裝配分解圖';
           c3.querySelector('p').textContent = isEn ? 'Full layer explosion detailing device backplate, MagSafe ring, PA12 nylon unibody chassis, N52 magnets, 3D printed seals, and the stylus.' : '完整呈現設備背板、引磁環、PA12 尼龍一體外殼、N52 釹鐵硼磁鐵、3D 密封蓋及手寫筆的六層精密層疊。';
         }
+      }
+
+      // Update Real-World Kickstarter Section
+      const rwSec = document.getElementById('real-world');
+      if (rwSec) {
+        const rwLabel = rwSec.querySelector('.section-label');
+        if (rwLabel) rwLabel.textContent = isEn ? 'IN THE WILD / REAL-WORLD SCENARIOS' : 'IN THE WILD / 走入日常真實世界';
+        const rwH2 = rwSec.querySelector('.section-heading h2');
+        if (rwH2) rwH2.innerHTML = isEn ? 'Everyday carry, reading & sketching.<br><span>Six defining moments in daily life.</span>' : '隨身、閱讀與即興創作。<br><span>生活裡的六個決定性時刻。</span>';
+        const rwP = rwSec.querySelector('.section-heading p');
+        if (rwP) rwP.textContent = isEn ? 'Eliminate the dread of digging through the bottom of your bag. From spontaneous transit annotations to cafe sketches, Mag Holder makes the stylus feel native to your device.' : '擺脫散落背包底層的翻找焦慮。從晃動捷運上的單手速記，到木質咖啡桌旁的靈感捕捉，Mag Holder 讓手寫筆宛如設備天生的一部分，安穩、直覺、富有秩序。';
+
+        const ksBadge = rwSec.querySelector('.ks-badge');
+        if (ksBadge) ksBadge.textContent = isEn ? 'KICKSTARTER STORY / BORN FROM DAILY HABITS' : 'KICKSTARTER STORY / 靈感源於生活';
+        const ksQuote = rwSec.querySelector('.ks-quote');
+        if (ksQuote) ksQuote.textContent = isEn ? '"Brought your ereader, but forgot the pen — this used to be a daily regret. Mag Holder isn\'t just a holder; it builds an effortless, instinctive bond between your reader and stylus."' : '「帶了閱讀器，卻又忘了帶筆——這曾是每天重複上演的懊惱。Mag Holder 不只是一個筆座，而是為日常閱讀器與手寫筆之間，建立起一道最自然的隨身默契。」';
+        const ksAuthor = rwSec.querySelector('.ks-author');
+        if (ksAuthor) ksAuthor.textContent = isEn ? '— Mag Holder Design Notes · 2026 Prototype Study' : '— Mag Holder 設計手記 · 2026 原型研究';
+
+        const rwCards = rwSec.querySelectorAll('.realworld-card');
+        const rwEnData = [
+          { scenario: 'Commute Carry · Quick One-Hand Draw', h3: 'Crowded Metro, Smooth Flipping', p: 'On a swaying train, flip pages on the BOOX with one hand. The stylus stays securely docked on the back, ready to annotate without digging through bags.' },
+          { scenario: 'Afternoon Cafe · Instant Spark & Sketch', h3: 'A Natural Slide, Unbroken Flow', p: 'Beside an oak cafe table with black coffee and open notes. A smooth slide out of the guide channel lets you jot down inspiration before it fades.' },
+          { scenario: 'Desk Reading · Natural Ergonomic Tilt', h3: 'Built-in Stand, Deflecting Glare', p: 'Resting flat on a desk, the rear holder spine forms a gentle ergonomic angle that deflects overhead ceiling glare and eases wrist strain.' },
+          { scenario: 'Everyday Carry · Pocket-Friendly EDC', h3: 'Beveled Matte Nylon, Snag-Free', p: 'Alongside a wallet, watch, and earbuds. Smooth radiused nylon edges slide effortlessly into jacket pockets and backpacks without snagging delicate linings.' },
+          { scenario: 'Modular Snap · Instant MagSafe Dock', h3: 'Bare Device or Full Kit in Seconds', p: 'Detach effortlessly for featherlight bare-device reading at home; snap firmly with a crisp magnetic click when heading outdoors.' },
+          { scenario: 'Cross-Device · iPad mini & Pencil', h3: 'No More Bumping Pencils Off', p: 'Expanding the system to iPad mini with Apple Pencil, eliminating the perpetual fear of side-mounted pencils getting bumped off inside tight commute bags.' }
+        ];
+        const rwZhData = [
+          { scenario: '通勤捷運 · 單手速讀隨拔', h3: '擁擠車廂，單手翻閱不慌亂', p: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；手寫筆穩固伏貼於背殼磁座，隨時抽拔標註重點，無需在公事包裡翻箱倒櫃。' },
+          { scenario: '午後咖啡 · 靈感隨抽隨寫', h3: '指尖順道一抽，思緒零中斷', p: '木質咖啡桌畔，點一杯黑咖啡攤開筆記。順著圓弧導引槽輕輕一抽，立即落筆記錄閃現的靈感，不讓翻找手寫筆打斷思路。' },
+          { scenario: '桌面閱讀 · 人體工學微傾角', h3: '天然墊高支撐，撫平頂部反光', p: '平置辦公桌面時，背部筆座恰如其分地抬升機身微幅仰角，避開室內頂燈刺眼眩光，手腕書寫也更自然放鬆。' },
+          { scenario: '極簡隨身 · EDC 零勾扯收納', h3: '倒角消光尼龍，俐落滑入包袋', p: '與皮夾、機械錶及無線耳機並列。整體外型無銳角突出，放進西裝口袋或帆布背包內袋順暢無阻，不刮擦織物內襯。' },
+          { scenario: '一秒快拆 · MagSafe 模組磁吸', h3: '純粹手持或合體攜帶，隨心變換', p: '在家享受純粹輕薄閱讀時一撥即卸；出門差旅時靠近背板「喀嗒」緊貼。標準 MagSafe 磁吸系統，隨時切換形態。' },
+          { scenario: '跨界延伸 · iPad mini 靈動創作', h3: '告別側邊易碰落，穩固隨身同行', p: '設計概念進一步延伸至 iPad mini 與 Apple Pencil。徹底解決原廠側邊磁吸容易在包袋中被意外撞落遺失的痛點。' }
+        ];
+
+        rwCards.forEach((c, i) => {
+          const d = isEn ? rwEnData[i] : rwZhData[i];
+          if (d) {
+            const sc = c.querySelector('.realworld-scenario');
+            if (sc) sc.textContent = d.scenario;
+            const h = c.querySelector('h3');
+            if (h) h.textContent = d.h3;
+            const p = c.querySelector('p');
+            if (p) p.textContent = d.p;
+          }
+        });
+      }
+
+      // Update active lightbox if open
+      if (lightboxModal && lightboxModal.classList.contains('active')) {
+        updateLightboxContent();
       }
 
       // Refresh viewer card and options
