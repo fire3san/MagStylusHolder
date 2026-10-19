@@ -338,13 +338,6 @@
           zh: '設計筆記草圖：推算底座外徑、內凹卡槽與頂部收容環的幾何配比，推導出 10 mm 彈性收容空間與防滑扣位。',
           en: 'Core engineering napkin sketch #1 calculating the horizontal cantilever and 10 mm retention ring profile.'
         }
-      },
-      {
-        title: { zh: 'iPad mini + Apple Pencil 首個物理打樣', en: 'First SLA 3D Print on iPad mini' },
-        desc: {
-          zh: '在切割墊上完成首件 SLA 高精度樹脂樣件實裝，Apple Pencil 順暢滑入，驗證側向開槽、快拆手感與懸臂抗扭強度。',
-          en: 'First SLA resin prototype physically test-fitted onto iPad mini with Apple Pencil on the workbench cutting mat.'
-        }
       }
     ]
   };
