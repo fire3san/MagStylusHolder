@@ -273,3 +273,12 @@
   .lightbox-desc{font-size:11px}
   .lightbox-close{top:-36px}
 }
+
+/* 7-Product Lab Bar & Collection Grid Enhancements */
+.lab-bar{flex-wrap:wrap;row-gap:14px}
+#model-options{flex-wrap:wrap;row-gap:6px}
+.collection-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:880px){
+  .collection-grid{grid-template-columns:1fr;gap:24px}
+}
+

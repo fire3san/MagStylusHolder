@@ -214,10 +214,16 @@
     }
     const clearanceEl = document.getElementById('viewer-model-clearance');
     if (clearanceEl) {
-      if (isEn) {
-        clearanceEl.textContent = `Bottom Clearance ${info.bottom.toFixed(2)} mm / Top Pen Exposure ${info.top.toFixed(1)} mm (Ring height ${info.ring_height} mm)`;
+      if (info.clearance_text) {
+        clearanceEl.textContent = isEn ? (info.clearance_text_en || info.clearance_text) : info.clearance_text;
+      } else if (typeof info.bottom === 'number' && typeof info.top === 'number') {
+        if (isEn) {
+          clearanceEl.textContent = `Bottom Clearance ${info.bottom.toFixed(2)} mm / Top Pen Exposure ${info.top.toFixed(1)} mm (Ring height ${info.ring_height} mm)`;
+        } else {
+          clearanceEl.textContent = `底端餘量 ${info.bottom.toFixed(2)} mm / 筆尾上露 ${info.top.toFixed(1)} mm（磁環中心距底 ${info.ring_height} mm）`;
+        }
       } else {
-        clearanceEl.textContent = `底端餘量 ${info.bottom.toFixed(2)} mm / 筆尾上露 ${info.top.toFixed(1)} mm（磁環中心距底 ${info.ring_height} mm）`;
+        clearanceEl.textContent = '';
       }
     }
     const download = document.getElementById('download-stl');
