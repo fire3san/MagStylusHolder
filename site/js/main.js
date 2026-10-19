@@ -301,6 +301,51 @@
           en: 'Expanding the system to iPad mini with Apple Pencil, eliminating the perpetual fear of side-mounted pencils getting bumped off inside tight commute bags.'
         }
       }
+    ],
+    labnotes: [
+      {
+        src: 'assets/lab/boox-85mm-measurement.jpg',
+        tag: { zh: 'BENCH EVIDENCE / 01', en: 'BENCH EVIDENCE / 01' },
+        title: { zh: '確立磁環中心至機底 85 mm 黃金基準', en: '85 mm Centerline Baseline Established' },
+        desc: {
+          zh: '實機裝配波浪紋保護殼與 MagSafe 導磁環，手寫確認「85 mm」中心定位點，將理論推導正式錨定為物理基準。',
+          en: 'Physical verification with ribbed case and MagSafe ring, establishing the verified 85 mm centerline datum on the BOOX Go 6.'
+        }
+      },
+      {
+        src: 'assets/lab/measuring-tape-ribbed-case.jpg',
+        tag: { zh: 'BENCH EVIDENCE / 02', en: 'BENCH EVIDENCE / 02' },
+        title: { zh: '避開凹凸稜線，確保零晃動貼合', en: 'Ribbed Case Texture & Relief Survey' },
+        desc: {
+          zh: '使用黃色鋼捲尺橫向與縱向精確複核保護殼 2–15 cm 浮雕紋理間距，保證筆座底座平坦接觸，杜絕按壓翹起。',
+          en: 'Physical tape measure survey across ribbed ridges (2–15 cm range) to guarantee a rock-solid, wobble-free puck contact plane.'
+        }
+      },
+      {
+        src: 'assets/lab/boox-redline-magsafe-sketch.jpg',
+        tag: { zh: 'BENCH EVIDENCE / 03', en: 'BENCH EVIDENCE / 03' },
+        title: { zh: '直接在殼體手繪懸臂導槽受力走向', en: 'In-Situ Cantilever & Channel Redlining' },
+        desc: {
+          zh: '以紅色簽字筆在導磁環與殼體表面手繪力矩支撐點與側邊導流槽，確認手指持握時的貼合手感與防滑邊界。',
+          en: 'Red-marker layout directly atop the MagSafe ring, tracing load-bearing cantilevers and ergonomic stylus release bevels.'
+        }
+      },
+      {
+        src: 'assets/lab/handwritten-sketch-85-10.png',
+        tag: { zh: 'BENCH EVIDENCE / 04', en: 'BENCH EVIDENCE / 04' },
+        title: { zh: '85 mm 橫向延伸臂與 Ø10 mm 彈性收容環', en: '#1 Napkin Geometry: 85 mm Arm & Ø10 mm Loop' },
+        desc: {
+          zh: '設計筆記草圖：推算底座外徑、內凹卡槽與頂部收容環的幾何配比，推導出 10 mm 彈性收容空間與防滑扣位。',
+          en: 'Core engineering napkin sketch #1 calculating the horizontal cantilever and 10 mm retention ring profile.'
+        }
+      },
+      {
+        title: { zh: 'iPad mini + Apple Pencil 首個物理打樣', en: 'First SLA 3D Print on iPad mini' },
+        desc: {
+          zh: '在切割墊上完成首件 SLA 高精度樹脂樣件實裝，Apple Pencil 順暢滑入，驗證側向開槽、快拆手感與懸臂抗扭強度。',
+          en: 'First SLA resin prototype physically test-fitted onto iPad mini with Apple Pencil on the workbench cutting mat.'
+        }
+      }
     ]
   };
 
@@ -419,7 +464,17 @@
 
       // Update nav links
       const navLinks = document.querySelectorAll('.nav-links a');
-      if (navLinks.length >= 8) {
+      if (navLinks.length >= 9) {
+        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
+        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
+        navLinks[2].textContent = isEn ? 'Lab Notes' : '研發實證';
+        navLinks[3].textContent = isEn ? 'Real World' : '真實場景';
+        navLinks[4].textContent = isEn ? 'Origin Math' : '尺寸研究';
+        navLinks[5].textContent = isEn ? 'Fit Lab' : '幾何適配';
+        navLinks[6].textContent = isEn ? 'The Collection' : '設計系列';
+        navLinks[7].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
+        navLinks[8].textContent = isEn ? 'FAQ' : '常見問題';
+      } else if (navLinks.length >= 8) {
         navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
         navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
         navLinks[2].textContent = isEn ? 'Real World' : '真實場景';
@@ -548,6 +603,112 @@
             if (h) h.textContent = d.h3;
             const p = c.querySelector('p');
             if (p) p.textContent = d.p;
+          }
+        });
+      }
+
+      // Update Maker's Workbench Lab Notes Section
+      const labSec = document.getElementById('lab-notes');
+      if (labSec) {
+        const lLabel = labSec.querySelector('.section-label');
+        if (lLabel) lLabel.textContent = isEn ? "THE MAKER'S WORKBENCH / BENCHTOP MEASUREMENTS & LAB NOTES" : "THE MAKER'S WORKBENCH / 實物測量與工作檯筆記";
+        const lH2 = labSec.querySelector('.section-heading h2');
+        if (lH2) lH2.innerHTML = isEn ? 'Beyond the CAD screen,<br><span>verifying every millimeter on the physical bench.</span>' : '走出 CAD 螢幕，<br><span>在工作檯上親手驗證每 1 毫米。</span>';
+        const lP = labSec.querySelector('.section-heading p');
+        if (lP) lP.textContent = isEn ? 'No matter how precise the parametric math, design must ultimately reconcile with physical reality: caliper offsets, ribbed cases, and the first 3D-printed assemblies on our cutting mat.' : '參數再精密，終究要回歸真實物理世界。從游標卡尺的實機取樣、波浪保護殼的公差適配，到首件 3D 打印實體裝機測試——這就是 Mag Holder 在工作室桌面上真實誕生的痕跡。';
+
+        const labCards = labSec.querySelectorAll('.lab-card');
+        const labEnData = [
+          { scenario: 'Physical Measurement · 85 mm Datum', h3: '85 mm Centerline Baseline Established', p: 'Physical verification with ribbed case and MagSafe ring, establishing the verified 85 mm centerline datum on the BOOX Go 6.' },
+          { scenario: 'Tolerance Survey · Ribbed Case Fit', h3: 'Ribbed Case Texture & Relief Survey', p: 'Physical tape measure survey across ribbed ridges (2–15 cm range) to guarantee a rock-solid, wobble-free puck contact plane.' },
+          { scenario: 'In-Situ Layout · Redline Skeleton', h3: 'In-Situ Cantilever & Channel Redlining', p: 'Red-marker layout directly atop the MagSafe ring, tracing load-bearing cantilevers and ergonomic stylus release bevels.' },
+          { scenario: 'Concept Draft · #1 Napkin Sketch', h3: '#1 Napkin Geometry: 85 mm Arm & Ø10 mm Loop', p: 'Core engineering napkin sketch #1 calculating the horizontal cantilever and 10 mm retention ring profile.' },
+          { scenario: 'Bench Assembly · First 3D Prototype', h3: 'First SLA 3D Print on iPad mini', p: 'First SLA resin prototype physically test-fitted onto iPad mini with Apple Pencil on the workbench cutting mat.' }
+        ];
+        const labZhData = [
+          { scenario: '物理測量 · 85 mm 磁環定位', h3: '確立磁環中心至機底 85 mm 黃金基準', p: '實機裝配波浪紋保護殼與 MagSafe 導磁環，手寫確認「85 mm」中心定位點，將理論推導正式錨定為物理基準。' },
+          { scenario: '公差實測 · 保護殼波浪紋避位', h3: '避開凹凸稜線，確保零晃動貼合', p: '使用黃色鋼捲尺橫向與縱向精確複核保護殼 2–15 cm 浮雕紋理間距，保證筆座底座平坦接觸，杜絕按壓翹起。' },
+          { scenario: '實體放樣 · 手繪懸臂受力骨架', h3: '直接在殼體手繪懸臂導槽受力走向', p: '以紅色簽字筆在導磁環與殼體表面手繪力矩支撐點與側邊導流槽，確認手指持握時的貼合手感與防滑邊界。' },
+          { scenario: '概念草繪 · #1 核心力學手稿', h3: '85 mm 橫向延伸臂與 Ø10 mm 彈性收容環', p: '設計筆記草圖：推算底座外徑、內凹卡槽與頂部收容環的幾何配比，推導出 10 mm 彈性收容空間與防滑扣位。' },
+          { scenario: '實物驗證 · 首件 3D 打印試樣', h3: 'iPad mini + Apple Pencil 首個物理打樣', p: '在切割墊上完成首件 SLA 高精度樹脂樣件實裝，Apple Pencil 順暢滑入，驗證側向開槽、快拆手感與懸臂抗扭強度。' }
+        ];
+
+        labCards.forEach((c, i) => {
+          const d = isEn ? labEnData[i] : labZhData[i];
+          if (d) {
+            const sc = c.querySelector('.lab-scenario');
+            if (sc) sc.textContent = d.scenario;
+            const h = c.querySelector('h3');
+            if (h) h.textContent = d.h3;
+            const p = c.querySelector('p');
+            if (p) p.textContent = d.p;
+          }
+        });
+      }
+
+      // Update FAQ Section
+      const faqSec = document.getElementById('faq');
+      if (faqSec) {
+        const fLabel = faqSec.querySelector('.section-label');
+        if (fLabel) fLabel.textContent = isEn ? 'FAQ & BACKER GUIDE / ENGINEERING & BACKER FAQ' : 'FAQ & BACKER GUIDE / 工程與贊助常見問答';
+        const fH2 = faqSec.querySelector('.section-heading h2');
+        if (fH2) fH2.innerHTML = isEn ? 'Engineering in the open,<br><span>answering every detail with honesty.</span>' : '誠實面對工程，<br><span>解答每一個細節疑問。</span>';
+        const fP = faqSec.querySelector('.section-heading p');
+        if (fP) fP.textContent = isEn ? 'We believe in radical engineering transparency. From magnetic shielding on E-Ink displays and 3D printing materials to iPad mini compatibility, here are honest answers to backer questions.' : '我們堅持透明公開的造物哲學。無論是磁場對 E-Ink 螢幕的潛在影響、3D 打印材料選擇，抑或是對 iPad mini 的支援，所有工程細節在此為你一一解答。';
+
+        const faqItems = faqSec.querySelectorAll('.faq-item');
+        const faqEnData = [
+          {
+            q: 'Will the strong magnets in the stylus holder damage the BOOX E-Ink screen or disrupt stylus pressure sensitivity?',
+            a: '<p><strong>It will not cause screen damage, and the magnetic field is directional and shielded.</strong></p><p>The BOOX Go 6 uses E-Ink Carta 1300 and electromagnetic resonance (EMR) digitizer technology. While unshielded magnets placed directly over the front writing surface could cause localized pen offset, Mag Holder isolates magnetic flux with single-direction blind sockets backed by a steel MagSafe flux ring. Measured residual stray field inside the stylus groove drops below 15 Gauss, preventing interference with the front EMR antenna grid.</p>'
+          },
+          {
+            q: 'Why is the MagSafe centerline distance from the BOOX Go 6 bottom precisely 85 mm? Does it adhere securely over ribbed cases?',
+            a: '<p><strong>This golden datum was determined jointly through geometric clearance equations and physical benchtop measurements.</strong></p><p>As proven in our lab notes (#01 & #02), the BOOX Go 6 is 149 mm tall and the stylus is 157.5 mm. With the MagSafe ring center placed 85 mm from the bottom edge, AERIS (Flow Long 120mm) leaves exactly 3 mm safety clearance at the bottom while top pen exposure is trimmed to 24.54 mm. It also perfectly bridges across the relief grooves of the official ribbed case for a solid, wobble-free seating plane.</p>'
+          },
+          {
+            q: 'Does it work with iPad mini and Apple Pencil? Can the Pencil still charge magnetically on the side?',
+            a: '<p><strong>Fully compatible, and specifically engineered to prevent Apple Pencil detachment drops.</strong></p><p>While Apple Pencil charges magnetically on the edge of the iPad mini, it frequently gets knocked off inside backpacks or during transit. Our TITAN PRO (K9-P10-Pad) and ECLIPSE MINI models lock the Pencil (Ø8.9 mm) securely to the rear chassis. When charging is needed, simply slide it out and snap it to the iPad edge—forming a reliable "rear transport lock + side rapid top-up" workflow.</p>'
+          },
+          {
+            q: 'If I download the STL files to 3D print on my own, which materials and processes do you recommend?',
+            a: '<p><strong>We strongly recommend SLS laser-sintered PA12 Nylon or tough SLA photopolymer resins.</strong></p><p>Because the retaining cantilever wall thickness tapers to 0.8–1.2 mm at critical flex points, conventional FDM prints (such as standard PLA or PETG) have weaker layer adhesion that may fatigue under repeated cycles. SLS PA12 nylon offers isotropic strength, impact flexibility, and a soft matte touch. For resin printing, always specify ABS-like or engineering tough resins.</p>'
+          },
+          {
+            q: 'Is Mag Holder a mass-produced product or an open-source prototype? How can I get involved?',
+            a: '<p><strong>Currently in the v7 prototype test-fitting phase, with all CAD print files completely open-source.</strong></p><p>In the Downloads section below, we provide the full v7 Print Pack with 10 STL files covering all 6 flagships, accompanied by an exhaustive 3D printing guide. You are welcome to download and submit them to any local 3D print service. If you discover tolerance improvements or test new device fits, please open an Issue or PR on our GitHub repository!</p>'
+          }
+        ];
+        const faqZhData = [
+          {
+            q: '手寫筆座底部的強磁，會不會干擾 BOOX 電子紙螢幕或破壞手寫筆壓感？',
+            a: '<p><strong>不會造成螢幕損壞，且已實施磁場定向屏蔽。</strong></p><p>BOOX Go 6 使用 E-Ink Carta 1300 電子紙技術與電磁手寫 (EMR)。傳統磁鐵若靠近正面書寫區域可能造成局部筆跡偏移，但 Mag Holder 的 N52 釹鐵硼磁路採封閉下置單向沉穴設計，背部貼合標準 MagSafe 導磁環，將漏磁通通導向背板結構外圍，筆身腔體內側磁通密度實測衰減至 15 Gauss 以下，完全避開正面 EMR 感應天線層。</p>'
+          },
+          {
+            q: '為什麼磁環中心到 BOOX Go 6 底部必須是 85 mm？波浪紋保護殼能貼牢嗎？',
+            a: '<p><strong>這是由幾何極限計算與工作檯實物測量共同決定的黃金基準。</strong></p><p>在工作檯實證中（見上方 Lab Notes #01 & #02），BOOX Go 6 機身高 149 mm，手寫筆長 157.5 mm。當磁環中心位於距機底 85 mm 處時，AERIS (Flow Long 120mm) 底部僅預留 3 mm 安全餘裕，筆尾上露 24.54 mm；同時剛好跨越官方波浪保護殼的縱向紋理凹槽，底座受力均勻，不會發生按壓搖晃。</p>'
+          },
+          {
+            q: 'iPad mini 與 Apple Pencil 真的可以用嗎？還能進行側邊磁吸無線充電嗎？',
+            a: '<p><strong>完全相容，專為解決 Apple Pencil 隨身防脫落而設計。</strong></p><p>iPad mini 原廠側邊磁吸雖然能無線充電，但在放入包包或走動抽拔時極易被碰撞掉落。Mag Holder 的 TITAN PRO (K9-P10-Pad) 與 ECLIPSE MINI 專為 Apple Pencil 2 及 Pencil Pro 設計（直徑 8.9 mm），牢固鎖在背殼；需要充電時取下吸回側邊即可，形成「背板攜帶鎖定 + 側邊快速補電」的最佳分工組合。</p>'
+          },
+          {
+            q: '如果我自己下載 STL 自行 3D 打印，該選擇什麼材料與工藝？',
+            a: '<p><strong>強烈建議採用 SLS 雷射燒結 PA12 尼龍或高韌性光固化樹脂。</strong></p><p>因為卡扣與筆鞘壁厚最薄處為 0.8–1.2 mm，常規 FDM 打印（如 PLA/PETG）層間結合力較弱，多次插拔可能出現層裂。SLS PA12 尼龍具備各向同性的韌性與細微消光磨砂手感；若選用光固化 SLA/DLP，請務必選用類 ABS (ABS-like) 或增韌樹脂。</p>'
+          },
+          {
+            q: 'Mag Holder 是量產商品還是開源原型？如何參與後續演進？',
+            a: '<p><strong>目前處於 v7 原型打樣與社群驗證階段，所有打樣檔案完全開源提供。</strong></p><p>我們在下方 Downloads 區提供了包含 6 大旗艦款在內的 10 個 STL 原型打樣包與完整打樣指南。你可以自由下載並送交任何 3D 打印服務商試樣。若你在尺寸公差、手感反饋或新設備適配上有任何發現，歡迎前往我們的 GitHub 倉庫提交 Issue 或 PR 一起改良！</p>'
+          }
+        ];
+
+        faqItems.forEach((item, idx) => {
+          const d = isEn ? faqEnData[idx] : faqZhData[idx];
+          if (d) {
+            const titleSpan = item.querySelector('.faq-title');
+            if (titleSpan) titleSpan.textContent = d.q;
+            const ansDiv = item.querySelector('.faq-answer');
+            if (ansDiv) ansDiv.innerHTML = d.a;
           }
         });
       }
