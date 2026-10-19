@@ -308,8 +308,8 @@
         tag: { zh: 'BENCH EVIDENCE / 01', en: 'BENCH EVIDENCE / 01' },
         title: { zh: '量度更正：磁環距殼底75 mm', en: 'Measurement corrected: 75 mm' },
         desc: {
-          zh: '早期照片保留原量度記錄，85 mm讀數已由使用者更正為75 mm。v8採用更正尺寸。',
-          en: 'Historical measurement photo: the owner corrected the original 85 mm reading to 75 mm. v8 uses the corrected dimension.'
+          zh: '早期照片保留原量度記錄，85 mm讀數已由使用者更正為75 mm。v9採用更正尺寸。',
+          en: 'Historical measurement photo: the owner corrected the original 85 mm reading to 75 mm. v9 uses the corrected dimension.'
         }
       },
       {
@@ -619,14 +619,14 @@
 
         const labCards = labSec.querySelectorAll('.lab-card');
         const labEnData = [
-          { scenario: 'Measurement corrected to 75 mm', h3: 'Measurement corrected: 75 mm', p: 'Historical measurement photo: the owner corrected the original 85 mm reading to 75 mm. v8 uses the corrected dimension.' },
+          { scenario: 'Measurement corrected to 75 mm', h3: 'Measurement corrected: 75 mm', p: 'Historical measurement photo: the owner corrected the original 85 mm reading to 75 mm. v9 uses the corrected dimension.' },
           { scenario: 'Tolerance Survey · Ribbed Case Fit', h3: 'Ribbed Case Texture & Relief Survey', p: 'Physical tape measure survey across ribbed ridges (2–15 cm range) to guarantee a rock-solid, wobble-free puck contact plane.' },
           { scenario: 'In-Situ Layout · Redline Skeleton', h3: 'In-Situ Cantilever & Channel Redlining', p: 'Red-marker layout directly atop the MagSafe ring, tracing load-bearing cantilevers and ergonomic stylus release bevels.' },
           { scenario: 'Concept Draft · #1 Napkin Sketch', h3: '#1 Napkin Geometry: 85 mm Arm & Ø10 mm Loop', p: 'Core engineering napkin sketch #1 calculating the horizontal cantilever and 10 mm retention ring profile.' },
           { scenario: 'Bench Assembly · First 3D Prototype', h3: 'First SLA 3D Print on iPad mini', p: 'First SLA resin prototype physically test-fitted onto iPad mini with Apple Pencil on the workbench cutting mat.' }
         ];
         const labZhData = [
-          { scenario: '物理測量 · 已更正為75 mm', h3: '量度更正：磁環距殼底75 mm', p: '早期照片保留原量度記錄，85 mm讀數已由使用者更正為75 mm。v8採用更正尺寸。' },
+          { scenario: '物理測量 · 已更正為75 mm', h3: '量度更正：磁環距殼底75 mm', p: '早期照片保留原量度記錄，85 mm讀數已由使用者更正為75 mm。v9採用更正尺寸。' },
           { scenario: '公差實測 · 保護殼波浪紋避位', h3: '避開凹凸稜線，確保零晃動貼合', p: '使用黃色鋼捲尺橫向與縱向精確複核保護殼 2–15 cm 浮雕紋理間距，保證筆座底座平坦接觸，杜絕按壓翹起。' },
           { scenario: '實體放樣 · 手繪懸臂受力骨架', h3: '直接在殼體手繪懸臂導槽受力走向', p: '以紅色簽字筆在導磁環與殼體表面手繪力矩支撐點與側邊導流槽，確認手指持握時的貼合手感與防滑邊界。' },
           { scenario: '概念草繪 · #1 核心力學手稿', h3: '85 mm 橫向延伸臂與 Ø10 mm 彈性收容環', p: '設計筆記草圖：推算底座外徑、內凹卡槽與頂部收容環的幾何配比，推導出 10 mm 彈性收容空間與防滑扣位。' },
@@ -657,8 +657,8 @@
         if (fP) fP.textContent = isEn ? 'We believe in radical engineering transparency. From magnetic shielding on E-Ink displays and 3D printing materials to iPad mini compatibility, here are honest answers to backer questions.' : '我們堅持透明公開的造物哲學。無論是磁場對 E-Ink 螢幕的潛在影響、3D 打印材料選擇，抑或是對 iPad mini 的支援，所有工程細節在此為你一一解答。';
 
         const faqItems = faqSec.querySelectorAll('.faq-item');
-        const faqEnData = [{"q": "Will the 5 x 1 mm N52 magnets interfere with the device?", "a": "<p>Magnetic fields, writing interference and long-term device use have not been tested. No validated magnetic shielding is provided. Test actual pen attraction and retention first.</p>"}, {"q": "Why use a 75 mm ring position?", "a": "<p>The owner corrected the earlier 85 mm reading to 75 mm from the case bottom. v8 Flow/AERIS is 110 mm long with 3 mm bottom clearance; Facet/VERTEX is 100 mm with 13 mm clearance. K+M has 3.5 mm at the specified pen position.</p>"}, {"q": "How are the magnets and 3M tape assembled?", "a": "<p>Bottom-loading pockets are 5.3 mm diameter and 4 mm deep. Bond each 5 x 1 mm magnet to the pocket ceiling using provisionally 0.2 mm tape; secure a 5.05 x 2.7 mm spacer below. Recalculate the spacer for other tape thicknesses. The case ring is separate hardware.</p>"}, {"q": "What about iPad and printing material?", "a": "<p>iPad geometry remains a fit study; its pockets also change to 5 x 1 mm magnets. No device validation or charging is provided. Quote PA12 prototypes and print fit samples before full bodies.</p>"}, {"q": "Is this a production-ready product?", "a": "<p>This is a v8 digital prototype with ten STL files: six holders, three fit samples and one spacer. Mesh checks do not validate retention, drops or fatigue. Follow the print guide.</p>"}];
-        const faqZhData = [{"q": "Ø5×1 mm N52磁石會否干擾設備？", "a": "<p>目前未做磁場、壓感干擾或長期裝機測試，也沒有經驗證的磁屏蔽結構。請先測實際筆身能否吸附，再以低處軟墊試裝；不能僅靠N52等級保證保持力。</p>"}, {"q": "為何改用75 mm磁環位置？", "a": "<p>使用者已確認之前85 mm讀數有誤，正確為距保護殼底75 mm。v8 Flow/AERIS長110 mm，底部留3 mm；Facet/VERTEX長100 mm，留13 mm；K+M指定筆位留3.5 mm。波浪殼黏附與搖晃待實測。</p>"}, {"q": "磁石與3M雙面膠怎樣裝？", "a": "<p>孔徑5.3 mm、深4 mm，由底面裝入。Ø5×1 mm磁石以暫定0.2 mm膠層貼近孔頂，下方用Ø5.05×2.7 mm墊片承托並另行固定。若膠厚不同，需重算墊片。背殼磁環是另一組硬件。</p>"}, {"q": "iPad版及打印材料如何選？", "a": "<p>iPad外形暫沿用尺寸研究，磁孔同步改為Ø5×1 mm；未完成實機驗證，也不提供充電。先向打印商詢價PA12試件並打印筆徑試片，核對公差、側鍵及長通道清粉。</p>"}, {"q": "現在可以當成量產成品嗎？", "a": "<p>目前是v8數位原型，打印包有6主件、3試片及1墊片，共10個STL。網格檢查不等於保持力、跌落或疲勞測試。請按打樣指南逐步驗證。</p>"}];
+        const faqEnData = [{"q": "Will the 5 x 1 mm N52 magnets interfere with the device?", "a": "<p>Magnetic fields, writing interference and long-term device use have not been tested. No validated magnetic shielding is provided. Test actual pen attraction and retention first.</p>"}, {"q": "Why use a 75 mm ring position?", "a": "<p>The owner corrected the earlier 85 mm reading to 75 mm from the case bottom. v9 Flow/AERIS is 110 mm long with 3 mm bottom clearance; Facet/VERTEX is 100 mm with 13 mm clearance. K+M has 3.5 mm at the specified pen position.</p>"}, {"q": "How are the magnets and 3M tape assembled?", "a": "<p>Bottom-loading pockets are 5.3 mm diameter and 4 mm deep. BOOX AERIS & VERTEX use 5 magnets (Y = -48, -38, -12, 0, 12 mm) for enhanced barrel retention; ECLIPSE, ZEPHYR and iPad models use 3 magnets. Bond each 5 x 1 mm magnet to the pocket ceiling using provisionally 0.2 mm tape; secure a 5.05 x 2.7 mm spacer below. Recalculate the spacer for other tape thicknesses. The case ring is separate hardware.</p>"}, {"q": "What about iPad and printing material?", "a": "<p>iPad geometry remains a fit study; its pockets also change to 5 x 1 mm magnets. No device validation or charging is provided. Quote PA12 prototypes and print fit samples before full bodies.</p>"}, {"q": "Is this a production-ready product?", "a": "<p>This is a v9 digital prototype with ten STL files: six holders, three fit samples and one spacer (v9 AERIS & VERTEX feature 5-magnet sockets). Mesh checks do not validate retention, drops or fatigue. Follow the print guide.</p>"}];
+        const faqZhData = [{"q": "Ø5×1 mm N52磁石會否干擾設備？", "a": "<p>目前未做磁場、壓感干擾或長期裝機測試，也沒有經驗證的磁屏蔽結構。請先測實際筆身能否吸附，再以低處軟墊試裝；不能僅靠N52等級保證保持力。</p>"}, {"q": "為何改用75 mm磁環位置？", "a": "<p>使用者已確認之前85 mm讀數有誤，正確為距保護殼底75 mm。v9 Flow/AERIS長110 mm，底部留3 mm；Facet/VERTEX長100 mm，留13 mm；K+M指定筆位留3.5 mm。波浪殼黏附與搖晃待實測。</p>"}, {"q": "磁石與3M雙面膠怎樣裝？", "a": "<p>孔徑5.3 mm、深4 mm，由底面裝入。AERIS 與 VERTEX 旗艦長鞘升級 5 顆 Ø5×1 mm 磁石（Y = -48, -38, -12, 0, 12 mm）強化筆身吸附力，其餘款式配置 3 顆。磁石以暫定0.2 mm膠層貼近孔頂，下方用Ø5.05×2.7 mm墊片承托並另行固定。若膠厚不同，需重算墊片。背殼磁環是另一組硬件。</p>"}, {"q": "iPad版及打印材料如何選？", "a": "<p>iPad外形暫沿用尺寸研究，磁孔同步改為Ø5×1 mm；未完成實機驗證，也不提供充電。先向打印商詢價PA12試件並打印筆徑試片，核對公差、側鍵及長通道清粉。</p>"}, {"q": "現在可以當成量產成品嗎？", "a": "<p>目前是v9數位原型，打樣包有6主件、3試片及1墊片，共10個STL（AERIS與VERTEX為5磁孔版本）。網格檢查不等於保持力、跌落或疲勞測試。請按打樣指南逐步驗證。</p>"}];
 
         faqItems.forEach((item, idx) => {
           const d = isEn ? faqEnData[idx] : faqZhData[idx];
