@@ -1,0 +1,227 @@
+{
+  "A_compact_ring_PROVISIONAL": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -32.0,
+        -47.0,
+        0.0
+      ],
+      [
+        32.0,
+        47.0,
+        12.093
+      ]
+    ],
+    "size_mm": [
+      64.0,
+      94.0,
+      12.093
+    ],
+    "volume_cm3": 8.195,
+    "nylon_mass_estimate_g_at_1_01": 8.28,
+    "triangles": 4252
+  },
+  "A_compact_discs_PROVISIONAL": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -32.0,
+        -47.0,
+        0.0
+      ],
+      [
+        32.0,
+        47.0,
+        12.093
+      ]
+    ],
+    "size_mm": [
+      64.0,
+      94.0,
+      12.093
+    ],
+    "volume_cm3": 9.423,
+    "nylon_mass_estimate_g_at_1_01": 9.52,
+    "triangles": 8218
+  },
+  "B_guarded_ring_PROVISIONAL": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -32.0,
+        -83.25,
+        0.0
+      ],
+      [
+        32.0,
+        83.25,
+        14.0
+      ]
+    ],
+    "size_mm": [
+      64.0,
+      166.5,
+      14.0
+    ],
+    "volume_cm3": 15.012,
+    "nylon_mass_estimate_g_at_1_01": 15.16,
+    "triangles": 4362
+  },
+  "B_guarded_discs_PROVISIONAL": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -32.0,
+        -83.25,
+        0.0
+      ],
+      [
+        32.0,
+        83.25,
+        14.0
+      ]
+    ],
+    "size_mm": [
+      64.0,
+      166.5,
+      14.0
+    ],
+    "volume_cm3": 16.24,
+    "nylon_mass_estimate_g_at_1_01": 16.4,
+    "triangles": 8374
+  },
+  "fit_clip_ID_9.2": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -9.0,
+        -8.0,
+        0.0
+      ],
+      [
+        9.0,
+        8.0,
+        11.776
+      ]
+    ],
+    "size_mm": [
+      18.0,
+      16.0,
+      11.776
+    ],
+    "volume_cm3": 1.162,
+    "nylon_mass_estimate_g_at_1_01": 1.17,
+    "triangles": 996
+  },
+  "fit_clip_ID_9.4": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -9.0,
+        -8.0,
+        0.0
+      ],
+      [
+        9.0,
+        8.0,
+        12.093
+      ]
+    ],
+    "size_mm": [
+      18.0,
+      16.0,
+      12.093
+    ],
+    "volume_cm3": 1.169,
+    "nylon_mass_estimate_g_at_1_01": 1.18,
+    "triangles": 996
+  },
+  "fit_clip_ID_9.6": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -9.0,
+        -8.0,
+        0.0
+      ],
+      [
+        9.0,
+        8.0,
+        12.398
+      ]
+    ],
+    "size_mm": [
+      18.0,
+      16.0,
+      12.398
+    ],
+    "volume_cm3": 1.176,
+    "nylon_mass_estimate_g_at_1_01": 1.19,
+    "triangles": 996
+  },
+  "fit_disc_pocket_5.3x2.15": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -6.0,
+        -6.0,
+        0.0
+      ],
+      [
+        6.0,
+        6.0,
+        3.2
+      ]
+    ],
+    "size_mm": [
+      12.0,
+      12.0,
+      3.2
+    ],
+    "volume_cm3": 0.402,
+    "nylon_mass_estimate_g_at_1_01": 0.41,
+    "triangles": 524
+  },
+  "fit_ring_recess_58.4_47.6_2.0": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "bounds_mm": [
+      [
+        -32.0,
+        -32.0,
+        0.0
+      ],
+      [
+        32.0,
+        32.0,
+        3.2
+      ]
+    ],
+    "size_mm": [
+      64.0,
+      64.0,
+      3.2
+    ],
+    "volume_cm3": 4.06,
+    "nylon_mass_estimate_g_at_1_01": 4.1,
+    "triangles": 1536
+  }
+}

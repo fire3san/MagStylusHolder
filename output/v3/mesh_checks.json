@@ -1,0 +1,110 @@
+{
+  "S_scabbard_3magnets": {
+    "size_mm": [
+      68.0,
+      126.0,
+      16.0
+    ],
+    "volume_cm3": 14.798,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "K2_integral_dual_cuffs": {
+    "size_mm": [
+      68.0,
+      68.0,
+      12.569
+    ],
+    "volume_cm3": 8.825,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "MK2_integral_dual_cuffs_3magnets": {
+    "size_mm": [
+      68.0,
+      68.0,
+      12.569
+    ],
+    "volume_cm3": 8.907,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "cuff_fit_ID9.0": {
+    "size_mm": [
+      18.0,
+      18.0,
+      12.353
+    ],
+    "volume_cm3": 1.477,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "cuff_fit_ID9.2": {
+    "size_mm": [
+      18.0,
+      18.0,
+      12.569
+    ],
+    "volume_cm3": 1.483,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "cuff_fit_ID9.4": {
+    "size_mm": [
+      18.0,
+      18.0,
+      12.772
+    ],
+    "volume_cm3": 1.488,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "tunnel_fit_ID9.6": {
+    "size_mm": [
+      15.0,
+      14.0,
+      16.0
+    ],
+    "volume_cm3": 1.433,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "S_magnet_spacer_print_3": {
+    "size_mm": [
+      6.05,
+      6.05,
+      2.3
+    ],
+    "volume_cm3": 0.066,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  },
+  "S_socket_tunnel_test": {
+    "size_mm": [
+      15.0,
+      14.0,
+      16.0
+    ],
+    "volume_cm3": 1.296,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "material": "PA12 SLS/MJF"
+  }
+}

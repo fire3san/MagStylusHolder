@@ -1,0 +1,152 @@
+[
+  {
+    "id": "S_Flow_BOOX_vertical",
+    "family": "S",
+    "style": "Flow",
+    "target": "BOOX Go 6 Gen II + InkSense Plus",
+    "body_mm": [
+      68.0,
+      109.54,
+      16.0
+    ],
+    "bore_mm": 9.6,
+    "pen_length_mm": 157.5,
+    "pen_tip_y_mm": -58.5,
+    "pen_tail_y_mm": 99.0,
+    "assumed_ring_height_from_bottom_mm": 85,
+    "bottom_clearance_mm": 13.46,
+    "top_pen_protrusion_mm": 35.0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 71.54,
+    "magnet_y_mm": [
+      -53.5,
+      -44.5,
+      -35.5
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  },
+  {
+    "id": "S_Facet_BOOX_vertical",
+    "family": "S",
+    "style": "Facet",
+    "target": "BOOX Go 6 Gen II + InkSense Plus",
+    "body_mm": [
+      68.0,
+      109.54,
+      16.1
+    ],
+    "bore_mm": 9.6,
+    "pen_length_mm": 157.5,
+    "pen_tip_y_mm": -58.5,
+    "pen_tail_y_mm": 99.0,
+    "assumed_ring_height_from_bottom_mm": 85,
+    "bottom_clearance_mm": 13.46,
+    "top_pen_protrusion_mm": 35.0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 71.54,
+    "magnet_y_mm": [
+      -53.5,
+      -44.5,
+      -35.5
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  },
+  {
+    "id": "KM_Arc_BOOX_vertical",
+    "family": "KM",
+    "style": "Arc",
+    "target": "BOOX Go 6 Gen II + InkSense Plus",
+    "body_mm": [
+      68.0,
+      68.0,
+      16.05
+    ],
+    "bore_mm": 9.4,
+    "pen_length_mm": 157.5,
+    "pen_tip_y_mm": -71.5,
+    "pen_tail_y_mm": 86.0,
+    "assumed_ring_height_from_bottom_mm": 85,
+    "bottom_clearance_mm": 13.5,
+    "top_pen_protrusion_mm": 22.0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 71.5,
+    "magnet_y_mm": [
+      -12,
+      0,
+      12
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  },
+  {
+    "id": "KM_Ribbon_BOOX_vertical",
+    "family": "KM",
+    "style": "Ribbon",
+    "target": "BOOX Go 6 Gen II + InkSense Plus",
+    "body_mm": [
+      68.0,
+      68.0,
+      15.85
+    ],
+    "bore_mm": 9.4,
+    "pen_length_mm": 157.5,
+    "pen_tip_y_mm": -71.5,
+    "pen_tail_y_mm": 86.0,
+    "assumed_ring_height_from_bottom_mm": 85,
+    "bottom_clearance_mm": 13.5,
+    "top_pen_protrusion_mm": 22.0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 71.5,
+    "magnet_y_mm": [
+      -12,
+      0,
+      12
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  },
+  {
+    "id": "S_Flow_iPad_Pencil89",
+    "family": "S",
+    "style": "Flow",
+    "target": "iPad mini 6/A17 Pro; 8.9mm Pencil fit study",
+    "body_mm": [
+      68.0,
+      130.54,
+      16.0
+    ],
+    "bore_mm": 9.3,
+    "pen_length_mm": 166,
+    "pen_tip_y_mm": -79.5,
+    "pen_tail_y_mm": 86.5,
+    "assumed_ring_height_from_bottom_mm": 97.7,
+    "bottom_clearance_mm": 5.16,
+    "top_pen_protrusion_mm": 0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 92.54,
+    "magnet_y_mm": [
+      -74.5,
+      -65.5,
+      -56.5
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  },
+  {
+    "id": "KM_Arc_iPad_Pencil89",
+    "family": "KM",
+    "style": "Arc",
+    "target": "iPad mini 6/A17 Pro; 8.9mm Pencil fit study",
+    "body_mm": [
+      68.0,
+      68.0,
+      16.05
+    ],
+    "bore_mm": 9.3,
+    "pen_length_mm": 166,
+    "pen_tip_y_mm": -83,
+    "pen_tail_y_mm": 83,
+    "assumed_ring_height_from_bottom_mm": 97.7,
+    "bottom_clearance_mm": 14.7,
+    "top_pen_protrusion_mm": 0,
+    "minimum_ring_height_for_no_bottom_protrusion_mm": 83,
+    "magnet_y_mm": [
+      -12,
+      0,
+      12
+    ],
+    "status": "Digital prototype; actual case position, grip and magnets unverified"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "A_compact": {
+    "nominal_cylinder_collision_mm3": 0.0,
+    "angle_from_vertical_degrees": 34,
+    "centred_assembly_xy_extent_mm": [
+      95.53,
+      135.61
+    ],
+    "note": "Nominal cylindrical pen only; button, nib profile, case, ring position, flex and magnetic forces unverified."
+  },
+  "B_guarded": {
+    "nominal_cylinder_collision_mm3": 0.0,
+    "angle_from_vertical_degrees": 34,
+    "centred_assembly_xy_extent_mm": [
+      103.1,
+      144.15
+    ],
+    "note": "Nominal cylindrical pen only; button, nib profile, case, ring position, flex and magnetic forces unverified."
+  }
+}

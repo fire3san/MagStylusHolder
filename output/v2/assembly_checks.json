@@ -1,0 +1,28 @@
+{
+  "M": {
+    "nominal_pen_intersection_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "pen_top_z_mm": 13.8,
+    "clip_centres_y_mm": [
+      -23,
+      23
+    ],
+    "magnet_top_z_mm": 4.4,
+    "nominal_magnet_to_barrel_gap_before_film_mm": 0.4
+  },
+  "K": {
+    "nominal_pen_intersection_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "pen_top_z_mm": 13.8,
+    "clip_centres_y_mm": [
+      -23,
+      23
+    ],
+    "collar_dock_collision_mm3": 0.0,
+    "collar_shift_1mm_collision_mm3": 14.940560035075421,
+    "axial_flange_clearance_total_mm": 0.6,
+    "intentional_TPU_bore_interference_diametral_mm": 0.2,
+    "collar_top_z_mm": 16.3,
+    "minimum_web_below_key_and_strap_recess_mm": 1.25
+  }
+}

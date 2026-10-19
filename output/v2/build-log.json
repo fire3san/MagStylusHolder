@@ -1,0 +1,150 @@
+{
+  "M_compact_puck_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      68.0,
+      68.0,
+      12.593
+    ],
+    "volume_cm3": 8.537,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "K_compact_puck_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      68.0,
+      68.0,
+      12.593
+    ],
+    "volume_cm3": 9.146,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "K_collar_ID8.6_TPU": {
+    "material": "TPU 90A-95A trial; do not print rigid",
+    "size_mm": [
+      14.0,
+      13.951,
+      12.0
+    ],
+    "volume_cm3": 0.65,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "K_collar_ID8.8_TPU": {
+    "material": "TPU 90A-95A trial; do not print rigid",
+    "size_mm": [
+      14.0,
+      13.951,
+      12.0
+    ],
+    "volume_cm3": 0.619,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "K_collar_ID9.0_TPU": {
+    "material": "TPU 90A-95A trial; do not print rigid",
+    "size_mm": [
+      14.0,
+      13.951,
+      12.0
+    ],
+    "volume_cm3": 0.587,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "clip_fit_ID9.2_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      18.0,
+      13.0,
+      12.376
+    ],
+    "volume_cm3": 1.005,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "clip_fit_ID9.4_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      18.0,
+      13.0,
+      12.593
+    ],
+    "volume_cm3": 1.008,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "clip_fit_ID9.6_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      18.0,
+      13.0,
+      12.798
+    ],
+    "volume_cm3": 1.011,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "magnet_test_6x2_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      14.0,
+      38.0,
+      4.6
+    ],
+    "volume_cm3": 2.225,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  },
+  "case_ring_fit_58.4_39.6_2.0_PA12": {
+    "material": "PA12 SLS/MJF",
+    "size_mm": [
+      68.0,
+      68.0,
+      3.2
+    ],
+    "volume_cm3": 5.818,
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1
+  }
+}
+{
+  "M": {
+    "nominal_pen_intersection_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "pen_top_z_mm": 13.8,
+    "clip_centres_y_mm": [
+      -23,
+      23
+    ],
+    "magnet_top_z_mm": 4.4,
+    "nominal_magnet_to_barrel_gap_before_film_mm": 0.4
+  },
+  "K": {
+    "nominal_pen_intersection_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "pen_top_z_mm": 13.8,
+    "clip_centres_y_mm": [
+      -23,
+      23
+    ],
+    "collar_dock_collision_mm3": 0.0,
+    "collar_shift_1mm_collision_mm3": 14.940560035075421,
+    "axial_flange_clearance_total_mm": 0.6,
+    "intentional_TPU_bore_interference_diametral_mm": 0.2,
+    "collar_top_z_mm": 16.3,
+    "minimum_web_below_key_and_strap_recess_mm": 1.25
+  }
+}

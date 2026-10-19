@@ -1,0 +1,27 @@
+{
+  "input": "/Users/san/Codex/MagSafeStylusHolder/boox_puck_N52_6x2mm_CLEAN_MANIFOLD.stl",
+  "sha256": "d05accbd4c1a62f6980a31d3627bba95cd83c0d95d3ecec8d1c78f09106f0472",
+  "bounds_mm": [
+    [
+      -34.0,
+      -34.0,
+      -1.2999999523162842
+    ],
+    [
+      34.0,
+      34.0,
+      15.500100135803223
+    ]
+  ],
+  "size_mm": [
+    68.0,
+    68.0,
+    16.800100088119507
+  ],
+  "volume_cm3": 22.396356890697646,
+  "watertight": true,
+  "consistent_winding": true,
+  "manifold_components": 1,
+  "triangles": 2236,
+  "note": "Original file unchanged. Measurements in review derived from sections."
+}

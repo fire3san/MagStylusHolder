@@ -1,0 +1,6 @@
+prototype,body_material_process,clip_bore_mm,collar_material_process,collar_bore_mm,strap_thickness_mm,pen_magnets_installed,magnet_positions_and_faces,axial_force_N,duration_s,pen_slip_mm,collar_in_dock_slip_mm,cycles,button_clear,case_ring_rotation,notes
+M_without_pen_magnets,,,,,,no,,3,10,,,,,,
+M_with_pen_magnets,,,,,,yes,,3,10,,,,,,
+K_collar_9.0,,,,9.0,,no,,3,10,,,,,,
+K_collar_8.8,,,,8.8,,no,,3,10,,,,,,
+K_collar_8.6,,,,8.6,,no,,3,10,,,,,,

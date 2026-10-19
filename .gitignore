@@ -1,0 +1,8 @@
+.DS_Store
+*/.DS_Store
+.venv/
+.playwright-mcp/
+tmp/
+*.pyc
+__pycache__/
+generate_sd_images.py

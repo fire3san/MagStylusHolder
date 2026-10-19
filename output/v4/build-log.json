@@ -1,0 +1,59 @@
+{
+  "KM_fused_collar_under_magnets": {
+    "size_mm": [
+      68.0,
+      68.0,
+      16.251
+    ],
+    "volume_cm3": 9.155,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "S_single_tunnel_rounded": {
+    "size_mm": [
+      68.0,
+      128.0,
+      16.0
+    ],
+    "volume_cm3": 17.375,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "magnet_spacer_6.05x1.9_print_3_per_holder": {
+    "size_mm": [
+      6.05,
+      6.05,
+      1.9
+    ],
+    "volume_cm3": 0.055,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "KM_bore_and_socket_sample": {
+    "size_mm": [
+      16.0,
+      14.0,
+      15.5
+    ],
+    "volume_cm3": 1.406,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "S_bore_and_socket_sample": {
+    "size_mm": [
+      16.0,
+      14.0,
+      16.0
+    ],
+    "volume_cm3": 1.415,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  }
+}

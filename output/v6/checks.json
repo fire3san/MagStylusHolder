@@ -1,0 +1,238 @@
+{
+  "S_Flow_BOOX_vertical": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -71.54,
+        0.0
+      ],
+      [
+        34.0,
+        38.0,
+        16.0
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      109.54,
+      16.0
+    ],
+    "volume_cm3": 17.645,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "S_Facet_BOOX_vertical": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -71.54,
+        0.0
+      ],
+      [
+        34.0,
+        38.0,
+        16.1
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      109.54,
+      16.1
+    ],
+    "volume_cm3": 20.29,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "KM_Arc_BOOX_vertical": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -34.0,
+        0.0
+      ],
+      [
+        34.0,
+        34.0,
+        16.05
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      68.0,
+      16.05
+    ],
+    "volume_cm3": 9.939,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "KM_Ribbon_BOOX_vertical": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -34.0,
+        0.0
+      ],
+      [
+        34.0,
+        34.0,
+        15.85
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      68.0,
+      15.85
+    ],
+    "volume_cm3": 11.192,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "S_Flow_iPad_Pencil89": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -92.54,
+        0.0
+      ],
+      [
+        34.0,
+        38.0,
+        16.0
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      130.54,
+      16.0
+    ],
+    "volume_cm3": 20.972,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "KM_Arc_iPad_Pencil89": {
+    "bounds_mm": [
+      [
+        -34.0,
+        -34.0,
+        0.0
+      ],
+      [
+        34.0,
+        34.0,
+        16.05
+      ]
+    ],
+    "size_mm": [
+      68.0,
+      68.0,
+      16.05
+    ],
+    "volume_cm3": 10.014,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "fit_bore_9.3": {
+    "bounds_mm": [
+      [
+        -8.0,
+        -7.0,
+        0.0
+      ],
+      [
+        8.0,
+        7.0,
+        15.5
+      ]
+    ],
+    "size_mm": [
+      16.0,
+      14.0,
+      15.5
+    ],
+    "volume_cm3": 1.423,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "fit_bore_9.4": {
+    "bounds_mm": [
+      [
+        -8.0,
+        -7.0,
+        0.0
+      ],
+      [
+        8.0,
+        7.0,
+        15.5
+      ]
+    ],
+    "size_mm": [
+      16.0,
+      14.0,
+      15.5
+    ],
+    "volume_cm3": 1.406,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "fit_bore_9.6": {
+    "bounds_mm": [
+      [
+        -8.0,
+        -7.0,
+        0.0
+      ],
+      [
+        8.0,
+        7.0,
+        16.0
+      ]
+    ],
+    "size_mm": [
+      16.0,
+      14.0,
+      16.0
+    ],
+    "volume_cm3": 1.415,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "magnet_spacer_6.05x1.9_qty3_per_holder": {
+    "bounds_mm": [
+      [
+        -3.025,
+        -3.025,
+        0.0
+      ],
+      [
+        3.025,
+        3.025,
+        1.9
+      ]
+    ],
+    "size_mm": [
+      6.05,
+      6.05,
+      1.9
+    ],
+    "volume_cm3": 0.055,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  }
+}

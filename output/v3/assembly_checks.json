@@ -1,0 +1,33 @@
+{
+  "S_scabbard_3magnets": {
+    "nominal_pen_collision_mm3": 0.0,
+    "pen_axis_z_mm": 9.8,
+    "note": "9 mm smooth cylindrical envelope only; button/taper, forces, fatigue and magnetic response untested."
+  },
+  "K2_integral_dual_cuffs": {
+    "nominal_pen_collision_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "note": "9 mm smooth cylindrical envelope only; button/taper, forces, fatigue and magnetic response untested."
+  },
+  "MK2_integral_dual_cuffs_3magnets": {
+    "nominal_pen_collision_mm3": 0.0,
+    "pen_axis_z_mm": 9.3,
+    "note": "9 mm smooth cylindrical envelope only; button/taper, forces, fatigue and magnetic response untested."
+  },
+  "S_magnet_stack": {
+    "socket_diameter_mm": 6.3,
+    "socket_depth_mm": 4.4,
+    "magnet_mm": [
+      6,
+      2
+    ],
+    "spacer_mm": [
+      6.05,
+      2.3
+    ],
+    "bond_allowance_mm": 0.1,
+    "roof_below_bore_mm": 0.6,
+    "nominal_magnet_to_pen_gap_mm": 0.9,
+    "closure": "Bond spacer and protective film; not a snap fit."
+  }
+}

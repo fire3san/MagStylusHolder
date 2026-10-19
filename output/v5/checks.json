@@ -1,0 +1,59 @@
+{
+  "KM_tunnel_through_clips": {
+    "size_mm": [
+      68.0,
+      68.0,
+      16.251
+    ],
+    "volume_cm3": 10.256,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "Shield_scabbard": {
+    "size_mm": [
+      68.0,
+      137.0,
+      16.0
+    ],
+    "volume_cm3": 18.429,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1,
+    "nominal_pen_collision_mm3": 0
+  },
+  "magnet_spacer_6.05x1.9_print_3_per_holder": {
+    "size_mm": [
+      6.05,
+      6.05,
+      1.9
+    ],
+    "volume_cm3": 0.055,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "KM_bore_and_socket_sample": {
+    "size_mm": [
+      16.0,
+      14.0,
+      15.5
+    ],
+    "volume_cm3": 1.406,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  },
+  "S_bore_and_socket_sample": {
+    "size_mm": [
+      16.0,
+      14.0,
+      16.0
+    ],
+    "volume_cm3": 1.415,
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_solids": 1
+  }
+}
