@@ -455,43 +455,10 @@
       const footerP = document.querySelector('footer p');
       if (footerP) footerP.textContent = isEn ? 'MagSafe Stylus Holder · Design Study & Prototype' : '磁吸手寫筆座 · 設計研究與打樣原型';
 
-      // Update nav links
-      const navLinks = document.querySelectorAll('.nav-links a');
-      if (navLinks.length >= 9) {
-        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
-        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
-        navLinks[2].textContent = isEn ? 'Lab Notes' : '研發實證';
-        navLinks[3].textContent = isEn ? 'Real World' : '真實場景';
-        navLinks[4].textContent = isEn ? 'Origin Math' : '尺寸研究';
-        navLinks[5].textContent = isEn ? 'Fit Lab' : '幾何適配';
-        navLinks[6].textContent = isEn ? 'The Collection' : '設計系列';
-        navLinks[7].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
-        navLinks[8].textContent = isEn ? 'FAQ' : '常見問題';
-      } else if (navLinks.length >= 8) {
-        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
-        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
-        navLinks[2].textContent = isEn ? 'Real World' : '真實場景';
-        navLinks[3].textContent = isEn ? 'Origin Math' : '尺寸研究';
-        navLinks[4].textContent = isEn ? 'Fit Lab' : '幾何適配';
-        navLinks[5].textContent = isEn ? 'The Collection' : '設計系列';
-        navLinks[6].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
-        navLinks[7].textContent = isEn ? 'Evolution' : '開發演進';
-      } else if (navLinks.length >= 7) {
-        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
-        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
-        navLinks[2].textContent = isEn ? 'Origin Math' : '尺寸研究';
-        navLinks[3].textContent = isEn ? 'Fit Lab' : '幾何適配';
-        navLinks[4].textContent = isEn ? 'The Collection' : '設計系列';
-        navLinks[5].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
-        navLinks[6].textContent = isEn ? 'Evolution' : '開發演進';
-      } else if (navLinks.length >= 6) {
-        navLinks[0].textContent = isEn ? 'The Idea' : '設計起點';
-        navLinks[1].textContent = isEn ? 'Drafting' : '草圖至成型';
-        navLinks[2].textContent = isEn ? 'Fit Lab' : '幾何適配';
-        navLinks[3].textContent = isEn ? 'The Collection' : '設計系列';
-        navLinks[4].textContent = isEn ? 'Anatomy' : '雙磁吸結構';
-        navLinks[5].textContent = isEn ? 'Evolution' : '開發演進';
-      }
+      // Translate visitor-facing copy without relying on navigation order.
+      document.querySelectorAll('[data-zh][data-en]').forEach(element => {
+        element.textContent = isEn ? element.dataset.en : element.dataset.zh;
+      });
       const navCta = document.querySelector('.nav-cta');
       if (navCta) navCta.innerHTML = isEn ? 'Download CAD <span>↗</span>' : '取得打樣檔案 <span>↗</span>';
 

@@ -48,11 +48,11 @@ Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 
 |:---:|:---|:---|:---|:---|:---|:---:|:---:|:---|
 | **01** | **AERIS · 全包覆流光長鞘** | AERIS · Monolithic Sheath | `S_Flow_BOOX_vertical` | `assets/stl/v9/S_Flow_BOOX_vertical.stl` | `assets/renders/v9/S_Flow_BOOX_vertical_mounted.png` | $68.0 \times 110.0 \times 16.0$ | 5 顆 $\varnothing 5\times 1$ mm | 110mm 縱向長鞘，底端餘 3mm，頂部露 24.54mm，5 磁梯次保持 |
 | **02** | **VERTEX · 幾何稜角精雕鞘** | VERTEX · Architectural Facet | `S_Facet_BOOX_vertical` | `assets/stl/v9/S_Facet_BOOX_vertical.stl` | `assets/renders/v9/S_Facet_BOOX_vertical_mounted.png` | $68.0 \times 100.0 \times 16.1$ | 5 顆 $\varnothing 5\times 1$ mm | 100mm 建築稜角，底端餘 13mm，頂部露 34.54mm，5 磁梯次保持 |
-| **03** | **ECLIPSE · 圓融雙磁快取環** | ECLIPSE · Radial Magnetic Collar | `KM_Arc_BOOX_vertical` | `assets/stl/v9/KM_Arc_BOOX_vertical.stl` | `assets/renders/v9/KM_Arc_BOOX_vertical.png` | $68.0 \times 68.0 \times 16.05$ | 3 顆 $\varnothing 5\times 1$ mm | 68mm 圓弧微彈鎖定環，中央同心底座，底端餘 3.5mm，瞬拔快取 |
+| **03** | **ECLIPSE · 圓融雙磁快取環** | ECLIPSE · Radial Magnetic Collar | `KM_Arc_BOOX_vertical` | `assets/stl/v9/KM_Arc_BOOX_vertical.stl` | `assets/renders/v9/KM_Arc_BOOX_vertical_mounted.png` | $68.0 \times 68.0 \times 16.05$ | 3 顆 $\varnothing 5\times 1$ mm | 68mm 圓弧微彈鎖定環，中央同心底座，底端餘 3.5mm，瞬拔快取 |
 | **04** | **ZEPHYR · 疾風羽翼流線夾** | ZEPHYR · Aerodynamic Wing Clamp | `KM_Ribbon_BOOX_vertical` | `assets/stl/v9/KM_Ribbon_BOOX_vertical.stl` | `assets/renders/v9/KM_Ribbon_BOOX_vertical_mounted.png` | $68.0 \times 68.0 \times 15.85$ | 3 顆 $\varnothing 5\times 1$ mm | 68mm 空氣動力流線雙翼肋夾，底端餘 3.5mm，極致輕盈導流 |
-| **05** | **AURA · 流光側滑長鞘** | AURA · Lateral Flow Sheath | `Side_Scabbard_v3` | `assets/stl/side/01_Side_Scabbard_PROVISIONAL.stl` | `assets/renders/side/01_Side_Scabbard_PROVISIONAL.png` | $99.8 \times 114.54 \times 14.9$ | 5 顆 $\varnothing 5\times 1$ mm | 94mm 側滑導軌長鞘（側向外擴 60.3mm），18mm 劍梢導角，防誤觸避鍵槽 |
-| **06** | **NEXUS · 側翼瞬取雙夾** | NEXUS · Dual-Wing Quick Clip | `Side_QuickClip_v3` | `assets/stl/side/02_Side_QuickClip_PROVISIONAL.stl` | `assets/renders/side/02_Side_QuickClip_PROVISIONAL.png` | $99.8 \times 65.0 \times 12.45$ | 3 顆 $\varnothing 5\times 1$ mm | 65mm 雙 C 翼快拆夾（跨距 26mm，側向外擴 60.3mm），一秒瞬插盲拔 |
-| **07** | **AXIS · 極簡導軌滑夾** | AXIS · Precision Rail Slide Clip | `Apple_Pencil_Clip_v3` | `assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl` | `assets/renders/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.png` | $14.0 \times 67.5 \times 9.18$ | 3 顆 $\varnothing 5\times 1$ mm | 14×67.5mm 極致修長窄軌直夾，無刻字極簡表面，羽量級精準貼合 |
+| **05** | **AURA · 流光側滑長鞘** | AURA · Lateral Flow Sheath | `Side_Scabbard_v3` | `assets/stl/side/01_Side_Scabbard_PROVISIONAL.stl` | `assets/renders/side/01_Side_Scabbard_mounted.png` | $99.8 \times 114.54 \times 14.9$ | 5 顆 $\varnothing 5\times 1$ mm | 94mm 側滑導軌長鞘（側向外擴 60.3mm），18mm 劍梢導角，防誤觸避鍵槽 |
+| **06** | **NEXUS · 側翼瞬取雙夾** | NEXUS · Dual-Wing Quick Clip | `Side_QuickClip_v3` | `assets/stl/side/02_Side_QuickClip_PROVISIONAL.stl` | `assets/renders/side/02_Side_QuickClip_mounted.png` | $99.8 \times 65.0 \times 12.45$ | 3 顆 $\varnothing 5\times 1$ mm | 65mm 雙 C 翼快拆夾（跨距 26mm，側向外擴 60.3mm），一秒瞬插盲拔 |
+| **07** | **AXIS · 極簡導軌滑夾** | AXIS · Precision Rail Slide Clip | `Apple_Pencil_Clip_v3` | `assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl` | `assets/renders/side/03_Apple_Pencil_Original_mounted.png` | $14.0 \times 67.5 \times 9.18$ | 3 顆 $\varnothing 5\times 1$ mm | 14×67.5mm 極致修長窄軌直夾，無刻字極簡表面，羽量級精準貼合 |
 | **08** | **ORBIT · 脊光開放快拆座** | ORBIT · Open Spine Compact | `A_Open_Spine_Compact` | `assets/stl/open_spine/A_Open_Spine_Compact.stl` | `assets/renders/open_spine/A_Open_Spine_Compact_mounted.png` | $68.0 \times 106.0 \times 16.1$ | 5 顆 $\varnothing 5\times 1$ mm | 106mm 開放背骨 + 雙側開微彈 C 夾（夾中距 -27/+22mm）+ 底部筆尖保護杯 |
 | **09** | **STRATOS · 凌霄開脊長座** | STRATOS · Extended Rear Spine | `B_Rear_Spine_Extended` | `assets/stl/open_spine/B_Rear_Spine_Extended.stl` | `assets/renders/open_spine/B_Rear_Spine_Extended_mounted.png` | $68.0 \times 129.0 \times 16.1$ | 5 顆 $\varnothing 5\times 1$ mm | 129mm 加長脊骨（延伸至 +57mm）+ 擴展雙 C 夾（-19/+27mm）+ 底部筆尖保護杯 |
 
@@ -62,8 +62,8 @@ Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 
 
 | 產品中文名稱 | 產品英文名稱 | Catalog Key | 主要 STL 檔案路徑 | 產品渲染圖路徑 | 尺寸 (W×H×D mm) | 磁石配置 | 特點說明 |
 |:---|:---|:---|:---|:---|:---:|:---:|:---|
-| **TITAN PRO · 旗艦雙模工作座** | TITAN PRO · Studio Sheath | `S_Flow_iPad_Pencil89` | `assets/stl/v9/S_Flow_iPad_Pencil89.stl` | `assets/renders/v9/S_Flow_iPad_Pencil89.png` | $68.0 \times 130.54 \times 16.0$ | 3 顆 $\varnothing 5\times 1$ mm | $\varnothing 9.3$ mm Apple Pencil 內徑，130.54mm 高度實現 0mm 頂部外露全包覆 |
-| **ECLIPSE MINI · 快拆雙磁環扣** | ECLIPSE MINI · Quick-Draw Puck | `KM_Arc_iPad_Pencil89` | `assets/stl/v9/KM_Arc_iPad_Pencil89.stl` | `assets/renders/v9/KM_Arc_iPad_Pencil89.png` | $68.0 \times 68.0 \times 16.05$ | 3 顆 $\varnothing 5\times 1$ mm | $\varnothing 9.3$ mm 內徑，底端留 14.7mm，隨行快取，背部防丟與側吸充電互不干擾 |
+| **TITAN PRO · 旗艦雙模工作座** | TITAN PRO · Studio Sheath | `S_Flow_iPad_Pencil89` | `assets/stl/v9/S_Flow_iPad_Pencil89.stl` | `assets/renders/v9/S_Flow_iPad_Pencil89_mounted.png` | $68.0 \times 130.54 \times 16.0$ | 3 顆 $\varnothing 5\times 1$ mm | $\varnothing 9.3$ mm Apple Pencil 內徑，130.54mm 高度實現 0mm 頂部外露全包覆 |
+| **ECLIPSE MINI · 快拆雙磁環扣** | ECLIPSE MINI · Quick-Draw Puck | `KM_Arc_iPad_Pencil89` | `assets/stl/v9/KM_Arc_iPad_Pencil89.stl` | `assets/renders/v9/KM_Arc_iPad_Pencil89_mounted.png` | $68.0 \times 68.0 \times 16.05$ | 3 顆 $\varnothing 5\times 1$ mm | $\varnothing 9.3$ mm 內徑，底端留 14.7mm，隨行快取，背部防丟與側吸充電互不干擾 |
 
 ---
 
@@ -141,3 +141,10 @@ Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 
 ## 📜 聲明 (Disclaimer)
 
 *本專案為開源設計研究與打樣原型，旨在探討極簡收納與人體工學體驗。MagSafe 為 Apple Inc. 之註冊商標，此處僅作為幾何接口與磁吸規格之技術參考。*
+
+## Frontend maintenance
+
+The repository root is the canonical product-page source. See
+[the maintenance guide](docs/maintaining-product-page.md) for the CSS component
+map and editing workflow. Run `python3 scripts/sync-site.py` after frontend edits
+to update the portable `site/` mirror; `--check` verifies that it is current.

@@ -1,0 +1,231 @@
+/* Global theme, reset, navigation and footer. Keep responsive rules with their component. */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --paper: #eae8df;
+  --ink: #263a32;
+  --muted: #6e776e;
+  --line: #c9cec2;
+  --accent: #c0d39d;
+  --white: #f5f4ed;
+  --page-gutter: 5%;
+  --font: Arial,'Noto Sans TC',sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.8 var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #647e3d;
+  outline-offset: 5px;
+}
+
+button {
+  border: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding: 0 var(--page-gutter);
+  gap: 20px;
+}
+
+.wordmark {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1.4px;
+  white-space: nowrap;
+}
+
+.wordmark>span {
+  color: #8c9d78;
+  padding: 0 3px;
+}
+
+.wordmark small {
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-left: 16px;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  font-size: 12px;
+}
+
+.nav-links a:hover {
+  opacity: .5;
+}
+
+.nav-cta {
+  font-size: 12px;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 5px;
+}
+
+.nav-cta span {
+  margin-left: 20px;
+}
+
+footer {
+  padding: 28px var(--page-gutter);
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer p, footer>a:last-child {
+  font-size: 9px;
+  color: var(--muted);
+}
+
+@media(min-width:1600px) {
+  body {
+    max-width: 1800px;
+    margin: auto;
+  }
+
+}
+
+@media(max-width:1100px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .wordmark small {
+    display: none;
+  }
+
+}
+
+@media(max-width:700px) {
+  .nav {
+    height: 70px;
+    padding: 0 6%;
+    gap: 15px;
+  }
+
+  .wordmark {
+    font-size: 21px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    font-size: 10px;
+  }
+
+  .nav-cta span {
+    margin-left: 8px;
+  }
+
+  footer {
+    padding: 23px 6%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer p {
+    order: 3;
+    width: 100%;
+    font-size: 8px;
+  }
+
+  footer>a:last-child {
+    margin-left: auto;
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+}
+
+@media(max-width:900px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #e2e6d8;
+  border: 1px solid #b8c2ab;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 2px;
+  color: var(--ink);
+  transition: all .2s ease;
+}
+
+.lang-btn:hover {
+  background: #d5dcc8;
+}
+
+.lang-opt {
+  opacity: .5;
+}
+
+.lang-opt.active {
+  opacity: 1;
+  color: #1d3822;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.lang-divider {
+  opacity: .3;
+  margin: 0 2px;
+}
+
