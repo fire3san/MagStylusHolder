@@ -248,57 +248,57 @@
     ],
     realworld: [
       {
-        src: 'assets/photos/lifestyle-commute-reading.jpg',
-        tag: { zh: '01 / COMMUTE CARRY', en: '01 / COMMUTE CARRY' },
-        title: { zh: '捷運通勤 · 單手速讀隨拔', en: 'Subway Commute · One-Handed Quick Draw' },
+        src: 'assets/photos/lifestyle-aeris-commute.jpg',
+        tag: { zh: '01 / AERIS · COMMUTE', en: '01 / AERIS · COMMUTE' },
+        title: { zh: 'AERIS · 全包覆流光長鞘通勤閱讀', en: 'AERIS · Monolithic Sheath Subway Commute' },
         desc: {
-          zh: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；手寫筆穩固伏貼於背殼磁座，隨時抽拔標註重點，無需在公事包裡翻箱倒櫃。',
-          en: 'On a swaying subway commute, holding the BOOX with one hand to turn pages. The stylus stays securely docked on the back, ready to draw and annotate instantly without digging through a bag.'
+          zh: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；AERIS 110 mm 旗艦長鞘與 5 顆下置強磁將手寫筆穩固收納於背板，隨時順滑抽拔標註重點。',
+          en: 'On a swaying subway commute, holding the BOOX with one hand to turn pages. The AERIS 110 mm monolithic sheath with 5-magnet retention keeps the stylus firmly docked, ready for instant annotation.'
         }
       },
       {
-        src: 'assets/photos/lifestyle-cafe-draw.jpg',
-        tag: { zh: '02 / CAFE INSPIRATION', en: '02 / CAFE INSPIRATION' },
-        title: { zh: '午後咖啡 · 靈感隨抽隨寫', en: 'Afternoon Cafe · Instant Spark & Sketch' },
+        src: 'assets/photos/lifestyle-vertex-cafe.jpg',
+        tag: { zh: '02 / VERTEX · CAFE', en: '02 / VERTEX · CAFE' },
+        title: { zh: 'VERTEX · 幾何稜角精雕鞘咖啡館速寫', en: 'VERTEX · Architectural Facet Afternoon Cafe' },
         desc: {
-          zh: '木質咖啡桌畔，點一杯黑咖啡攤開筆記。順著圓弧導引槽輕輕一抽，立即落筆記錄閃現的靈感，不讓翻找手寫筆打斷思路。',
-          en: 'Beside an oak table with black coffee and open notes. A natural slide out of the sculpted groove captures spontaneous thoughts before they vanish.'
+          zh: '午後咖啡桌畔，點一杯黑咖啡攤開筆記。VERTEX 俐落的建築倒角導引手指順勢拔出筆身，靈感閃現即時成文，思緒毫無阻滯。',
+          en: 'Beside an oak table with black coffee and open notes. VERTEX architectural chamfers guide your fingers for a smooth tactile draw, capturing thoughts without friction.'
         }
       },
       {
-        src: 'assets/photos/lifestyle-desk-stand.jpg',
-        tag: { zh: '03 / ERGONOMIC ANGLE', en: '03 / ERGONOMIC ANGLE' },
-        title: { zh: '桌面閱讀 · 人體工學微傾角', en: 'Desk Stand · Natural Ergonomic Tilt' },
+        src: 'assets/photos/lifestyle-zephyr-desk.jpg',
+        tag: { zh: '03 / ZEPHYR · DESK TILT', en: '03 / ZEPHYR · DESK TILT' },
+        title: { zh: 'ZEPHYR · 疾風羽翼流線夾人體工學微傾', en: 'ZEPHYR · Aerodynamic Wing Ergonomic Desk Tilt' },
         desc: {
-          zh: '平置辦公桌面時，背部筆座恰如其分地抬升機身微幅仰角，避開室內頂燈刺眼眩光，手腕書寫也更自然放鬆。',
-          en: 'Resting flat on a desk, the rear holder spine creates a gentle ergonomic angle that deflects overhead ceiling glare and eases wrist strain during long writing sessions.'
+          zh: '平置辦公桌面時，ZEPHYR 雙翼夾肋恰如其分地墊高背部形成人體工學仰角，撫平頂燈倒影，手腕長時間握筆書寫更自如放鬆。',
+          en: 'Resting flat on a desk, ZEPHYR dual wing clamps provide a natural ergonomic tilt that eliminates ceiling reflections and eases wrist fatigue during extended writing.'
         }
       },
       {
-        src: 'assets/photos/lifestyle-edc-flatlay.jpg',
-        tag: { zh: '04 / EVERYDAY CARRY', en: '04 / EVERYDAY CARRY' },
-        title: { zh: '極簡隨身 · EDC 零勾扯收納', en: 'Everyday Carry · Pocket-Friendly Flat Lay' },
+        src: 'assets/photos/lifestyle-eclipse-edc.jpg',
+        tag: { zh: '04 / ECLIPSE · EDC', en: '04 / ECLIPSE · EDC' },
+        title: { zh: 'ECLIPSE · 圓融雙磁快取環極簡隨身', en: 'ECLIPSE · Radial Magnetic Collar Everyday Carry' },
         desc: {
-          zh: '與皮夾、機械錶及無線耳機並列。整體外型無銳角突出，放進西裝口袋或帆布背包內袋順暢無阻，不刮擦織物內襯。',
-          en: 'Arranged seamlessly alongside a wallet, watch, and earbuds. Smooth radiused nylon edges slide effortlessly into jacket pockets and backpacks without snagging delicate linings.'
+          zh: '與皮夾、手錶及耳機並列。ECLIPSE 68 mm 環形收束外型無尖銳稜角，整機放進口袋或西裝內袋零勾扯，極致純粹。',
+          en: 'Arranged seamlessly alongside a wallet, watch, and earbuds. ECLIPSE compact 68 mm radial collar slides effortlessly into pockets without snagging fabric.'
         }
       },
       {
-        src: 'assets/photos/lifestyle-magnetic-snap.jpg',
-        tag: { zh: '05 / MODULAR SNAP', en: '05 / MODULAR SNAP' },
-        title: { zh: '一秒快拆 · MagSafe 模組磁吸', en: 'Modular Snap · Instant MagSafe Alignment' },
+        src: 'assets/photos/lifestyle-aura-snap.jpg',
+        tag: { zh: '05 / AURA · MODULAR SNAP', en: '05 / AURA · MODULAR SNAP' },
+        title: { zh: 'AURA · 流光側滑長鞘 MagSafe 快拆', en: 'AURA · Lateral Flow Sheath MagSafe Quick-Snap' },
         desc: {
-          zh: '在家享受純粹輕薄閱讀時一撥即卸；出門差旅時靠近背板「喀嗒」緊貼。標準 MagSafe 磁吸系統，隨時切換形態。',
-          en: 'Detach effortlessly for featherlight bare-device reading at home; snap firmly with a crisp magnetic click when heading outdoors. True modular versatility.'
+          zh: '橫向延展 60.3 mm 的 AURA 側滑鞘，讓手寫筆自然就位機身側翼；在家一撥即卸享受純粹閱讀，出門靠近磁環清脆「喀嗒」合體。',
+          en: 'Featuring a 60.3 mm lateral cantilever bridge, AURA aligns the stylus comfortably along the outer spine. Snap on instantly with MagSafe, detach for bare-device reading.'
         }
       },
       {
-        src: 'assets/photos/lifestyle-ipad-extension.jpg',
-        tag: { zh: '06 / IPAD MINI EXPANSION', en: '06 / IPAD MINI EXPANSION' },
-        title: { zh: '跨界延伸 · iPad mini 靈動創作', en: 'Cross-Device Extension · iPad mini & Apple Pencil' },
+        src: 'assets/photos/lifestyle-titan-ipad.jpg',
+        tag: { zh: '06 / TITAN PRO · IPAD', en: '06 / TITAN PRO · IPAD' },
+        title: { zh: 'TITAN PRO · 旗艦雙模工作座 iPad mini', en: 'TITAN PRO · Studio Sheath iPad mini & Apple Pencil' },
         desc: {
-          zh: '設計概念進一步延伸至 iPad mini 與 Apple Pencil。徹底解決原廠側邊磁吸容易在包袋中被意外撞落遺失的痛點。',
-          en: 'Expanding the system to iPad mini with Apple Pencil, eliminating the perpetual fear of side-mounted pencils getting bumped off inside tight commute bags.'
+          zh: '專為 iPad mini 獨立打造。130.54 mm 長度實現 0 mm 頂部露出完全包覆，徹底告別原廠側邊磁吸在包袋中被意外撞落的痛點。',
+          en: 'Engineered specifically for iPad mini and Apple Pencil, achieving 100% full top enclosure (0 mm overhang) to permanently eliminate accidental pencil drop-offs in bags.'
         }
       }
     ],
