@@ -8,6 +8,8 @@
 
   let scene, camera, renderer, controls;
   let currentMesh = null;
+  let currentModelKey = null;
+  let isViewerInitialized = false;
   let floorGrid, ambientLight, dirLight1, dirLight2, pointLight;
   let container, loadingEl, statsEl;
   let isAutoRotating = false;
@@ -41,9 +43,40 @@
     })
   };
 
+  function getRandomModelKey(device, excludeKey) {
+    const targetDevice = device || 'boox_v7';
+    const keys = Object.keys(STL_MODELS).filter(k => STL_MODELS[k].device === targetDevice);
+    if (!keys.length) return 'S_Flow_BOOX_vertical';
+    const candidates = excludeKey ? keys.filter(k => k !== excludeKey) : keys;
+    const pool = candidates.length > 0 ? candidates : keys;
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  function getInitialModelKey() {
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryModel = urlParams.get('model') || urlParams.get('inspect');
+      if (queryModel && STL_MODELS[queryModel]) {
+        return queryModel;
+      }
+      const hash = window.location.hash;
+      if (hash && hash.startsWith('#inspect=')) {
+        const hashModel = decodeURIComponent(hash.replace('#inspect=', '').trim());
+        if (hashModel && STL_MODELS[hashModel]) {
+          return hashModel;
+        }
+      }
+    } catch (e) {
+      // ignore URL parsing errors
+    }
+    return getRandomModelKey('boox_v7');
+  }
+
   function initViewer() {
+    if (isViewerInitialized) return;
     container = document.getElementById('stl-viewer-container');
     if (!container) return;
+    isViewerInitialized = true;
 
     loadingEl = document.getElementById('viewer-loading');
     statsEl = document.getElementById('viewer-stats');
@@ -109,8 +142,9 @@
     window.addEventListener('resize', onWindowResize);
     setupControls();
 
-    // Initial Model Load
-    loadModel('S_Flow_BOOX_vertical');
+    // Initial Model Load: Randomly select from flagship models (or URL query/hash override)
+    const initialModel = getInitialModelKey();
+    loadModel(initialModel);
 
     // Animation Loop
     animate();
@@ -145,7 +179,11 @@
   function loadModel(modelKey) {
     const info = STL_MODELS[modelKey];
     if (!info) return;
+    currentModelKey = modelKey;
     const request = ++loadRequest;
+
+    // Immediately update UI metadata (hero studio visual, badge tag, title, specs)
+    updateModelCard(modelKey, info);
 
     if (loadingEl) loadingEl.style.display = 'flex';
 
@@ -175,7 +213,6 @@
 
         scene.add(currentMesh);
 
-        updateModelCard(modelKey, info);
         resetCamera();
 
         if (loadingEl) loadingEl.style.display = 'none';
@@ -307,14 +344,33 @@
     if (!options) return;
     options.replaceChildren();
     const isEn = window.currentLang === 'en';
-    Object.entries(STL_MODELS).filter(([,m]) => m.device === device).forEach(([key, info]) => {
+    const entries = Object.entries(STL_MODELS).filter(([,m]) => m.device === device);
+
+    entries.forEach(([key, info]) => {
       const button = document.createElement('button');
-      button.className = 'model-btn'; button.dataset.model = key;
+      button.className = 'model-btn';
+      button.dataset.model = key;
+      if (key === currentModelKey) button.classList.add('active');
       const displayName = isEn ? (info.name_en || info.name) : info.name;
       button.textContent = displayName.split(' · ')[0];
       button.addEventListener('click', () => loadModel(key)); 
       options.appendChild(button);
     });
+
+    // Add Random / Shuffle button to easily discover all models
+    if (entries.length > 1) {
+      const randomBtn = document.createElement('button');
+      randomBtn.className = 'model-btn model-btn-random';
+      randomBtn.dataset.action = 'random';
+      randomBtn.title = isEn ? 'Randomly pick another design' : '隨機切換另一款設計原型';
+      randomBtn.setAttribute('aria-label', isEn ? 'Pick a random model' : '隨機切換設計原型');
+      randomBtn.textContent = isEn ? '🎲 Random' : '🎲 隨機';
+      randomBtn.addEventListener('click', () => {
+        const nextKey = getRandomModelKey(device, currentModelKey);
+        if (nextKey) loadModel(nextKey);
+      });
+      options.appendChild(randomBtn);
+    }
   }
 
   function setupControls() {
@@ -372,7 +428,9 @@
     }
   }
 
-  if (document.readyState === 'loading') {
+  if (document.getElementById('stl-viewer-container')) {
+    initViewer();
+  } else if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initViewer);
   } else {
     initViewer();
@@ -380,6 +438,7 @@
 
   window.MagSafeViewer = {
     loadModel,
+    getRandomModelKey,
     setMaterial,
     setViewAngle,
     resetCamera,
