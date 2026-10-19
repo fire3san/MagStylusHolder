@@ -6,3 +6,11 @@ tmp/
 *.pyc
 __pycache__/
 generate_sd_images.py
+
+# Raw user reference artifacts & local build outputs
+*.heic
+*.pdf
+FullSizeRender.jpg
+Screenshot*
+output/
+

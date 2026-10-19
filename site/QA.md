@@ -16,3 +16,9 @@
 - Device, case and pen are dimensional illustrations, explicitly labelled as concept renders, not photographs.
 - New image loading and five stage rows verified in browser; desktop and 390px layouts have no horizontal overflow.
 - All local HTML asset links resolve. Screenshots: qa-story-desktop.png and qa-story-mobile.png.
+
+## v8 75 mm / 5x1 magnets
+- Ten STL exports pass manifold/watertight checks and nominal pen/magnet clearance checks.
+- Current model paths and HTML links resolve; guide and v8 pack copied.
+- Browser verification blocked by browser URL policy; no visual QA claimed this revision.
+- Tape0.20 mm remains provisional.
