@@ -1,0 +1,124 @@
+{
+  "01_Side_Scabbard_PROVISIONAL": {
+    "watertight": true,
+    "connected_solids": 1,
+    "size_mm": [
+      99.8,
+      114.54,
+      14.9
+    ],
+    "volume_cm3": 15.87,
+    "magnet_count": 5,
+    "magnet_centres_xy_mm": [
+      [
+        -60.3,
+        -60
+      ],
+      [
+        -60.3,
+        -48
+      ],
+      [
+        -60.3,
+        -36
+      ],
+      [
+        -60.3,
+        -24
+      ],
+      [
+        -60.3,
+        -12
+      ]
+    ],
+    "magnet_mm": [
+      5.0,
+      1.0
+    ],
+    "pocket_mm": [
+      5.3,
+      3.0
+    ],
+    "spacer_thickness_mm": 1.8,
+    "assumed_tape_mm": 0.2,
+    "nominal_magnet_collision_mm3": 0
+  },
+  "02_Side_QuickClip_PROVISIONAL": {
+    "watertight": true,
+    "connected_solids": 1,
+    "size_mm": [
+      99.8,
+      65.0,
+      12.45
+    ],
+    "volume_cm3": 9.62,
+    "magnet_count": 3,
+    "magnet_centres_xy_mm": [
+      [
+        -60.3,
+        -13
+      ],
+      [
+        -60.3,
+        0
+      ],
+      [
+        -60.3,
+        13
+      ]
+    ],
+    "magnet_mm": [
+      5.0,
+      1.0
+    ],
+    "pocket_mm": [
+      5.3,
+      3.0
+    ],
+    "spacer_thickness_mm": 1.8,
+    "assumed_tape_mm": 0.2,
+    "nominal_magnet_collision_mm3": 0
+  },
+  "03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL": {
+    "watertight": true,
+    "connected_solids": 1,
+    "size_mm": [
+      14.0,
+      67.5,
+      9.177
+    ],
+    "magnet_count": 3,
+    "magnet_mm": [
+      5,
+      1
+    ],
+    "pocket_mm": [
+      5.3,
+      1.2
+    ],
+    "pocket_centres_xy_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        16.75
+      ],
+      [
+        0,
+        33.5
+      ]
+    ],
+    "original_clip_geometry_retained": true,
+    "engraving_filled_to_z_mm": 2.4
+  },
+  "clearance": {
+    "pen_axis_to_ring_centre_mm": 60.3,
+    "holder_edge_to_ring_edge_min_horizontal_mm": 20.799999999999997,
+    "pen_tangent_to_ring_hardware_far_edge_mm": 85.0,
+    "quickclip_centres_apart_mm": 26,
+    "quickclip_clear_gap_mm": 16,
+    "case_fit_verified": false
+  }
+}

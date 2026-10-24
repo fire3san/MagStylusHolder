@@ -250,5 +250,50 @@ window.MODEL_CATALOG = {
     "bottom": 14.0,
     "top": 22.0,
     "ring_height": 85
+  },
+  "AURA_SCREEN": {
+    "name": "AURA SCREEN · 朝屏幕水平直臂款",
+    "name_en": "AURA SCREEN · Flat screen-facing v2",
+    "path": "assets/stl/screen-facing/AURA_SCREEN.stl",
+    "renderImg": "assets/renders/screen-facing/AURA_SCREEN.png",
+    "desc": "v2 水平直臂款，對應 BOOX Go 6 (Gen II)。連接臂上下表面同層，無 L 形落差；筆鞘／筆夾向屏幕方向凸出，筆身仍沿機身長邊。假設每面1.5 mm保護殼，鞘至殼邊3 mm。實機、保持力及摺疊待驗證。",
+    "desc_en": "v2 flat bridge for BOOX Go 6 (Gen II): coplanar connection, zero L-shaped step. Holder projects toward the screen; pen remains parallel to the long edge. Assumed 1.5 mm case allowance per face, 3 mm holder-to-case gap. Physical fit, retention and folding unverified.",
+    "extents": "105.50 × 114.54 × 14.90 mm",
+    "weight": "數位原型 · 實測待驗",
+    "retention": "沿用原夾口／筆鞘及磁孔；保持力待實測",
+    "stage": "v2 / FLAT SCREEN CONCEPT",
+    "device": "boox_v7",
+    "clearance_text": "水平直臂 · 落差0 mm / 鞘至假設殼邊3 mm",
+    "clearance_text_en": "Flat bridge · 0 mm step / 3 mm nominal case gap"
+  },
+  "NEXUS_SCREEN": {
+    "name": "NEXUS SCREEN · 朝屏幕水平直臂款",
+    "name_en": "NEXUS SCREEN · Flat screen-facing v2",
+    "path": "assets/stl/screen-facing/NEXUS_SCREEN.stl",
+    "renderImg": "assets/renders/screen-facing/NEXUS_SCREEN.png",
+    "desc": "v2 水平直臂款，對應 BOOX Go 6 (Gen II)。連接臂上下表面同層，無 L 形落差；筆鞘／筆夾向屏幕方向凸出，筆身仍沿機身長邊。假設每面1.5 mm保護殼，鞘至殼邊3 mm。實機、保持力及摺疊待驗證。",
+    "desc_en": "v2 flat bridge for BOOX Go 6 (Gen II): coplanar connection, zero L-shaped step. Holder projects toward the screen; pen remains parallel to the long edge. Assumed 1.5 mm case allowance per face, 3 mm holder-to-case gap. Physical fit, retention and folding unverified.",
+    "extents": "105.50 × 65.00 × 12.45 mm",
+    "weight": "數位原型 · 實測待驗",
+    "retention": "沿用原夾口／筆鞘及磁孔；保持力待實測",
+    "stage": "v2 / FLAT SCREEN CONCEPT",
+    "device": "boox_v7",
+    "clearance_text": "水平直臂 · 落差0 mm / 鞘至假設殼邊3 mm",
+    "clearance_text_en": "Flat bridge · 0 mm step / 3 mm nominal case gap"
+  },
+  "AURA_DUO_SCREEN": {
+    "name": "AURA DUO SCREEN · 朝屏幕水平直臂款",
+    "name_en": "AURA DUO SCREEN · Flat screen-facing v2",
+    "path": "assets/stl/screen-facing/AURA_DUO_SCREEN.stl",
+    "renderImg": "assets/renders/screen-facing/AURA_DUO_SCREEN.png",
+    "desc": "v2 水平直臂款，對應 iPhone Duo (closed)。連接臂上下表面同層，無 L 形落差；筆鞘／筆夾向屏幕方向凸出，筆身仍沿機身長邊。假設每面1.5 mm保護殼，鞘至殼邊3 mm。實機、保持力及摺疊待驗證。",
+    "desc_en": "v2 flat bridge for iPhone Duo (closed): coplanar connection, zero L-shaped step. Holder projects toward the screen; pen remains parallel to the long edge. Assumed 1.5 mm case allowance per face, 3 mm holder-to-case gap. Physical fit, retention and folding unverified.",
+    "extents": "93.05 × 114.54 × 14.90 mm",
+    "weight": "數位原型 · 實測待驗",
+    "retention": "沿用原夾口／筆鞘及磁孔；保持力待實測",
+    "stage": "v2 / FLAT SCREEN CONCEPT",
+    "device": "iphone_duo",
+    "clearance_text": "水平直臂 · 落差0 mm / 鞘至假設殼邊3 mm",
+    "clearance_text_en": "Flat bridge · 0 mm step / 3 mm nominal case gap"
   }
 };

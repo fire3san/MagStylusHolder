@@ -167,3 +167,18 @@ to update the portable `site/` mirror; `--check` verifies that it is current.
 See [geometry and rendering notes](docs/AURA_DUO_V3.md). Rebuild with `.venv/bin/python scripts/aura_duo/build.py`; the product page and downloads use the revised STL.
 
 Lifestyle scene sources, device references and generation prompts: [docs/LIFESTYLE_GALLERY.md](docs/LIFESTYLE_GALLERY.md).
+
+## 朝屏幕側置款（SCREEN 概念打樣）
+
+NEXUS、AURA 與 AURA DUO（使用者稱 AURA PRO）各新增一款朝顯示屏版本，原款保留。
+v2 已更新實際 STL：連接臂為水平同層直臂，落差0 mm；筆夾／筆鞘朝屏幕。
+NEXUS、AURA 對應 BOOX Go 6 Gen II；AURA DUO 對應 iPhone Duo 收合尺寸。
+按官方機身尺寸，每面暫加1.5 mm保護殼作包絡檢查，鞘至假設殼邊3 mm。
+尺寸來源與實機驗證限制詳見 `assets/stl/screen-facing/README.md`。
+
+- 網頁：`#screen-facing`，3D 型號：`NEXUS_SCREEN`、`AURA_SCREEN`、`AURA_DUO_SCREEN`。
+- STL、驗證結果與說明：`assets/stl/screen-facing/`。
+- 打樣包：`assets/downloads/Screen_Facing_Flat_v2.zip`。
+- 重新生成：`.venv/bin/python scripts/build-screen-facing.py`。
+- 三款均檢查封閉網格、單一實體、磁環區域不變及與假設機殼包絡無交疊。
+- 實機、側鍵、磁石裝配、保持力、直臂強度與 DUO 摺疊須後續打樣確認。

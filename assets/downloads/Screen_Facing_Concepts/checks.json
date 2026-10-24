@@ -1,0 +1,80 @@
+{
+  "AURA_SCREEN": {
+    "source": "01_Side_Scabbard_PROVISIONAL.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "extents_mm": [
+      105.5,
+      114.54,
+      14.9
+    ],
+    "pen_axis_x_mm": -66.0,
+    "assumed_case_width_mm": 112.0,
+    "assumed_case_height_mm": 152.0,
+    "assumed_case_thickness_mm": 9.8,
+    "holder_to_case_gap_mm": 3.0,
+    "bridge_z_bounds_mm": [
+      0.0,
+      3.4
+    ],
+    "bridge_vertical_step_mm": 0.0,
+    "device": "BOOX Go 6 (Gen II)",
+    "revision": "v2-flat / no L connector",
+    "case_intersection_mm3": 0.0,
+    "ring_difference_mm3": 0.0,
+    "status": "CAD concept; physical fit, strength, retention and hinge sweep unverified"
+  },
+  "NEXUS_SCREEN": {
+    "source": "02_Side_QuickClip_PROVISIONAL.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "extents_mm": [
+      105.5,
+      65.0,
+      12.449
+    ],
+    "pen_axis_x_mm": -66.0,
+    "assumed_case_width_mm": 112.0,
+    "assumed_case_height_mm": 152.0,
+    "assumed_case_thickness_mm": 9.8,
+    "holder_to_case_gap_mm": 3.0,
+    "bridge_z_bounds_mm": [
+      0.0,
+      3.4
+    ],
+    "bridge_vertical_step_mm": 0.0,
+    "device": "BOOX Go 6 (Gen II)",
+    "revision": "v2-flat / no L connector",
+    "case_intersection_mm3": 0.0,
+    "ring_difference_mm3": 0.0,
+    "status": "CAD concept; physical fit, strength, retention and hinge sweep unverified"
+  },
+  "AURA_DUO_SCREEN": {
+    "source": "AURA_DUO_iPhone_v3.stl",
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "extents_mm": [
+      93.05,
+      114.54,
+      14.9
+    ],
+    "pen_axis_x_mm": -53.55,
+    "assumed_case_width_mm": 87.1,
+    "assumed_case_height_mm": 120.8,
+    "assumed_case_thickness_mm": 14.3,
+    "holder_to_case_gap_mm": 3.0,
+    "bridge_z_bounds_mm": [
+      0.0,
+      3.4
+    ],
+    "bridge_vertical_step_mm": 0.0,
+    "device": "iPhone Duo (closed)",
+    "revision": "v2-flat / no L connector",
+    "case_intersection_mm3": 0.0,
+    "ring_difference_mm3": 0.0,
+    "status": "CAD concept; physical fit, strength, retention and hinge sweep unverified"
+  }
+}
