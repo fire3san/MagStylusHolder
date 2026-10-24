@@ -363,7 +363,8 @@
 }
 
 .realworld-art {
-  height: 260px;
+  aspect-ratio: 3 / 2;
+  flex-shrink: 0;
   position: relative;
   background: #dfe3d7;
   overflow: hidden;
@@ -378,7 +379,7 @@
 }
 
 .realworld-card:hover .realworld-art img {
-  transform: scale(1.06);
+  transform: none;
 }
 
 .realworld-tag {
@@ -534,3 +535,36 @@
   margin: 0;
 }
 
+
+/* CAD references remain distinct from generated lifestyle illustrations. */
+.gallery-disclosure {
+  max-width: 860px;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.gallery-cad-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+  padding: 18px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.realworld-body > p { margin-bottom: 20px; }
+.gallery-cad-link img { width: 70px; height: 70px; object-fit: contain; background: #eeeee8; }
+.gallery-cad-link strong, .gallery-cad-link span span { display: block; }
+.gallery-cad-link strong { font-size: 12px; letter-spacing: 1px; margin-bottom: 5px; }
+.gallery-cad-link span span { font-size: 11px; color: #506a39; }
+.gallery-cad-link:hover span span { text-decoration: underline; }
+.gallery-cad-link:focus-visible, .realworld-art:focus-visible { outline: 3px solid #7c945b; outline-offset: -3px; }
+.gallery-sources { margin-top: 24px; color: var(--muted); font-size: 11px; line-height: 2; }
+.gallery-sources a { color: inherit; text-decoration: underline; text-underline-offset: 3px; margin-right: 12px; }

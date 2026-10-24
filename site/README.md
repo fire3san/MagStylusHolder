@@ -31,7 +31,7 @@
 
 Mag Holder 目前涵蓋 **四大架構體系、共十款旗艦設計**，外加 iPad mini 專屬款式與歷代工程里程碑：
 
-0. **★ 旗艦簽名款 (Flagship Signature — AURA DUO)**: 專為雙屏摺疊機 **iPhone Duo** 與 **Apple Pencil Pro** 打造，傳承 AURA 同向側滑導軌語言，將偏置微調為 37.0 mm 緊貼機邊（消除懸空縫隙，總寬 76.5 mm 完美收合），內側保留 8.5 mm 鉸鏈中軸避空，180° 完全展開零干涉，配備 5 顆梯次 N52 強磁矩陣。
+0. **★ AURA DUO v3**: 筆軸53.55 mm外側偏置，鞘至殼邊3 mm（每側1.5 mm殼邊假設），筆與手機長邊及背板平行。實機配合與摺疊掃掠待驗證。
 1. **縱向軸心系列 (Axial Sheaths & Clamps)**: 沿機身背板軸向收納，強調沈浸式包覆與極限防護。
 2. **側翼外擴側滑系列 (Lateral Slide Rails)**: 筆軸向外側延伸 60.3 mm，解放後背握持空間，支援側向滑入。
 3. **開脊微彈快拆系列 (Open Spine Quick-Release)**: 開放式背骨與雙側開 C 夾，實現「微傾即取」的極致靈活性。
@@ -47,7 +47,7 @@ Mag Holder 目前涵蓋 **四大架構體系、共十款旗艦設計**，外加 
 
 | 編號 | 產品中文名稱 | 產品英文名稱 | Catalog Key (`data-inspect`) | 主要 STL 檔案路徑 | 產品渲染圖路徑 | 尺寸 (W×H×D mm) | 磁石配置 | 架構特色與展開動態學 |
 |:---:|:---|:---|:---|:---|:---|:---:|:---:|:---|
-| **00** | **★ AURA DUO · 雙屏磁吸智筆座** | AURA DUO · Dual-Screen MagSafe Pencil Hub | `AURA_DUO_iPhone` | `assets/stl/side/AURA_DUO_iPhone_PencilPro.stl` | `assets/renders/side/AURA_DUO_iPhone_unfolded_mounted.png` | $76.5 \times 114.0 \times 13.5$ | 5 顆 $\varnothing 5\times 1$ mm N52 梯次 | 專為 iPhone Duo 雙屏打造：**鉸鏈中軸防干涉與貼邊動態學**（長鞘與 AURA 同向向左延伸，37.0mm 緊貼機邊偏置，內側留 8.5mm 中軸避空），$\varnothing 8.9$ mm Apple Pencil Pro 專屬劍鞘，展開 180° 與折疊態零干涉 |
+| **00** | **★ AURA DUO · 雙屏磁吸智筆座** | AURA DUO v3 | `AURA_DUO_iPhone` | `assets/stl/side/AURA_DUO_iPhone_v3.stl` | `assets/renders/side/AURA_DUO_v3_unfolded.png` | $93.05 \times 114.54 \times 14.9$ | 5個保留磁孔 | 53.55 mm外側偏置；鞘至殼邊3 mm（每側1.5 mm殼邊假設）；筆與手機長邊及背板平行；實機與摺疊掃掠待驗證 |
 
 ---
 
@@ -55,7 +55,7 @@ Mag Holder 目前涵蓋 **四大架構體系、共十款旗艦設計**，外加 
 
 | 編號 | 產品中文名稱 | 產品英文名稱 | Catalog Key (`data-inspect`) | 主要 STL 檔案路徑 | 產品渲染圖路徑 | 尺寸 (W×H×D mm) | 磁石配置 | 架構特色 |
 |:---:|:---|:---|:---|:---|:---|:---:|:---:|:---|
-| **01** | **AERIS · 全包覆流光長鞘** | AERIS · Monolithic Sheath | `S_Flow_BOOX_vertical` | `assets/stl/v9/S_Flow_BOOX_vertical.stl` | `assets/renders/v9/S_Flow_BOOX_vertical_mounted.png` | $68.0 \times 110.0 \times 16.0$ | 5 顆 $\varnothing 5\times 1$ mm | 110mm 縱向長鞘，底端餘 3mm，頂部露 24.54mm，5 磁梯次保持 |
+| **01** | **AERIS · 全包覆流光長鞘** | AERIS · Monolithic Sheath | `S_Flow_BOOX_vertical` | `assets/stl/v9/S_Flow_BOOX_vertical.stl` | `assets/renders/v9/AERIS_fit_checked_mounted.png` | $68.0 \times 110.0 \times 16.0$ | 5 顆 $\varnothing 5\times 1$ mm | 110mm 縱向長鞘，底端餘 3mm，高於152mm假設殼頂21.54mm，5 磁梯次保持 |
 | **02** | **VERTEX · 幾何稜角精雕鞘** | VERTEX · Architectural Facet | `S_Facet_BOOX_vertical` | `assets/stl/v9/S_Facet_BOOX_vertical.stl` | `assets/renders/v9/S_Facet_BOOX_vertical_mounted.png` | $68.0 \times 100.0 \times 16.1$ | 5 顆 $\varnothing 5\times 1$ mm | 100mm 建築稜角，底端餘 13mm，頂部露 34.54mm，5 磁梯次保持 |
 | **03** | **ECLIPSE · 圓融雙磁快取環** | ECLIPSE · Radial Magnetic Collar | `KM_Arc_BOOX_vertical` | `assets/stl/v9/KM_Arc_BOOX_vertical.stl` | `assets/renders/v9/KM_Arc_BOOX_vertical_mounted.png` | $68.0 \times 68.0 \times 16.05$ | 3 顆 $\varnothing 5\times 1$ mm | 68mm 圓弧微彈鎖定環，中央同心底座，底端餘 3.5mm，瞬拔快取 |
 | **04** | **ZEPHYR · 疾風羽翼流線夾** | ZEPHYR · Aerodynamic Wing Clamp | `KM_Ribbon_BOOX_vertical` | `assets/stl/v9/KM_Ribbon_BOOX_vertical.stl` | `assets/renders/v9/KM_Ribbon_BOOX_vertical_mounted.png` | $68.0 \times 68.0 \times 15.85$ | 3 顆 $\varnothing 5\times 1$ mm | 68mm 空氣動力流線雙翼肋夾，底端餘 3.5mm，極致輕盈導流 |
@@ -161,3 +161,9 @@ The repository root is the canonical product-page source. See
 [the maintenance guide](docs/maintaining-product-page.md) for the CSS component
 map and editing workflow. Run `python3 scripts/sync-site.py` after frontend edits
 to update the portable `site/` mirror; `--check` verifies that it is current.
+
+## AURA DUO v3 correction
+
+See [geometry and rendering notes](docs/AURA_DUO_V3.md). Rebuild with `.venv/bin/python scripts/aura_duo/build.py`; the product page and downloads use the revised STL.
+
+Lifestyle scene sources, device references and generation prompts: [docs/LIFESTYLE_GALLERY.md](docs/LIFESTYLE_GALLERY.md).

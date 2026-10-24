@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
+<title id="title">AURA DUO v3 — outward clearance and parallel pencil</title>
+<desc id="desc">Back-plane schematic. Pencil axis is 53.55 mm left of the ring center, parallel to the phone long edge. Sheath clears an assumed 1.5 mm case edge by 3 mm. Device registration and folding sweep are unverified.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="#47765c" stroke-width="2"/></marker></defs>
+<rect width="1100" height="700" fill="#f4f3ef"/>
+<g font-family="Arial,sans-serif" fill="#263a32">
+<text x="42" y="42" font-size="24">AURA DUO / v3 CLEARANCE REVISION</text>
+<text x="42" y="72" font-size="15" fill="#60715e">BACK VIEW · Parallel pencil + phone long axes · Static layout, not a fold simulation</text>
+<g transform="translate(0 40) scale(.93)">
+<!-- 3 px per mm; ring is the coordinate origin, x=546, y=375. -->
+<rect x="415.35" y="223.8" width="261.3" height="362.4" rx="16" fill="#bdc8bb" stroke="#7a8e78"/>
+<rect x="419.85" y="228.3" width="252.3" height="353.4" rx="14" fill="#d8ded2" stroke="#8a9985"/>
+<rect x="676.65" y="228.3" width="241.5" height="353.4" rx="14" fill="#e2e7dc" stroke="#8a9985"/>
+<path d="M674.4 215V600" stroke="#9a7960" stroke-dasharray="7 5"/>
+<text x="700" y="620" font-size="14">Hinge registration: provisional</text>
+<text x="717" y="270" font-size="14" fill="#60715e">Other phone half</text>
+<path d="M385.35 345L483 333V417L385.35 405Z" fill="#36575a"/>
+<circle cx="546" cy="375" r="97.5" fill="#36575a"/>
+<circle cx="546" cy="375" r="52.5" fill="#d8ded2"/>
+<circle cx="546" cy="375" r="87.6" fill="none" stroke="#9eb5a0" stroke-dasharray="4 4"/>
+<g transform="translate(28.35 0)"><rect x="343.65" y="66" width="26.7" height="468" rx="10" fill="#fffdf4" stroke="#a0aa97"/>
+<path d="M336 339Q336 333 340 333H374Q378 333 378 339V570Q378 604 357 621Q336 604 336 570Z" fill="#36575a" stroke="#263a32"/>
+<path d="M353 333V489H361V333" fill="#f6f5ed"/>
+<path d="M357 116V615" stroke="#65966a" stroke-dasharray="5 6" opacity=".6"/>
+</g>
+<line x1="385.35" y1="178" x2="546" y2="178" stroke="#47765c" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="415" y="163" font-size="17" font-weight="bold">53.55 mm offset</text>
+<line x1="406.35" y1="300" x2="415.35" y2="300" stroke="#47765c" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M410 296L265 259" fill="none" stroke="#47765c"/>
+<text x="44" y="233" font-size="20" font-weight="bold">3 mm clear gap*</text>
+<text x="44" y="260" font-size="15">Sheath to case edge</text>
+<text x="44" y="307" font-size="17">5.55 mm pencil-to-case gap*</text>
+<text x="44" y="367" font-size="17" font-weight="bold">Pen axis: parallel (0°)</text>
+<text x="44" y="395" font-size="15">Along the long edge and back plane</text>
+<text x="44" y="477" font-size="15">v2 offset: 63 mm</text>
+<text x="44" y="502" font-size="15">v3 moves inward by 9.45 mm</text>
+</g>
+<text x="42" y="662" font-size="14" fill="#60715e">*84.1 mm closed width + 1.5 mm case edge per side. Actual case, ring placement and hinge sweep need measurement.</text>
+</g></svg>

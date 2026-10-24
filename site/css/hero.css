@@ -626,3 +626,12 @@
 .mat-btn[data-mat="white"] i { background: #eae7da; }
 .mat-btn[data-mat="black"] i { background: #333936; }
 .mat-btn[data-mat="clay"] i { background: #a8a29e; }
+
+/* Keep the long device selector inside the mobile CAD grid. */
+.hero > *, .model-select { min-width: 0; }
+#device-profile { width: 100%; max-width: 100%; }
+@media(max-width:700px) {
+ .hero { grid-template-columns: minmax(0, 1fr); }
+ .object-topline, .hero-view-switcher { flex-wrap: wrap; gap: 10px; }
+ .model-btn { white-space: normal; }
+}

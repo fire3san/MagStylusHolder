@@ -46,8 +46,8 @@
   const DEVICE_CONFIGS = {
     iphone_duo: {
       name: 'iPhone Duo (Dual-Screen)',
-      width: 145.0,
-      height: 158.0,
+      width: 164.6,
+      height: 117.8,
       penLength: 166.0,
       penName: 'Apple Pencil Pro'
     },
@@ -253,71 +253,15 @@
         }
       }
     ],
-    realworld: [
-      {
-        src: 'assets/photos/lifestyle-aeris-commute.jpg',
-        tag: { zh: '01 / AERIS · COMMUTE', en: '01 / AERIS · COMMUTE' },
-        title: { zh: 'AERIS · 全包覆流光長鞘通勤閱讀', en: 'AERIS · Monolithic Sheath Subway Commute' },
-        desc: {
-          zh: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；AERIS 110 mm 旗艦長鞘與 5 顆下置強磁將手寫筆穩固收納於背板，隨時順滑抽拔標註重點。',
-          en: 'On a swaying subway commute, holding the BOOX with one hand to turn pages. The AERIS 110 mm monolithic sheath with 5-magnet retention keeps the stylus firmly docked, ready for instant annotation.'
-        }
+    realworld: (window.LIFESTYLE_SCENES || []).map((scene, index) => ({
+      src: scene.src,
+      tag: {
+        zh: `${String(index + 1).padStart(2, '0')} / ${scene.name} · ${scene.device}`,
+        en: `${String(index + 1).padStart(2, '0')} / ${scene.name} · ${scene.device}`
       },
-      {
-        src: 'assets/photos/lifestyle-vertex-cafe.jpg',
-        tag: { zh: '02 / VERTEX · CAFE', en: '02 / VERTEX · CAFE' },
-        title: { zh: 'VERTEX · 幾何稜角精雕鞘咖啡館速寫', en: 'VERTEX · Architectural Facet Afternoon Cafe' },
-        desc: {
-          zh: '午後咖啡桌畔，點一杯黑咖啡攤開筆記。VERTEX 俐落的建築倒角導引手指順勢拔出筆身，靈感閃現即時成文，思緒毫無阻滯。',
-          en: 'Beside an oak table with black coffee and open notes. VERTEX architectural chamfers guide your fingers for a smooth tactile draw, capturing thoughts without friction.'
-        }
-      },
-      {
-        src: 'assets/photos/lifestyle-zephyr-desk.jpg',
-        tag: { zh: '03 / ZEPHYR · DESK TILT', en: '03 / ZEPHYR · DESK TILT' },
-        title: { zh: 'ZEPHYR · 疾風羽翼流線夾人體工學微傾', en: 'ZEPHYR · Aerodynamic Wing Ergonomic Desk Tilt' },
-        desc: {
-          zh: '平置辦公桌面時，ZEPHYR 雙翼夾肋恰如其分地墊高背部形成人體工學仰角，撫平頂燈倒影，手腕長時間握筆書寫更自如放鬆。',
-          en: 'Resting flat on a desk, ZEPHYR dual wing clamps provide a natural ergonomic tilt that eliminates ceiling reflections and eases wrist fatigue during extended writing.'
-        }
-      },
-      {
-        src: 'assets/photos/lifestyle-eclipse-edc.jpg',
-        tag: { zh: '04 / ECLIPSE · EDC', en: '04 / ECLIPSE · EDC' },
-        title: { zh: 'ECLIPSE · 圓融雙磁快取環極簡隨身', en: 'ECLIPSE · Radial Magnetic Collar Everyday Carry' },
-        desc: {
-          zh: '與皮夾、手錶及耳機並列。ECLIPSE 68 mm 環形收束外型無尖銳稜角，整機放進口袋或西裝內袋零勾扯，極致純粹。',
-          en: 'Arranged seamlessly alongside a wallet, watch, and earbuds. ECLIPSE compact 68 mm radial collar slides effortlessly into pockets without snagging fabric.'
-        }
-      },
-      {
-        src: 'assets/photos/lifestyle-aura-snap.jpg',
-        tag: { zh: '05 / AURA · MODULAR SNAP', en: '05 / AURA · MODULAR SNAP' },
-        title: { zh: 'AURA · 流光側滑長鞘 MagSafe 快拆', en: 'AURA · Lateral Flow Sheath MagSafe Quick-Snap' },
-        desc: {
-          zh: '橫向延展 60.3 mm 的 AURA 側滑鞘，讓手寫筆自然就位機身側翼；在家一撥即卸享受純粹閱讀，出門靠近磁環清脆「喀嗒」合體。',
-          en: 'Featuring a 60.3 mm lateral cantilever bridge, AURA aligns the stylus comfortably along the outer spine. Snap on instantly with MagSafe, detach for bare-device reading.'
-        }
-      },
-      {
-        src: 'assets/photos/lifestyle-titan-ipad.jpg',
-        tag: { zh: '06 / TITAN PRO · IPAD', en: '06 / TITAN PRO · IPAD' },
-        title: { zh: 'TITAN PRO · 旗艦雙模工作座 iPad mini', en: 'TITAN PRO · Studio Sheath iPad mini & Apple Pencil' },
-        desc: {
-          zh: '專為 iPad mini 獨立打造。130.54 mm 長度實現 0 mm 頂部露出完全包覆，徹底告別原廠側邊磁吸在包袋中被意外撞落的痛點。',
-          en: 'Engineered specifically for iPad mini and Apple Pencil, achieving 100% full top enclosure (0 mm overhang) to permanently eliminate accidental pencil drop-offs in bags.'
-        }
-      },
-      {
-        src: 'assets/photos/lifestyle-aura-duo-iphone.jpg',
-        tag: { zh: '07 / AURA DUO · iPHONE DUO ★', en: '07 / AURA DUO · iPHONE DUO ★' },
-        title: { zh: 'AURA DUO · 雙屏磁吸智筆座 (iPhone Duo & Apple Pencil Pro)', en: 'AURA DUO · Dual-Screen MagSafe Pencil Hub' },
-        desc: {
-          zh: 'iPhone Duo 攤開雙屏進入速記創作模式，AURA DUO 鉸鏈感知側凹確保摺疊與展開兩態皆穩固；Apple Pencil Pro 吸附於側翼，隨手一抽即進入書寫狀態，讓雙屏體驗真正完整。',
-          en: 'Unfolding iPhone Duo into dual-screen notebook mode. The AURA DUO hinge-aware notch keeps retention rock-solid in both folded and unfolded states, while Apple Pencil Pro stays docked along the lateral spine.'
-        }
-      }
-    ],
+      title: scene.title,
+      desc: scene.desc
+    })),
     labnotes: [
       {
         src: 'assets/lab/boox-85mm-measurement.jpg',
@@ -535,53 +479,7 @@
         }
       }
 
-      // Update Real-World Kickstarter Section
-      const rwSec = document.getElementById('real-world');
-      if (rwSec) {
-        const rwLabel = rwSec.querySelector('.section-label');
-        if (rwLabel) rwLabel.textContent = isEn ? 'IN THE WILD / REAL-WORLD SCENARIOS' : 'IN THE WILD / 走入日常真實世界';
-        const rwH2 = rwSec.querySelector('.section-heading h2');
-        if (rwH2) rwH2.innerHTML = isEn ? 'Everyday carry, reading & sketching.<br><span>Six defining moments in daily life.</span>' : '隨身、閱讀與即興創作。<br><span>生活裡的六個決定性時刻。</span>';
-        const rwP = rwSec.querySelector('.section-heading p');
-        if (rwP) rwP.textContent = isEn ? 'Eliminate the dread of digging through the bottom of your bag. From spontaneous transit annotations to cafe sketches, Mag Holder makes the stylus feel native to your device.' : '擺脫散落背包底層的翻找焦慮。從晃動捷運上的單手速記，到木質咖啡桌旁的靈感捕捉，Mag Holder 讓手寫筆宛如設備天生的一部分，安穩、直覺、富有秩序。';
-
-        const ksBadge = rwSec.querySelector('.ks-badge');
-        if (ksBadge) ksBadge.textContent = isEn ? 'KICKSTARTER STORY / BORN FROM DAILY HABITS' : 'KICKSTARTER STORY / 靈感源於生活';
-        const ksQuote = rwSec.querySelector('.ks-quote');
-        if (ksQuote) ksQuote.textContent = isEn ? '"Brought your ereader, but forgot the pen — this used to be a daily regret. Mag Holder isn\'t just a holder; it builds an effortless, instinctive bond between your reader and stylus."' : '「帶了閱讀器，卻又忘了帶筆——這曾是每天重複上演的懊惱。Mag Holder 不只是一個筆座，而是為日常閱讀器與手寫筆之間，建立起一道最自然的隨身默契。」';
-        const ksAuthor = rwSec.querySelector('.ks-author');
-        if (ksAuthor) ksAuthor.textContent = isEn ? '— Mag Holder Design Notes · 2026 Prototype Study' : '— Mag Holder 設計手記 · 2026 原型研究';
-
-        const rwCards = rwSec.querySelectorAll('.realworld-card');
-        const rwEnData = [
-          { scenario: 'Commute Carry · Quick One-Hand Draw', h3: 'Crowded Metro, Smooth Flipping', p: 'On a swaying train, flip pages on the BOOX with one hand. The stylus stays securely docked on the back, ready to annotate without digging through bags.' },
-          { scenario: 'Afternoon Cafe · Instant Spark & Sketch', h3: 'A Natural Slide, Unbroken Flow', p: 'Beside an oak cafe table with black coffee and open notes. A smooth slide out of the guide channel lets you jot down inspiration before it fades.' },
-          { scenario: 'Desk Reading · Natural Ergonomic Tilt', h3: 'Built-in Stand, Deflecting Glare', p: 'Resting flat on a desk, the rear holder spine forms a gentle ergonomic angle that deflects overhead ceiling glare and eases wrist strain.' },
-          { scenario: 'Everyday Carry · Pocket-Friendly EDC', h3: 'Beveled Matte Nylon, Snag-Free', p: 'Alongside a wallet, watch, and earbuds. Smooth radiused nylon edges slide effortlessly into jacket pockets and backpacks without snagging delicate linings.' },
-          { scenario: 'Modular Snap · Instant MagSafe Dock', h3: 'Bare Device or Full Kit in Seconds', p: 'Detach effortlessly for featherlight bare-device reading at home; snap firmly with a crisp magnetic click when heading outdoors.' },
-          { scenario: 'Cross-Device · iPad mini & Pencil', h3: 'No More Bumping Pencils Off', p: 'Expanding the system to iPad mini with Apple Pencil, eliminating the perpetual fear of side-mounted pencils getting bumped off inside tight commute bags.' }
-        ];
-        const rwZhData = [
-          { scenario: '通勤捷運 · 單手速讀隨拔', h3: '擁擠車廂，單手翻閱不慌亂', p: '在顛簸搖晃的捷運車廂裡，單手握持 BOOX 翻頁；手寫筆穩固伏貼於背殼磁座，隨時抽拔標註重點，無需在公事包裡翻箱倒櫃。' },
-          { scenario: '午後咖啡 · 靈感隨抽隨寫', h3: '指尖順道一抽，思緒零中斷', p: '木質咖啡桌畔，點一杯黑咖啡攤開筆記。順著圓弧導引槽輕輕一抽，立即落筆記錄閃現的靈感，不讓翻找手寫筆打斷思路。' },
-          { scenario: '桌面閱讀 · 人體工學微傾角', h3: '天然墊高支撐，撫平頂部反光', p: '平置辦公桌面時，背部筆座恰如其分地抬升機身微幅仰角，避開室內頂燈刺眼眩光，手腕書寫也更自然放鬆。' },
-          { scenario: '極簡隨身 · EDC 零勾扯收納', h3: '倒角消光尼龍，俐落滑入包袋', p: '與皮夾、機械錶及無線耳機並列。整體外型無銳角突出，放進西裝口袋或帆布背包內袋順暢無阻，不刮擦織物內襯。' },
-          { scenario: '一秒快拆 · MagSafe 模組磁吸', h3: '純粹手持或合體攜帶，隨心變換', p: '在家享受純粹輕薄閱讀時一撥即卸；出門差旅時靠近背板「喀嗒」緊貼。標準 MagSafe 磁吸系統，隨時切換形態。' },
-          { scenario: '跨界延伸 · iPad mini 靈動創作', h3: '告別側邊易碰落，穩固隨身同行', p: '設計概念進一步延伸至 iPad mini 與 Apple Pencil。徹底解決原廠側邊磁吸容易在包袋中被意外撞落遺失的痛點。' }
-        ];
-
-        rwCards.forEach((c, i) => {
-          const d = isEn ? rwEnData[i] : rwZhData[i];
-          if (d) {
-            const sc = c.querySelector('.realworld-scenario');
-            if (sc) sc.textContent = d.scenario;
-            const h = c.querySelector('h3');
-            if (h) h.textContent = d.h3;
-            const p = c.querySelector('p');
-            if (p) p.textContent = d.p;
-          }
-        });
-      }
+      // Lifestyle copy uses the shared data-zh/data-en language handler.
 
       // Update Maker's Workbench Lab Notes Section
       const labSec = document.getElementById('lab-notes');
@@ -638,7 +536,7 @@
           {"q": "Why use a 75 mm ring position?", "a": "<p>The owner corrected the earlier 85 mm reading to 75 mm from the case bottom. v9 Flow/AERIS is 110 mm long with 3 mm bottom clearance; Facet/VERTEX is 100 mm with 13 mm clearance. K+M has 3.5 mm at the specified pen position.</p>"},
           {"q": "How are the magnets and 3M tape assembled?", "a": "<p>Bottom-loading pockets are 5.3 mm diameter and 4 mm deep. BOOX AERIS & VERTEX use 5 magnets (Y = -48, -38, -12, 0, 12 mm) for enhanced barrel retention; ECLIPSE, ZEPHYR and iPad models use 3 magnets. Bond each 5 x 1 mm magnet to the pocket ceiling using provisionally 0.2 mm tape; secure a 5.05 x 2.7 mm spacer below. Recalculate the spacer for other tape thicknesses. The case ring is separate hardware.</p>"},
           {"q": "What about iPad and printing material?", "a": "<p>iPad geometry remains a fit study; its pockets also change to 5 x 1 mm magnets. No device validation or charging is provided. Quote PA12 prototypes and print fit samples before full bodies.</p>"},
-          {"q": "How does AURA DUO support iPhone Duo and Apple Pencil Pro?", "a": "<p>AURA DUO is our signature flagship for the dual-screen foldable iPhone Duo. Its base features an engineered hinge-notch clearance, ensuring uninterrupted hinge movement whether unfolded as dual screens or folded. The bore is calibrated to Ø8.9 mm for Apple Pencil Pro with 5 × Ø5×1 mm tiered N52 magnets and a 60.3 mm lateral rail sheath for effortless blind insertion and rock-solid hold.</p>"},
+          {"q": "How does AURA DUO support iPhone Duo and Apple Pencil Pro?", "a": "<p>AURA DUO v3 uses a 53.55 mm outboard offset and a parallel pencil axis. Assuming 1.5 mm case edges, sheath clearance is 3 mm. The inherited CAD bore measures 9.6 mm for an 8.9 mm reference barrel. This is mechanical storage; phone writing support, physical fit, retention and hinge sweep are separate checks.</p>"},
           {"q": "Is this a production-ready product?", "a": "<p>This is a v9 digital prototype with eleven STL files: six standard flagships, AURA DUO signature model, three fit samples and one spacer (v9 AERIS & VERTEX feature 5-magnet sockets). Mesh checks do not validate retention, drops or fatigue. Follow the print guide.</p>"}
         ];
         const faqZhData = [
@@ -646,7 +544,7 @@
           {"q": "為何改用75 mm磁環位置？", "a": "<p>使用者已確認之前85 mm讀數有誤，正確為距保護殼底75 mm。v9 Flow/AERIS長110 mm，底部留3 mm；Facet/VERTEX長100 mm，留13 mm；K+M指定筆位留3.5 mm。波浪殼黏附與搖晃待實測。</p>"},
           {"q": "磁石與3M雙面膠怎樣裝？", "a": "<p>孔徑5.3 mm、深4 mm，由底面裝入。AERIS 與 VERTEX 旗艦長鞘升級 5 顆 Ø5×1 mm 磁石（Y = -48, -38, -12, 0, 12 mm）強化筆身吸附力，其餘款式配置 3 顆。磁石以暫定0.2 mm膠層貼近孔頂，下方用Ø5.05×2.7 mm墊片承托並另行固定。若膠厚不同，需重算墊片。背殼磁環是另一組硬件。</p>"},
           {"q": "iPad版及打印材料如何選？", "a": "<p>iPad外形暫沿用尺寸研究，磁孔同步改為Ø5×1 mm；未完成實機驗證，也不提供充電。先向打印商詢價PA12試件並打印筆徑試片，核對公差、側鍵及長通道清粉。</p>"},
-          {"q": "AURA DUO 如何適配 iPhone Duo 與 Apple Pencil Pro？", "a": "<p>AURA DUO 為 iPhone Duo 雙屏摺疊機專屬簽名款，底座特設「鉸鏈感知側凹」（Hinge-Notch），在手機展開為雙屏或對折單屏時均不阻礙鉸鏈活動。內孔精確調校為 Ø8.9 mm，完全容納 Apple Pencil Pro，配合 60.3 mm 側滑導軌與 5 枚 Ø5×1 mm 梯次 N52 強磁矩陣，確保極致穩固保持力與流暢盲插拔體驗。</p>"},
+          {"q": "AURA DUO 如何適配 iPhone Duo 與 Apple Pencil Pro？", "a": "<p>AURA DUO v3 採53.55 mm外側偏置，筆身與手機長邊平行。按每側1.5 mm殼邊估算，鞘至殼邊留3 mm。保留的CAD內孔實測9.6 mm，筆身參考8.9 mm。這是機械收納設計；手機書寫支援、實機配合、保持力與摺疊掃掠須分別確認。</p>"},
           {"q": "現在可以當成量產成品嗎？", "a": "<p>目前是v9數位原型，打樣包包含 10 個 STL（AERIS與VERTEX為5磁孔版本）、AURA DUO 雙屏旗艦款、3 款側滑 STL 與 2 款全新開脊微彈 STL。網格檢查不等於保持力、跌落或疲勞測試。請按打樣指南逐步驗證。</p>"}
         ];
 

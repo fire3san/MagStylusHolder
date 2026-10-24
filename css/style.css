@@ -1,8 +1,8 @@
 /* Product page stylesheet entry point. Edit the component files below.
    Import order is intentional: shared foundations precede component styles. */
-@import url("base.css");
-@import url("hero.css");
-@import url("sections.css");
-@import url("galleries.css");
-@import url("lightbox.css");
-@import url("discovery.css");
+@import url("base.css?v=aura-duo-v2");
+@import url("hero.css?v=aura-duo-v2");
+@import url("sections.css?v=aura-duo-v2");
+@import url("galleries.css?v=gallery-v3");
+@import url("lightbox.css?v=aura-duo-v2");
+@import url("discovery.css?v=aura-duo-v2");

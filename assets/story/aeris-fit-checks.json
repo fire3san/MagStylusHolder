@@ -1,0 +1,21 @@
+{
+  "holder_y_bounds_mm": [
+    -72.0,
+    38.0
+  ],
+  "centerline_internal_floor_y_mm": -61.959999,
+  "tip_internal_clearance_mm": 3,
+  "pen_length_mm": 157.5,
+  "pen_tip_y_mm": -58.959999,
+  "pen_cap_y_mm": 98.54000099999999,
+  "ring_height_from_case_bottom_mm": 75,
+  "assumed_case_edge_mm": 1.5,
+  "device_height_mm": 149,
+  "assumed_case_outer_height_mm": 152,
+  "sheath_bottom_to_case_bottom_mm": 3.0,
+  "pen_overhang_above_bare_device_mm": 23.04,
+  "pen_overhang_above_assumed_case_mm": 21.54,
+  "legacy_149mm_case_envelope_overhang_mm": 24.54,
+  "physical_case_height_measured": false,
+  "pen_holder_collision_mm3": 0.0
+}

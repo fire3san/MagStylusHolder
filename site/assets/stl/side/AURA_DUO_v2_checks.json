@@ -1,0 +1,25 @@
+{
+  "revision": "v2 / clearance and assembly correction",
+  "source_commit": "cd83914",
+  "watertight": true,
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "extents_mm": [
+    102.5,
+    114.54,
+    14.9
+  ],
+  "previous_pen_axis_offset_mm": 37,
+  "pen_axis_offset_mm": 63.0,
+  "phone_closed_width_mm": 84.1,
+  "assumed_case_edge_mm": 1.5,
+  "sheath_to_case_gap_mm": 12.45,
+  "pencil_to_case_gap_mm": 15.0,
+  "pen_axis_vs_phone_long_edge_deg": 0.0,
+  "pen_axis_vs_back_plane_deg": 0.0,
+  "pen_holder_collision_mm3": 0.0,
+  "magnet_pockets_clear": true,
+  "ring_recess_clear": true,
+  "physical_fit_verified": false,
+  "hinge_sweep_verified": false
+}

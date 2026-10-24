@@ -1,0 +1,114 @@
+[
+  {
+    "key": "aeris",
+    "name": "AERIS",
+    "model": "S_Flow_BOOX_vertical",
+    "device": "BOOX Go 6 (Gen II)",
+    "cad": "assets/renders/v9/AERIS_fit_checked_mounted.png",
+    "src": "assets/photos/gallery-v5/aeris.png",
+    "title": {
+      "zh": "通勤時，筆也有位置。",
+      "en": "A place for your pen on the commute."
+    },
+    "desc": {
+      "zh": "110 mm 長鞘底端距殼底3 mm。157.5 mm 筆長會上露：按149 mm機身、上下各1.5 mm殼邊計，筆尾高於殼頂約21.54 mm；實際數值隨殼外高與筆位改變。",
+      "en": "The 110 mm sheath ends 3 mm above the case bottom. A 157.5 mm pen protrudes: with a 149 mm reader and 1.5 mm case edges, its cap sits about 21.54 mm above the case. Actual overhang depends on case height and pen position."
+    }
+  },
+  {
+    "key": "vertex",
+    "name": "VERTEX",
+    "model": "S_Facet_BOOX_vertical",
+    "device": "BOOX Go 6 (Gen II)",
+    "cad": "assets/renders/v9/S_Facet_BOOX_vertical_mounted.png",
+    "src": "assets/photos/gallery-v5/vertex.png",
+    "title": {
+      "zh": "午後靈感，俐落收好。",
+      "en": "Give your ideas a place to return to."
+    },
+    "desc": {
+      "zh": "100 mm 稜角長鞘保留清楚的幾何切面；筆位沿機背中央，環形底座仍然可見。從咖啡桌邊的閱讀，回到筆與設備一起收好的日常。",
+      "en": "A 100 mm faceted sheath brings defined planes to the central pen channel, leaving the circular base visible. A cafe reading scene built around putting pen and reader away together."
+    }
+  },
+  {
+    "key": "zephyr",
+    "name": "ZEPHYR",
+    "model": "KM_Ribbon_BOOX_vertical",
+    "device": "BOOX Go 6 (Gen II)",
+    "cad": "assets/renders/v9/KM_Ribbon_BOOX_vertical_mounted.png",
+    "src": "assets/photos/gallery-v5/zephyr.png",
+    "title": {
+      "zh": "把結構收在中央。",
+      "en": "Keep the structure at the center."
+    },
+    "desc": {
+      "zh": "68 mm 圓環與短翼夾集中於機背中央，筆身從兩端露出。流線肋骨勾勒緊湊輪廓，為桌邊閱讀留下一個固定的收筆位置。",
+      "en": "A 68 mm ring and short wing clamp gather at the center of the reader, with the pen visible at both ends. Flowing ribs give the compact holder its shape and the pen a dedicated place between reading sessions."
+    }
+  },
+  {
+    "key": "eclipse",
+    "name": "ECLIPSE MINI",
+    "model": "KM_Arc_iPad_Pencil89",
+    "device": "iPhone 17",
+    "cad": "assets/renders/v9/KM_Arc_iPad_Pencil89_mounted.png",
+    "src": "assets/photos/gallery-v3/eclipse.png",
+    "title": {
+      "zh": "圓融收束，隨手歸位。",
+      "en": "A compact home for your pencil."
+    },
+    "desc": {
+      "zh": "圓環底座與中央短夾保留 ECLIPSE MINI 的形狀，筆身與 iPhone 17 長邊平行。此為背殼收納配置探索，實際殼型與固定方式需先確認。",
+      "en": "The circular base and short central clamp retain the ECLIPSE MINI form, with the pencil parallel to iPhone 17. This case-storage arrangement is a concept; case fit and attachment need checking."
+    }
+  },
+  {
+    "key": "aura",
+    "name": "AURA",
+    "model": "Side_Scabbard_v3",
+    "device": "BOOX Go 6 (Gen II)",
+    "cad": "assets/renders/side/01_Side_Scabbard_mounted.png",
+    "src": "assets/photos/gallery-v3/aura.png",
+    "title": {
+      "zh": "把筆留在機身外側。",
+      "en": "Make room beside your reader."
+    },
+    "desc": {
+      "zh": "圓環留在機背，側臂將 94 mm 流光長鞘帶到機身外側。從圓環、連接臂到漸收鞘尖，一條輪廓把閱讀器與筆連在一起。",
+      "en": "The ring sits on the reader while a side arm carries the 94 mm sheath beyond its edge. From the circular base to the tapered tip, one continuous silhouette brings reader and pen together."
+    }
+  },
+  {
+    "key": "axis",
+    "name": "AXIS",
+    "model": "Apple_Pencil_Clip_v3",
+    "device": "iPhone 17",
+    "cad": "assets/renders/side/03_Apple_Pencil_Original_mounted.png",
+    "src": "assets/photos/gallery-v3/axis.png",
+    "title": {
+      "zh": "讓桌面，多一點秩序。",
+      "en": "A little more order on your desk."
+    },
+    "desc": {
+      "zh": "14 × 67.5 mm 窄軌夾沿筆身收束，與 iPhone 17 並列展示。AXIS 本身沒有大圓環；此圖展示獨立筆夾，不代表可直接吸附於手機。",
+      "en": "The 14 × 67.5 mm narrow rail follows the pencil, shown beside iPhone 17. AXIS has no large circular base; this scene shows the standalone clip rather than a direct phone mount."
+    }
+  },
+  {
+    "key": "duo",
+    "name": "AURA DUO",
+    "model": "AURA_DUO_iPhone",
+    "device": "iPhone Duo",
+    "cad": "assets/renders/side/AURA_DUO_v3_unfolded.png",
+    "src": "assets/photos/gallery-v4/duo.png",
+    "title": {
+      "zh": "展開雙屏，筆仍平行。",
+      "en": "Unfold the phone. Keep the pencil aligned."
+    },
+    "desc": {
+      "zh": "v3 收短側臂，筆軸向內移9.45 mm。按每側1.5 mm殼邊估算，鞘與殼邊留3 mm間隙；筆身保持平行，貼近機身一起攜帶。",
+      "en": "v3 shortens the arm and moves the pen axis inward by 9.45 mm. With 1.5 mm case edges, the sheath has 3 mm clearance while the pencil stays parallel to the phone."
+    }
+  }
+]
