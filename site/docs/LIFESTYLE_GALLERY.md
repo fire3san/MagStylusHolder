@@ -27,3 +27,7 @@ AERIS and AURA DUO now use `assets/photos/gallery-v4/aeris.png` and `duo.png`. A
 ## Centering correction v5
 
 AERIS, VERTEX and ZEPHYR final images use `assets/photos/gallery-v5/`. Their circular bases and axial pen holders align with the device's transverse center, matching CAD X=0. ImageGen precise-object-edit prompts preserve all geometry, axial position, overhang, case, background and lighting; move the complete ring/sheath/clamp/pen assembly left as one unit to the perspective longitudinal midline. AERIS correction is approximately47px left at ring height; VERTEX40px; ZEPHYR30px. The CAD/STLs already have X=0 registration and do not need a geometry shift.
+
+## Pen-length correction v6
+
+ZEPHYR and AURA now use `assets/photos/gallery-v6/zephyr.png` and `aura.png`. Built-in ImageGen precise-object edits use the previous lifestyle image as target and its actual mounted CAD as the proportion reference. Preserve the ring, clamp/sheath, device and background. Extend the silver upper barrel so the complete157.5 mm pen is longer than the149 mm reader and its cap visibly clears the top edge. Keep its lower tip near the bottom and its axis parallel to the device long edge. ZEPHYR assumes3.5 mm tip clearance from the bottom and roughly9 mm overhang beyond a nominal152 mm case. AURA preserves its side-sheath location and lower tip, extending the cap beyond the reader top. These images are concept illustrations; CAD controls exact dimensions.

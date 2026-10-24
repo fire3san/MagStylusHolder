@@ -37,14 +37,14 @@
     "model": "KM_Ribbon_BOOX_vertical",
     "device": "BOOX Go 6 (Gen II)",
     "cad": "assets/renders/v9/KM_Ribbon_BOOX_vertical_mounted.png",
-    "src": "assets/photos/gallery-v5/zephyr.png",
+    "src": "assets/photos/gallery-v6/zephyr.png",
     "title": {
       "zh": "把結構收在中央。",
       "en": "Keep the structure at the center."
     },
     "desc": {
-      "zh": "68 mm 圓環與短翼夾集中於機背中央，筆身從兩端露出。流線肋骨勾勒緊湊輪廓，為桌邊閱讀留下一個固定的收筆位置。",
-      "en": "A 68 mm ring and short wing clamp gather at the center of the reader, with the pen visible at both ends. Flowing ribs give the compact holder its shape and the pen a dedicated place between reading sessions."
+      "zh": "68 mm 圓環與短翼夾集中於機背中央，筆身從兩端露出。流線肋骨勾勒緊湊輪廓，為桌邊閱讀留下一個固定的收筆位置。 157.5 mm 手寫筆比149 mm機身長，筆尾會突出機頂。",
+      "en": "A 68 mm ring and short wing clamp gather at the center of the reader, with the pen visible at both ends. Flowing ribs give the compact holder its shape and the pen a dedicated place between reading sessions. The 157.5 mm stylus is longer than the 149 mm reader, so its cap extends beyond the top edge."
     }
   },
   {
@@ -69,14 +69,14 @@
     "model": "Side_Scabbard_v3",
     "device": "BOOX Go 6 (Gen II)",
     "cad": "assets/renders/side/01_Side_Scabbard_mounted.png",
-    "src": "assets/photos/gallery-v3/aura.png",
+    "src": "assets/photos/gallery-v6/aura.png",
     "title": {
       "zh": "把筆留在機身外側。",
       "en": "Make room beside your reader."
     },
     "desc": {
-      "zh": "圓環留在機背，側臂將 94 mm 流光長鞘帶到機身外側。從圓環、連接臂到漸收鞘尖，一條輪廓把閱讀器與筆連在一起。",
-      "en": "The ring sits on the reader while a side arm carries the 94 mm sheath beyond its edge. From the circular base to the tapered tip, one continuous silhouette brings reader and pen together."
+      "zh": "圓環留在機背，側臂將 94 mm 流光長鞘帶到機身外側。從圓環、連接臂到漸收鞘尖，一條輪廓把閱讀器與筆連在一起。 157.5 mm 手寫筆比149 mm機身長，筆尾會突出機頂。",
+      "en": "The ring sits on the reader while a side arm carries the 94 mm sheath beyond its edge. From the circular base to the tapered tip, one continuous silhouette brings reader and pen together. The 157.5 mm stylus is longer than the 149 mm reader, so its cap extends beyond the top edge."
     }
   },
   {
