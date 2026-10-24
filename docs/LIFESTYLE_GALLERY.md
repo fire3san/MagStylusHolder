@@ -31,3 +31,7 @@ AERIS, VERTEX and ZEPHYR final images use `assets/photos/gallery-v5/`. Their cir
 ## Pen-length correction v6
 
 ZEPHYR and AURA now use `assets/photos/gallery-v6/zephyr.png` and `aura.png`. Built-in ImageGen precise-object edits use the previous lifestyle image as target and its actual mounted CAD as the proportion reference. Preserve the ring, clamp/sheath, device and background. Extend the silver upper barrel so the complete157.5 mm pen is longer than the149 mm reader and its cap visibly clears the top edge. Keep its lower tip near the bottom and its axis parallel to the device long edge. ZEPHYR assumes3.5 mm tip clearance from the bottom and roughly9 mm overhang beyond a nominal152 mm case. AURA preserves its side-sheath location and lower tip, extending the cap beyond the reader top. These images are concept illustrations; CAD controls exact dimensions.
+
+## Relative-angle correction v7
+
+Final AURA and ECLIPSE MINI scenes use `assets/photos/gallery-v7/{aura,eclipse}.png`. Built-in ImageGen precise-object edit prompts recompose the previous photos as straight-down overhead flat-lays: device portrait with vertical long edges, pen/sheath/clamp axis vertical and parallel to those edges, centered ring, horizontal side bridge for AURA. Preserve the actual holder shapes, complete pen length, visible protrusion and cafe/linen surroundings. This replaces inconsistent mixed perspective in earlier AI scenes; the CAD/STLs are unchanged.

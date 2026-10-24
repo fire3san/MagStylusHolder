@@ -53,7 +53,7 @@
     "model": "KM_Arc_iPad_Pencil89",
     "device": "iPhone 17",
     "cad": "assets/renders/v9/KM_Arc_iPad_Pencil89_mounted.png",
-    "src": "assets/photos/gallery-v3/eclipse.png",
+    "src": "assets/photos/gallery-v7/eclipse.png",
     "title": {
       "zh": "圓融收束，隨手歸位。",
       "en": "A compact home for your pencil."
@@ -69,7 +69,7 @@
     "model": "Side_Scabbard_v3",
     "device": "BOOX Go 6 (Gen II)",
     "cad": "assets/renders/side/01_Side_Scabbard_mounted.png",
-    "src": "assets/photos/gallery-v6/aura.png",
+    "src": "assets/photos/gallery-v7/aura.png",
     "title": {
       "zh": "把筆留在機身外側。",
       "en": "Make room beside your reader."
