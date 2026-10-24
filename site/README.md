@@ -29,8 +29,9 @@
 | 型號 | 代號 | 設計特點 | 適配設備 |
 ## 🏆 旗艦產品系列 (The Collection)
 
-Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 iPad mini 專屬款式與歷代工程里程碑：
+Mag Holder 目前涵蓋 **四大架構體系、共十款旗艦設計**，外加 iPad mini 專屬款式與歷代工程里程碑：
 
+0. **★ 旗艦簽名款 (Flagship Signature — AURA DUO)**: 專為雙屏摺疊機 **iPhone Duo** 與 **Apple Pencil Pro** 打造，傳承 AURA 同向側滑導軌語言，將偏置微調為 37.0 mm 緊貼機邊（消除懸空縫隙，總寬 76.5 mm 完美收合），內側保留 8.5 mm 鉸鏈中軸避空，180° 完全展開零干涉，配備 5 顆梯次 N52 強磁矩陣。
 1. **縱向軸心系列 (Axial Sheaths & Clamps)**: 沿機身背板軸向收納，強調沈浸式包覆與極限防護。
 2. **側翼外擴側滑系列 (Lateral Slide Rails)**: 筆軸向外側延伸 60.3 mm，解放後背握持空間，支援側向滑入。
 3. **開脊微彈快拆系列 (Open Spine Quick-Release)**: 開放式背骨與雙側開 C 夾，實現「微傾即取」的極致靈活性。
@@ -40,7 +41,15 @@ Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 
 ## 🗺️ 產品名稱與 STL 檔案對照表 (Product Name to STL Mapping Guide for AI / Dev)
 
 > **重要提示（致後續維護之 AI Agent 與開發者）**：  
-> 網頁前端使用 `window.MODEL_CATALOG`（位於 [js/models.js](/Users/san/Codex/MagSafeStylusHolder/js/models.js) 與 [site/js/models.js](/Users/san/Codex/MagSafeStylusHolder/site/js/models.js)）驅動 Three.js 3D 檢視器、按鈕資料繫結 (`data-inspect`)、型號規格卡片與下載連結。所有路徑在專案根目錄與 `site/` 保持 1:1 鏡像對應。
+> 網頁前端使用 `window.MODEL_CATALOG`（位於 [js/models.js](C:/SRC/MagStylusHolder/js/models.js) 與 [site/js/models.js](C:/SRC/MagStylusHolder/site/js/models.js)）驅動 Three.js 3D 檢視器、按鈕資料繫結 (`data-inspect`)、型號規格卡片與下載連結。所有路徑在專案根目錄與 `site/` 保持 1:1 鏡像對應。
+
+### 0. ★ 旗艦簽名款：iPhone Duo 雙屏專用 (Flagship Signature)
+
+| 編號 | 產品中文名稱 | 產品英文名稱 | Catalog Key (`data-inspect`) | 主要 STL 檔案路徑 | 產品渲染圖路徑 | 尺寸 (W×H×D mm) | 磁石配置 | 架構特色與展開動態學 |
+|:---:|:---|:---|:---|:---|:---|:---:|:---:|:---|
+| **00** | **★ AURA DUO · 雙屏磁吸智筆座** | AURA DUO · Dual-Screen MagSafe Pencil Hub | `AURA_DUO_iPhone` | `assets/stl/side/AURA_DUO_iPhone_PencilPro.stl` | `assets/renders/side/AURA_DUO_iPhone_unfolded_mounted.png` | $76.5 \times 114.0 \times 13.5$ | 5 顆 $\varnothing 5\times 1$ mm N52 梯次 | 專為 iPhone Duo 雙屏打造：**鉸鏈中軸防干涉與貼邊動態學**（長鞘與 AURA 同向向左延伸，37.0mm 緊貼機邊偏置，內側留 8.5mm 中軸避空），$\varnothing 8.9$ mm Apple Pencil Pro 專屬劍鞘，展開 180° 與折疊態零干涉 |
+
+---
 
 ### 1. BOOX Go 6 九大旗艦模型 (The Nine Flagships)
 
@@ -95,7 +104,11 @@ Mag Holder 目前涵蓋 **三大架構體系、共九大旗艦設計**，外加 
 
 - **雙磁吸系統 (Dual-Magnetic System)**:
   - 外部基底：$\varnothing 58.4\text{ mm}$ 標準 MagSafe 磁吸環槽，牢固吸附於保護殼引磁片。
-  - 內部筆座：3 顆下置 N52 釹鐵硼微型強磁，精準吸附手寫筆內部鐵芯，行進不脫落、單手直覺拔出。
+  - 內部筆座：3 ~ 5 顆下置 N52 釹鐵硼微型強磁（v9 AERIS/VERTEX 與 AURA DUO 配備 5 顆梯次分佈強磁），精準吸附手寫筆內部鐵芯，行進不脫落、單手直覺拔出。
+- **雙屏鉸鏈中軸防干涉動態學 (Dual-Screen Fold Kinematics Clearance)**:
+  - 專為 iPhone Duo 開發：中央折疊鉸鏈（$X=0$）與右背板 MagSafe 中心距離 $38.2\text{ mm}$。
+  - AURA DUO 筆鞘長鞘（Scabbard）朝外側延伸至 $X = +60.3\text{ mm}$，筆身完全收納於外緣，底座內緣預留 $6\text{ mm}$ 軸心切角。
+  - 徹底杜絕向內側干涉導致的「卡中軸」問題，無論是 $180^\circ$ 完全展開雙屏、折疊單屏使用，或任意角度懸停皆順暢無阻。
 - **3D 互動 CAD 實驗室 (Interactive 3D WebGL Viewer)**:
   - 採用 Three.js 與真實工程 STL 網格渲染。
   - 支援石白 (Alabaster White)、墨黑 (Ink Black)、岩灰 (Clay Gray) 與工程線框 (Wireframe) 四種材質模式。

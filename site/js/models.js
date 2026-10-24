@@ -1,4 +1,19 @@
 window.MODEL_CATALOG = {
+  "AURA_DUO_iPhone": {
+    "name": "AURA DUO · 雙屏磁吸智筆座",
+    "name_en": "AURA DUO · Dual-Screen MagSafe Pencil Hub (iPhone Duo)",
+    "path": "assets/stl/side/AURA_DUO_iPhone_PencilPro.stl",
+    "renderImg": "assets/renders/side/AURA_DUO_iPhone_unfolded_mounted.png",
+    "desc": "iPhone Duo 專屬旗艦：雙屏鉸鏈感知磁吸底座，傳承 AURA 同向側滑筆鞘美學，微調為 37.0 mm 緊貼 iPhone 側邊（告別懸空空隙），完全支援 Apple Pencil Pro（Ø8.9 mm）。5 枚 Ø5×1 mm 梯次強磁精密矩陣，MagSafe 磁吸圓環 + 內嵌鉸鏈側感知凹位，確保展開與折疊雙態穩固。劍鞘導尖 18 mm 引導入筆，單手盲插輕鬆到位。",
+    "desc_en": "iPhone Duo exclusive flagship. Dual-screen hinge-aware MagSafe base sharing AURA's homologous lateral sheath direction, fine-tuned to 37.0 mm edge-hugging flush offset (eliminating gap). Full Apple Pencil Pro support (Ø8.9 mm bore). 5 × Ø5×1 mm tiered N52 magnets, hinge-notch side cutout — stable in both unfolded and folded modes.",
+    "extents": "76.5 × 114.0 × 13.5 mm",
+    "weight": "數位原型 · 實測待驗",
+    "retention": "Apple Pencil Pro Ø8.9 mm 側滑導軌 + 5 顆梯次 N52 磁鐵 (Y=-12 ~ -60 mm)",
+    "stage": "v1 / SIGNATURE PROTOTYPE",
+    "device": "iphone_duo",
+    "clearance_text": "筆中心至環中心 37.0 mm (與 AURA 同向緊貼機邊) / 鞘長 94 mm · 5孔強磁矩陣 · 鉸鏈感知側凹",
+    "clearance_text_en": "Lateral Offset 37.0 mm (AURA homologous flush fit) / Sheath 94 mm · 5-Magnet Matrix · Hinge-Notch Clearance"
+  },
   "S_Flow_BOOX_vertical": {
     "name": "AERIS · 全包覆流光長鞘",
     "name_en": "AERIS · Monolithic Sheath (110mm)",

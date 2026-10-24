@@ -69,7 +69,7 @@
     } catch (e) {
       // ignore URL parsing errors
     }
-    return getRandomModelKey('boox_v7');
+    return STL_MODELS['AURA_DUO_iPhone'] ? 'AURA_DUO_iPhone' : getRandomModelKey('boox_v7');
   }
 
   function initViewer() {
@@ -359,8 +359,9 @@
   }
 
   function setupControls() {
-    renderModelOptions('boox_v7');
     const device = document.getElementById('device-profile');
+    const initialDevice = device ? device.value : 'iphone_duo';
+    renderModelOptions(initialDevice);
     if (device) {
       device.addEventListener('change', () => {
         renderModelOptions(device.value);

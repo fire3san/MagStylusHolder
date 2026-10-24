@@ -1529,3 +1529,311 @@
 .length-comparison--anatomy { margin-top: 40px; }
 .evolution-block { margin-top: 70px; }
 .evo-meta a.inspect-btn { display: grid; place-items: center; }
+
+/* ── AURA DUO Signature Product ──────────────────────────────────── */
+
+/* Nav signature link */
+.nav-link-sig {
+  font-weight: 700;
+  color: #4a6f35;
+  letter-spacing: .5px;
+}
+
+.nav-link-sig:hover {
+  color: var(--ink);
+}
+
+/* Signature section */
+.aura-duo-signature {
+  background: linear-gradient(160deg, #1f2f28 0%, #263a32 60%, #2b4535 100%);
+  color: #e6ead9;
+  border-top: none;
+}
+
+.duo-sig-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.duo-sig-badge {
+  background: #a8c87a;
+  color: #1a2e14;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 2px;
+}
+
+.duo-sig-kicker {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: #85a06a;
+  font-weight: 600;
+}
+
+.duo-sig-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.duo-sig-title {
+  font-size: clamp(36px, 4vw, 62px);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: #edf0e6;
+  margin-bottom: 24px;
+}
+
+.duo-sig-title em {
+  font-style: normal;
+  color: #9dc270;
+}
+
+.duo-sig-lead {
+  font-size: 14px;
+  color: #a8b89a;
+  line-height: 2;
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+
+.duo-sig-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 36px;
+  border: 1px solid #3d5a45;
+}
+
+.duo-spec-item {
+  padding: 14px 18px;
+  border-bottom: 1px solid #3d5a45;
+  border-right: 1px solid #3d5a45;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.duo-spec-item:nth-child(even) {
+  border-right: none;
+}
+
+.duo-spec-item:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.duo-spec-label {
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #6a8a58;
+  font-weight: 700;
+}
+
+.duo-spec-val {
+  font-size: 12px;
+  color: #cdd8c0;
+  font-weight: 500;
+}
+
+.duo-sig-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.duo-sig-cta {
+  background: #9dc270;
+  color: #1a2e14;
+  border: none;
+  padding: 14px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.duo-sig-cta:hover {
+  background: #b8d989;
+}
+
+.duo-sig-secondary {
+  font-size: 12px;
+  color: #7da662;
+  border-bottom: 1px solid #4a6f35;
+  padding-bottom: 2px;
+  transition: color .2s;
+}
+
+.duo-sig-secondary:hover {
+  color: #9dc270;
+}
+
+/* Visual frame */
+.duo-sig-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.duo-visual-frame {
+  position: relative;
+  background: #1a2a22;
+  border: 1px solid #3d5a45;
+  overflow: hidden;
+}
+
+.duo-visual-frame img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  aspect-ratio: 1;
+  mix-blend-mode: luminosity;
+  opacity: .9;
+  transition: opacity .3s;
+}
+
+.duo-visual-frame:hover img {
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+.duo-visual-tags {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.duo-vtag {
+  background: rgba(30,50,35,.8);
+  border: 1px solid #4d7045;
+  color: #9dc270;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  backdrop-filter: blur(4px);
+}
+
+/* Feature strip */
+.duo-feature-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #3d5a45;
+  border: 1px solid #3d5a45;
+}
+
+.duo-feature {
+  background: #1f2f28;
+  padding: 18px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+  color: #a8b89a;
+  line-height: 1.6;
+}
+
+.duo-feature small {
+  font-size: 10px;
+  color: #6a8a58;
+}
+
+.duo-feature-icon {
+  font-size: 18px;
+  color: #9dc270;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Signature realworld card */
+.realworld-card--signature {
+  border: 2px solid #748b59;
+  background: #f0f4e9;
+}
+
+/* Evolution signature item */
+.evolution-item--signature {
+  background: #1f2f28;
+  border-color: #9dc270;
+  box-shadow: inset 4px 0 0 #9dc270;
+  color: #e6ead9;
+}
+
+.evolution-item--signature .evo-gen {
+  color: #9dc270;
+}
+
+.evolution-item--signature .evo-year {
+  color: #7da662;
+}
+
+.evolution-item--signature .evo-info h3 {
+  color: #edf0e6;
+}
+
+.evolution-item--signature .evo-info p {
+  color: #a8b89a;
+}
+
+.evo-tag.sig {
+  background: #9dc270;
+  color: #1a2e14;
+  font-weight: 800;
+}
+
+/* Signature choice card */
+.choice-card--signature {
+  border: 2px solid #748b59;
+  background: #f0f4e9;
+}
+
+/* Responsive overrides */
+@media(max-width:900px) {
+  .duo-sig-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .duo-sig-title {
+    font-size: 38px;
+  }
+}
+
+@media(max-width:700px) {
+  .duo-sig-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .duo-spec-item {
+    border-right: none;
+  }
+
+  .duo-spec-item:nth-last-child(-n+2) {
+    border-bottom: 1px solid #3d5a45;
+  }
+
+  .duo-spec-item:last-child {
+    border-bottom: none;
+  }
+
+  .duo-feature-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .duo-sig-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

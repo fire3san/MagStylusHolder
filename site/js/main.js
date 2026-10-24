@@ -44,6 +44,13 @@
 
   // --- 1. Interactive Fit Lab & Clearance Calculator ---
   const DEVICE_CONFIGS = {
+    iphone_duo: {
+      name: 'iPhone Duo (Dual-Screen)',
+      width: 145.0,
+      height: 158.0,
+      penLength: 166.0,
+      penName: 'Apple Pencil Pro'
+    },
     boox: {
       name: 'BOOX Go 6',
       width: 109.0,
@@ -299,6 +306,15 @@
         desc: {
           zh: '專為 iPad mini 獨立打造。130.54 mm 長度實現 0 mm 頂部露出完全包覆，徹底告別原廠側邊磁吸在包袋中被意外撞落的痛點。',
           en: 'Engineered specifically for iPad mini and Apple Pencil, achieving 100% full top enclosure (0 mm overhang) to permanently eliminate accidental pencil drop-offs in bags.'
+        }
+      },
+      {
+        src: 'assets/photos/lifestyle-aura-duo-iphone.jpg',
+        tag: { zh: '07 / AURA DUO · iPHONE DUO ★', en: '07 / AURA DUO · iPHONE DUO ★' },
+        title: { zh: 'AURA DUO · 雙屏磁吸智筆座 (iPhone Duo & Apple Pencil Pro)', en: 'AURA DUO · Dual-Screen MagSafe Pencil Hub' },
+        desc: {
+          zh: 'iPhone Duo 攤開雙屏進入速記創作模式，AURA DUO 鉸鏈感知側凹確保摺疊與展開兩態皆穩固；Apple Pencil Pro 吸附於側翼，隨手一抽即進入書寫狀態，讓雙屏體驗真正完整。',
+          en: 'Unfolding iPhone Duo into dual-screen notebook mode. The AURA DUO hinge-aware notch keeps retention rock-solid in both folded and unfolded states, while Apple Pencil Pro stays docked along the lateral spine.'
         }
       }
     ],
@@ -617,8 +633,22 @@
         if (fP) fP.textContent = isEn ? 'We believe in radical engineering transparency. From magnetic shielding on E-Ink displays and 3D printing materials to iPad mini compatibility, here are honest answers to backer questions.' : '我們堅持透明公開的造物哲學。無論是磁場對 E-Ink 螢幕的潛在影響、3D 打印材料選擇，抑或是對 iPad mini 的支援，所有工程細節在此為你一一解答。';
 
         const faqItems = faqSec.querySelectorAll('.faq-item');
-        const faqEnData = [{"q": "Will the 5 x 1 mm N52 magnets interfere with the device?", "a": "<p>Magnetic fields, writing interference and long-term device use have not been tested. No validated magnetic shielding is provided. Test actual pen attraction and retention first.</p>"}, {"q": "Why use a 75 mm ring position?", "a": "<p>The owner corrected the earlier 85 mm reading to 75 mm from the case bottom. v9 Flow/AERIS is 110 mm long with 3 mm bottom clearance; Facet/VERTEX is 100 mm with 13 mm clearance. K+M has 3.5 mm at the specified pen position.</p>"}, {"q": "How are the magnets and 3M tape assembled?", "a": "<p>Bottom-loading pockets are 5.3 mm diameter and 4 mm deep. BOOX AERIS & VERTEX use 5 magnets (Y = -48, -38, -12, 0, 12 mm) for enhanced barrel retention; ECLIPSE, ZEPHYR and iPad models use 3 magnets. Bond each 5 x 1 mm magnet to the pocket ceiling using provisionally 0.2 mm tape; secure a 5.05 x 2.7 mm spacer below. Recalculate the spacer for other tape thicknesses. The case ring is separate hardware.</p>"}, {"q": "What about iPad and printing material?", "a": "<p>iPad geometry remains a fit study; its pockets also change to 5 x 1 mm magnets. No device validation or charging is provided. Quote PA12 prototypes and print fit samples before full bodies.</p>"}, {"q": "Is this a production-ready product?", "a": "<p>This is a v9 digital prototype with ten STL files: six holders, three fit samples and one spacer (v9 AERIS & VERTEX feature 5-magnet sockets). Mesh checks do not validate retention, drops or fatigue. Follow the print guide.</p>"}];
-        const faqZhData = [{"q": "Ø5×1 mm N52磁石會否干擾設備？", "a": "<p>目前未做磁場、壓感干擾或長期裝機測試，也沒有經驗證的磁屏蔽結構。請先測實際筆身能否吸附，再以低處軟墊試裝；不能僅靠N52等級保證保持力。</p>"}, {"q": "為何改用75 mm磁環位置？", "a": "<p>使用者已確認之前85 mm讀數有誤，正確為距保護殼底75 mm。v9 Flow/AERIS長110 mm，底部留3 mm；Facet/VERTEX長100 mm，留13 mm；K+M指定筆位留3.5 mm。波浪殼黏附與搖晃待實測。</p>"}, {"q": "磁石與3M雙面膠怎樣裝？", "a": "<p>孔徑5.3 mm、深4 mm，由底面裝入。AERIS 與 VERTEX 旗艦長鞘升級 5 顆 Ø5×1 mm 磁石（Y = -48, -38, -12, 0, 12 mm）強化筆身吸附力，其餘款式配置 3 顆。磁石以暫定0.2 mm膠層貼近孔頂，下方用Ø5.05×2.7 mm墊片承托並另行固定。若膠厚不同，需重算墊片。背殼磁環是另一組硬件。</p>"}, {"q": "iPad版及打印材料如何選？", "a": "<p>iPad外形暫沿用尺寸研究，磁孔同步改為Ø5×1 mm；未完成實機驗證，也不提供充電。先向打印商詢價PA12試件並打印筆徑試片，核對公差、側鍵及長通道清粉。</p>"}, {"q": "現在可以當成量產成品嗎？", "a": "<p>目前是v9數位原型，打樣包有6主件、3試片及1墊片，共10個STL（AERIS與VERTEX為5磁孔版本）。網格檢查不等於保持力、跌落或疲勞測試。請按打樣指南逐步驗證。</p>"}];
+        const faqEnData = [
+          {"q": "Will the 5 x 1 mm N52 magnets interfere with the device?", "a": "<p>Magnetic fields, writing interference and long-term device use have not been tested. No validated magnetic shielding is provided. Test actual pen attraction and retention first.</p>"},
+          {"q": "Why use a 75 mm ring position?", "a": "<p>The owner corrected the earlier 85 mm reading to 75 mm from the case bottom. v9 Flow/AERIS is 110 mm long with 3 mm bottom clearance; Facet/VERTEX is 100 mm with 13 mm clearance. K+M has 3.5 mm at the specified pen position.</p>"},
+          {"q": "How are the magnets and 3M tape assembled?", "a": "<p>Bottom-loading pockets are 5.3 mm diameter and 4 mm deep. BOOX AERIS & VERTEX use 5 magnets (Y = -48, -38, -12, 0, 12 mm) for enhanced barrel retention; ECLIPSE, ZEPHYR and iPad models use 3 magnets. Bond each 5 x 1 mm magnet to the pocket ceiling using provisionally 0.2 mm tape; secure a 5.05 x 2.7 mm spacer below. Recalculate the spacer for other tape thicknesses. The case ring is separate hardware.</p>"},
+          {"q": "What about iPad and printing material?", "a": "<p>iPad geometry remains a fit study; its pockets also change to 5 x 1 mm magnets. No device validation or charging is provided. Quote PA12 prototypes and print fit samples before full bodies.</p>"},
+          {"q": "How does AURA DUO support iPhone Duo and Apple Pencil Pro?", "a": "<p>AURA DUO is our signature flagship for the dual-screen foldable iPhone Duo. Its base features an engineered hinge-notch clearance, ensuring uninterrupted hinge movement whether unfolded as dual screens or folded. The bore is calibrated to Ø8.9 mm for Apple Pencil Pro with 5 × Ø5×1 mm tiered N52 magnets and a 60.3 mm lateral rail sheath for effortless blind insertion and rock-solid hold.</p>"},
+          {"q": "Is this a production-ready product?", "a": "<p>This is a v9 digital prototype with eleven STL files: six standard flagships, AURA DUO signature model, three fit samples and one spacer (v9 AERIS & VERTEX feature 5-magnet sockets). Mesh checks do not validate retention, drops or fatigue. Follow the print guide.</p>"}
+        ];
+        const faqZhData = [
+          {"q": "Ø5×1 mm N52磁石會否干擾設備？", "a": "<p>目前未做磁場、壓感干擾或長期裝機測試，也沒有經驗證的磁屏蔽結構。請先測實際筆身能否吸附，再以低處軟墊試裝；不能僅靠N52等級保證保持力。</p>"},
+          {"q": "為何改用75 mm磁環位置？", "a": "<p>使用者已確認之前85 mm讀數有誤，正確為距保護殼底75 mm。v9 Flow/AERIS長110 mm，底部留3 mm；Facet/VERTEX長100 mm，留13 mm；K+M指定筆位留3.5 mm。波浪殼黏附與搖晃待實測。</p>"},
+          {"q": "磁石與3M雙面膠怎樣裝？", "a": "<p>孔徑5.3 mm、深4 mm，由底面裝入。AERIS 與 VERTEX 旗艦長鞘升級 5 顆 Ø5×1 mm 磁石（Y = -48, -38, -12, 0, 12 mm）強化筆身吸附力，其餘款式配置 3 顆。磁石以暫定0.2 mm膠層貼近孔頂，下方用Ø5.05×2.7 mm墊片承托並另行固定。若膠厚不同，需重算墊片。背殼磁環是另一組硬件。</p>"},
+          {"q": "iPad版及打印材料如何選？", "a": "<p>iPad外形暫沿用尺寸研究，磁孔同步改為Ø5×1 mm；未完成實機驗證，也不提供充電。先向打印商詢價PA12試件並打印筆徑試片，核對公差、側鍵及長通道清粉。</p>"},
+          {"q": "AURA DUO 如何適配 iPhone Duo 與 Apple Pencil Pro？", "a": "<p>AURA DUO 為 iPhone Duo 雙屏摺疊機專屬簽名款，底座特設「鉸鏈感知側凹」（Hinge-Notch），在手機展開為雙屏或對折單屏時均不阻礙鉸鏈活動。內孔精確調校為 Ø8.9 mm，完全容納 Apple Pencil Pro，配合 60.3 mm 側滑導軌與 5 枚 Ø5×1 mm 梯次 N52 強磁矩陣，確保極致穩固保持力與流暢盲插拔體驗。</p>"},
+          {"q": "現在可以當成量產成品嗎？", "a": "<p>目前是v9數位原型，打樣包包含 10 個 STL（AERIS與VERTEX為5磁孔版本）、AURA DUO 雙屏旗艦款、3 款側滑 STL 與 2 款全新開脊微彈 STL。網格檢查不等於保持力、跌落或疲勞測試。請按打樣指南逐步驗證。</p>"}
+        ];
 
         faqItems.forEach((item, idx) => {
           const d = isEn ? faqEnData[idx] : faqZhData[idx];
@@ -653,15 +683,15 @@
       if (colSec) {
         const cH2 = colSec.querySelector('.section-heading h2');
         if (cH2) cH2.innerHTML = isEn
-          ? 'Nine Flagship Series.<br><span>Axial, Lateral Slide & Open Spine Personalities.</span>'
-          : '九大旗艦系列。<br><span>縱向、側滑與開脊三種收納性格。</span>';
+          ? 'Ten Flagship Series.<br><span>Axial, Lateral Slide, Open Spine & Dual-Screen.</span>'
+          : '十大旗艦系列。<br><span>縱向、側滑、開脊與雙屏四種收納性格。</span>';
         const cP = colSec.querySelector('.section-heading p');
         if (cP) cP.textContent = isEn
-          ? 'AERIS, VERTEX, ECLIPSE and ZEPHYR explore axial layouts; AURA, NEXUS and AXIS lateral slide series expand outward draw dimensions; the all-new ORBIT and STRATOS open spine series introduce flex C-clips with open backbones for tilt-and-release agility.'
-          : 'AERIS、VERTEX、ECLIPSE 與 ZEPHYR 探索縱向軸心佈局；AURA、NEXUS 與 AXIS 側滑系列拓展側翼外擴取筆維度；全新 ORBIT 與 STRATOS 開脊系列以微彈 C 夾與開放式背骨，帶來「微傾即取」的極致靈活，回應多元書寫姿態。';
+          ? 'AERIS, VERTEX, ECLIPSE and ZEPHYR explore axial layouts; AURA DUO stands as our signature flagship for the dual-screen iPhone Duo with Apple Pencil Pro; AURA, NEXUS and AXIS expand lateral slide dimensions; ORBIT and STRATOS introduce open spine flex C-clips.'
+          : 'AERIS、VERTEX、ECLIPSE 與 ZEPHYR 探索縱向軸心佈局；AURA DUO 作為旗艦簽名款，專為 iPhone Duo 雙屏與 Apple Pencil Pro 而生；AURA、NEXUS 與 AXIS 側滑系列拓展側翼外擴取筆維度；全新 ORBIT 與 STRATOS 開脊系列以微彈 C 夾與開放式背骨，帶來「微傾即取」的極致靈活。';
         const cCaption = colSec.querySelector('.caption');
         if (cCaption) cCaption.textContent = isEn
-          ? 'All nine views rendered from actual CAD geometry. Material colors are for visual preview; physical surface finish to be confirmed via test prints.'
+          ? 'All views rendered from actual CAD geometry. Material colors are for visual preview; physical surface finish to be confirmed via test prints.'
           : '九款畫面均由實際 CAD 幾何生成，材質顏色僅供視覺預覽；實際表面與手感需以打印樣件確認。';
       }
 
