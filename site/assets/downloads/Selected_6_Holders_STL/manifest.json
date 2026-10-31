@@ -1,0 +1,32 @@
+[
+  {
+    "file": "NEXUS_SCREEN_v2_flat.stl",
+    "source": "assets/stl/screen-facing/NEXUS_SCREEN.stl",
+    "sha256": "585adab4c21a5734599934a9f162df8493d916055fb9407f8619d3cbaadb8e12"
+  },
+  {
+    "file": "AURA_SCREEN_v2_flat.stl",
+    "source": "assets/stl/screen-facing/AURA_SCREEN.stl",
+    "sha256": "7bc9e21e2147279b2a2bde036cba032e49d2a5ddd4c7d81f56daf2d5eef23e9a"
+  },
+  {
+    "file": "AXIS.stl",
+    "source": "assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl",
+    "sha256": "5c58a1489af712359ec9544b5739d045c05b690ab55f4c4b5d2d6695a9d6371b"
+  },
+  {
+    "file": "ORBIT.stl",
+    "source": "assets/stl/open_spine/A_Open_Spine_Compact.stl",
+    "sha256": "9a940cbbcc88c33cf01e9d2fd208e74417d2ea9cfb605cd4b0791d53665435a2"
+  },
+  {
+    "file": "ECLIPSE.stl",
+    "source": "assets/stl/v9/KM_Arc_BOOX_vertical.stl",
+    "sha256": "8b144d275190ead337464484cb3ef8c3893893579e4c3537670803b107e40aff"
+  },
+  {
+    "file": "AERIS.stl",
+    "source": "assets/stl/v9/S_Flow_BOOX_vertical.stl",
+    "sha256": "084c0b6d393bd635bb4e3d5c9ec98283ddbb331e50419e3481254710e29df842"
+  }
+]
