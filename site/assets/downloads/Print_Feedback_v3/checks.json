@@ -1,0 +1,46 @@
+{
+  "AURA_SCREEN_v3": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "extents_mm": [
+      103.5,
+      104.54,
+      14.9
+    ],
+    "bounds_mm": [
+      [
+        -71.0,
+        -72.04,
+        -11.5
+      ],
+      [
+        32.5,
+        32.5,
+        3.4
+      ]
+    ],
+    "volume_cm3": 15.253,
+    "unchanged_body_difference_mm3": 0.000179,
+    "sha256": "6b842be2620363a95e075ac16cefdd71ad6c33e321d8c1d1db7de3fb427a1654",
+    "pen_axis_x_mm": -64,
+    "previous_pen_axis_x_mm": -66,
+    "holder_to_assumed_case_gap_mm": 1,
+    "previous_gap_mm": 3,
+    "nose_y_mm": -72.04,
+    "previous_nose_y_mm": -82.04,
+    "tip_shortening_mm": 10,
+    "internal_tip_seat_length_mm": 10,
+    "internal_tip_end_y_mm": -68.2,
+    "barrel_seat_start_y_mm": -58.2,
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_case_bottom_y_mm": -76,
+    "bottom_clearance_mm": 3.96,
+    "bridge_z_bounds_mm": [
+      0,
+      3.4
+    ],
+    "case_intersection_mm3": 0,
+    "ring_difference_mm3": 0
+  }
+}

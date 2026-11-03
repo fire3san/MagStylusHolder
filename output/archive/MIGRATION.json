@@ -1,0 +1,32 @@
+{
+  "moved_paths": {
+    "output/v2": "output/archive/axial/v2",
+    "output/v3": "output/archive/axial/v3",
+    "output/v4": "output/archive/axial/v4",
+    "output/v5": "output/archive/axial/v5",
+    "output/v6": "output/archive/axial/v6",
+    "output/v7": "output/archive/axial/v7",
+    "output/v8": "output/archive/axial/v8",
+    "output/v9": "output/archive/axial/v9",
+    "output/side_holder": "output/archive/side/v1",
+    "output/side_holder_v2": "output/archive/side/v2",
+    "output/side_holder_v3": "output/archive/side/v3",
+    "output/open_spine_duo": "output/archive/open-spine/v1",
+    "output/open_spine_duo_magnets": "output/archive/open-spine/v2",
+    "output/open_spine_duo_five_magnets": "output/archive/open-spine/v3",
+    "output/boox-stylus-prototype-v0.1.zip": "output/archive/axial/v1/boox-stylus-prototype-v0.1.zip",
+    "output/placement-template.svg": "output/archive/axial/v1/placement-template.svg",
+    "output/TAOBAO_PRINT_REQUEST_ZH.md": "output/archive/axial/v1/TAOBAO_PRINT_REQUEST_ZH.md",
+    "output/assembly_checks.json": "output/archive/axial/v1/assembly_checks.json",
+    "output/assembly_build_log.json": "output/archive/axial/v1/assembly_build_log.json",
+    "output/mesh_checks.json": "output/archive/axial/v1/mesh_checks.json",
+    "output/.DS_Store": "output/archive/axial/v1/.DS_Store",
+    "output/source": "output/archive/axial/v1/source",
+    "output/model-preview.png": "output/archive/axial/v1/model-preview.png",
+    "output/build_log.json": "output/archive/axial/v1/build_log.json",
+    "output/stl": "output/archive/axial/v1/stl",
+    "output/READ_ME_FIRST.md": "output/archive/axial/v1/READ_ME_FIRST.md"
+  },
+  "verified_file_count": 384,
+  "content_verified_before_reference_updates": true
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "AURA_SCREEN_v4.stl",
+    "source": "assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl",
+    "sha256": "bfe9c619a6233f5ce410ee7b3a7de53c31703ef1108281b0f399b6ed426da8e0"
+  },
+  {
+    "file": "NEXUS_SCREEN_v2_flat.stl",
+    "source": "assets/stl/screen-facing/NEXUS_SCREEN.stl",
+    "sha256": "585adab4c21a5734599934a9f162df8493d916055fb9407f8619d3cbaadb8e12"
+  },
+  {
+    "file": "AERIS.stl",
+    "source": "assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl",
+    "sha256": "3ccb0cb5dbbb3180c0e38a859905f105c7847db71c448cf4cc4df4c33adba921"
+  },
+  {
+    "file": "ECLIPSE.stl",
+    "source": "assets/stl/v9/KM_Arc_BOOX_vertical.stl",
+    "sha256": "8b144d275190ead337464484cb3ef8c3893893579e4c3537670803b107e40aff"
+  },
+  {
+    "file": "AXIS.stl",
+    "source": "assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl",
+    "sha256": "5c58a1489af712359ec9544b5739d045c05b690ab55f4c4b5d2d6695a9d6371b"
+  },
+  {
+    "file": "ORBIT.stl",
+    "source": "assets/stl/open_spine/A_Open_Spine_Compact.stl",
+    "sha256": "9a940cbbcc88c33cf01e9d2fd208e74417d2ea9cfb605cd4b0791d53665435a2"
+  }
+]

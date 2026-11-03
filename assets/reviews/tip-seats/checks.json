@@ -1,0 +1,162 @@
+{
+  "AURA_SCREEN_v4": {
+    "source": "assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl",
+    "sha256": "bfe9c619a6233f5ce410ee7b3a7de53c31703ef1108281b0f399b6ed426da8e0",
+    "floor_y_mm": -67.45,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.13
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 9.0,
+    "modeled_tip_y_mm": -65.77091,
+    "axial_nib_clearance_mm": 1.6791,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "AURA_v4": {
+    "source": "assets/downloads/Tapered_Seats_20261103/AURA_v4.stl",
+    "sha256": "10411e55e2b0cc4dc7d6e75f6294762f1cb112ef66c4a00ce0bc790b1cc76674",
+    "floor_y_mm": -67.5,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.13
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 9.0,
+    "modeled_tip_y_mm": -65.82091,
+    "axial_nib_clearance_mm": 1.6791,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "AURA_DUO_v4": {
+    "source": "assets/downloads/Tapered_Seats_20261103/AURA_DUO_v4.stl",
+    "sha256": "19b49b7d99f84cb3452ef298f7a10b16fbe056cc08e514fe0d54cab068e9d4ec",
+    "floor_y_mm": -67.75,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.12
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 8.9,
+    "modeled_tip_y_mm": -66.07483,
+    "axial_nib_clearance_mm": 1.6752,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "AURA_DUO_SCREEN_v3": {
+    "source": "assets/downloads/Tapered_Seats_20261103/AURA_DUO_SCREEN_v3.stl",
+    "sha256": "e0faa762287c551d338c7f8953e26c9b5c364d49ae2005e054921ea0c85a46a5",
+    "floor_y_mm": -67.75,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.12
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 8.9,
+    "modeled_tip_y_mm": -66.07483,
+    "axial_nib_clearance_mm": 1.6752,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "AERIS_v10": {
+    "source": "assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl",
+    "sha256": "3ccb0cb5dbbb3180c0e38a859905f105c7847db71c448cf4cc4df4c33adba921",
+    "floor_y_mm": -66.96,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.13
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 9.0,
+    "modeled_tip_y_mm": -65.28091,
+    "axial_nib_clearance_mm": 1.6791,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "VERTEX_v10": {
+    "source": "assets/downloads/Tapered_Seats_20261103/VERTEX_v10.stl",
+    "sha256": "1e4ae30e75ddeecc11f310b21b656d6872867c4379a972226483e10868d35f6e",
+    "floor_y_mm": -55.96,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.13
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 9.0,
+    "modeled_tip_y_mm": -54.28091,
+    "axial_nib_clearance_mm": 1.6791,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "TITAN_PRO_v10": {
+    "source": "assets/downloads/Tapered_Seats_20261103/TITAN_PRO_v10.stl",
+    "sha256": "7d14517dced10a0ce7e3b698662b17f527896344613a8fc30a978cfb0cdc0983",
+    "floor_y_mm": -87.5,
+    "bore_radii_at_0_5_2_4mm_above_floor_mm": [
+      0.8,
+      0.8,
+      1.12
+    ],
+    "internal_seat": "tapered",
+    "assumed_pen_tip_length_mm": 10,
+    "assumed_pen_barrel_diameter_mm": 8.9,
+    "modeled_tip_y_mm": -85.82483,
+    "axial_nib_clearance_mm": 1.6752,
+    "pen_collision_mm3": 0.0,
+    "extraction_clear": true,
+    "physical_retention_verified": false,
+    "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
+    "minimum_new_seat_wall_mm": 1.5
+  },
+  "ORBIT": {
+    "source": "assets/stl/open_spine/A_Open_Spine_Compact.stl",
+    "internal_seat": "protective cup; no outer cone",
+    "floor_y_mm": -70.0,
+    "modeled_tip_y_mm": -67,
+    "axial_nib_clearance_mm": 3.0,
+    "pen_collision_mm3": 0.0,
+    "physical_retention_verified": false,
+    "finding": "Tip is inside the cup with end clearance; retention is provided by clips/magnets and needs a physical test."
+  },
+  "STRATOS": {
+    "source": "assets/stl/open_spine/B_Rear_Spine_Extended.stl",
+    "internal_seat": "protective cup; no outer cone",
+    "floor_y_mm": -70.0,
+    "modeled_tip_y_mm": -67,
+    "axial_nib_clearance_mm": 3.0,
+    "pen_collision_mm3": 0.0,
+    "physical_retention_verified": false,
+    "finding": "Tip is inside the cup with end clearance; retention is provided by clips/magnets and needs a physical test."
+  }
+}

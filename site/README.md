@@ -10,32 +10,38 @@
 
 ## 最新設計與列印檔案 (Latest Designs & Files)
 
-目前選定打樣的 **6 款主件**如下；AURA SCREEN、NEXUS SCREEN 使用 **v2 水平直臂**，其餘沿用各系列現有版本。表內 STL 連結指向原始模型，檔名對應六款下載包中的名稱。
+**2026-11-03 七款錐形內座修訂** — AURA SCREEN v4、AURA v4、AURA DUO v4、AURA DUO SCREEN v3、AERIS v10、VERTEX v10、TITAN PRO v10 均新增筆鼻錐面支撐及獨立筆尖避空。新增內座周圍材料至少 **1.5 mm**，假設筆型的筆尖底部空間約 **1.68 mm**；外部尺寸、磁環與磁孔保留。AURA SCREEN 維持全長縮短10 mm、向機殼靠近2 mm。筆鼻長度暫定10 mm，實際配合與保持力須試印確認。
+
+[下載七款最新 STL 與剖面](assets/downloads/Tapered_Seats_20261103.zip) · [壁厚與筆位檢查](assets/downloads/Tapered_Seats_20261103/checks.json) · [驗證說明](docs/TIP_SEAT_REVIEW.md)。舊版檔案繼續保留；AURA SCREEN v3 已被取代。首次 PLA 用料8.62 m為使用者回報，新版須重新切片。
+
+目前選定打樣的 **6 款主件**如下；AURA SCREEN 使用最新 **v4 錐形內座修訂**，NEXUS SCREEN 保留 **v2 水平直臂**，其餘沿用各系列現有版本。表內 STL 連結指向原始模型，檔名對應六款下載包中的名稱。
 
 | 設計／版本 | 最新設計摘要 | 尺寸 W×H×D（mm） | STL 檔案 | PLA 實心估重 |
 |:---|:---|:---|:---|---:|
-| **AERIS · BOOX v9** | 110 mm 縱向長鞘，5 磁孔；底端留 3 mm，筆尾仍高於假設殼頂 | 68 × 110 × 16 | [AERIS.stl](assets/stl/v9/S_Flow_BOOX_vertical.stl) | 21.9 g |
-| **AURA SCREEN · v2 flat** | 朝屏幕長鞘，水平同層直臂、無 L 形落差；保留原磁環介面 | 105.5 × 114.54 × 14.9 | [AURA_SCREEN_v2_flat.stl](assets/stl/screen-facing/AURA_SCREEN.stl) | 19.8 g |
+| **AERIS · BOOX v10** | 110 mm長鞘，支撐錐面、筆尖避空，5磁孔 | 68 × 110 × 16 | [AERIS_v10.stl](assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl) | 22.2 g |
+| **AURA SCREEN · v4** | 縮短10 mm、靠近機殼2 mm；支撐錐面、獨立筆尖避空 | 103.5 × 104.54 × 14.9 | [AURA_SCREEN_v4.stl](assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl) | 19.2 g |
 | **AXIS · 側滑 v3（暫定）** | 14 mm 窄軌滑夾，無刻字，3 磁孔；筆型與夾口配合待實測 | 14 × 67.5 × 9.18 | [AXIS.stl](assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl) | 3.2 g |
 | **ECLIPSE · BOOX v9** | 68 mm 圓弧快取環，3 磁孔，緊湊縱向收納 | 68 × 68 × 16.05 | [ECLIPSE.stl](assets/stl/v9/KM_Arc_BOOX_vertical.stl) | 12.5 g |
 | **NEXUS SCREEN · v2 flat** | 朝屏幕雙 C 夾，水平同層直臂、無 L 形落差 | 105.5 × 65 × 12.45 | [NEXUS_SCREEN_v2_flat.stl](assets/stl/screen-facing/NEXUS_SCREEN.stl) | 12.1 g |
 | **ORBIT · Open Spine Compact** | 106 mm 開放背骨、雙側開 C 夾、筆尖保護杯，5 磁孔 | 68 × 106 × 16.1 | [ORBIT.stl](assets/stl/open_spine/A_Open_Spine_Compact.stl) | 18.0 g |
 
-估重按 STL 原尺寸（mm）、PLA 密度 1.24 g/cm³、100% 實心模型體積計算，六款各一件合計約 **87.5 g**；未計支撐、底邊、排料、磁石與磁環。這不是切片耗料結果，低填充率亦不能直接按比例乘算；PETG 等材料須按實際密度與切片設定重新估算。
+估重按 STL 原尺寸（mm）、PLA 密度 1.24 g/cm³、100% 實心模型體積計算，六款各一件合計約 **87.2 g**；未計支撐、底邊、排料、磁石與磁環。這不是切片耗料結果，低填充率亦不能直接按比例乘算；PETG 等材料須按實際密度與切片設定重新估算。
 
 | 最新資料包／相關修訂 | 內容與狀態 | 檔案連結 |
 |:---|:---|:---|
-| **六款精選 STL 包** | 上表六款主件；不含磁石、磁環、墊片及配合試片 | [下載 ZIP](assets/downloads/Selected_6_Holders_STL.zip) · [檔案來源與 SHA-256](assets/downloads/Selected_6_Holders_STL/manifest.json) |
+| **六款精選 STL 包** | 上表六款主件；不含磁石、磁環、墊片及配合試片 | [最新 ZIP](assets/downloads/Selected_6_Holders_Latest.zip) · [檔案來源與 SHA-256](assets/downloads/Selected_6_Holders_Latest/manifest.json) · [保留舊版](assets/downloads/Selected_6_Holders_STL.zip) |
 | **朝屏幕 v2 flat（三款）** | AURA SCREEN、NEXUS SCREEN、AURA DUO SCREEN；連接臂厚 3.4 mm、垂直落差 0 mm，筆軸仍沿機身長邊 | [下載 ZIP](assets/downloads/Screen_Facing_Flat_v2.zip) · [設計說明](assets/stl/screen-facing/README.md) · [CAD 檢查](assets/stl/screen-facing/checks.json) |
 | **AURA DUO · v3（朝機背）** | 筆軸偏置 53.55 mm，按暫定殼邊預留 3 mm；與 SCREEN 版本分開提供 | [STL](assets/stl/side/AURA_DUO_iPhone_v3.stl) · [ZIP](assets/downloads/AURA_DUO_v3.zip) · [修訂說明](docs/AURA_DUO_V3.md) |
 | **AURA DUO SCREEN · v2 flat** | 使用 DUO v3 筆鞘的朝屏幕版本；未包含於六款精選包 | [STL](assets/stl/screen-facing/AURA_DUO_SCREEN.stl) · [CAD 檢查](assets/stl/screen-facing/checks.json) |
-| **AERIS 配合修訂說明** | STL 未改；按 152 mm 假設殼高及 157.5 mm 筆長，筆尾高於殼頂約 21.54 mm | [量度與假設](docs/AURA_DUO_V3.md#aeris--measured-overhang) · [檢查數據](assets/story/aeris-fit-checks.json) |
+| **AERIS v9 舊版配合說明** | 以下為舊版筆位；按 152 mm 假設殼高及 157.5 mm 筆長，筆尾高於殼頂約 21.54 mm | [量度與假設](docs/AURA_DUO_V3.md#aeris--measured-overhang) · [檢查數據](assets/story/aeris-fit-checks.json) |
 
 **打樣材料**：一般 FDM 日常使用先試 PETG；高溫／戶外用途可考慮 ASA。原工程指南的 SLS／MJF PA12 路線仍保留，兩種製程的公差不能直接視為相同。先試印配合試片，再確認夾口鬆緊與打印方向。
 
 所有款式仍屬打樣原型；網格及假設機殼包絡檢查不代表實體配合、磁吸保持力、夾口疲勞或 DUO 摺疊掃掠已驗證。原朝機背 AURA／NEXUS 與歷代版本繼續保留，見下方完整對照表。
 
 ---
+
+工程輸出目錄與重建方式見 [輸出整理說明](docs/PRINT_OUTPUTS.md)。
 
 ## 📖 設計理念與起點 (The Origin & Concept)
 
@@ -160,7 +166,9 @@ Mag Holder 目前涵蓋 **四大架構體系、共十款旗艦設計**，外加 
 │   ├── stl/            # 旗艦系列真實 3D 打印 STL 檔案
 │   ├── images/         # 六層裝配爆炸圖等工程圖紙
 │   └── downloads/      # 3D 打印打包下載檔案
-├── output/             # 歷代工程版本 (v2 ~ v7)、淘寶 3D 打印需求單
+├── output/
+│   ├── latest/         # 最新六款 STL 與 AURA SCREEN v3 修訂包（自動產生）
+│   └── archive/        # 按 axial / side / open-spine 分組，再按版本保存
 └── README.md           # 專案說明文件
 ```
 
