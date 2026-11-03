@@ -10,6 +10,8 @@
 
 ## 最新設計與列印檔案 (Latest Designs & Files)
 
+AURA SCREEN、NEXUS SCREEN、AURA DUO SCREEN 的頁面模型及直接下載均使用平底向下版本。[三款打印方向包](assets/downloads/Screen_Products_Bed_Down.zip)；只旋轉方向，設計尺寸不變。
+
 **2026-11-03 七款錐形內座修訂** — AURA SCREEN v4、AURA v4、AURA DUO v4、AURA DUO SCREEN v3、AERIS v10、VERTEX v10、TITAN PRO v10 均新增筆鼻錐面支撐及獨立筆尖避空。新增內座周圍材料至少 **1.5 mm**，假設筆型的筆尖底部空間約 **1.68 mm**；外部尺寸、磁環與磁孔保留。AURA SCREEN 維持全長縮短10 mm、向機殼靠近2 mm。筆鼻長度暫定10 mm，實際配合與保持力須試印確認。
 
 [下載七款最新 STL 與剖面](assets/downloads/Tapered_Seats_20261103.zip) · [壁厚與筆位檢查](assets/downloads/Tapered_Seats_20261103/checks.json) · [驗證說明](docs/TIP_SEAT_REVIEW.md)。舊版檔案繼續保留；AURA SCREEN v3 已被取代。首次 PLA 用料8.62 m為使用者回報，新版須重新切片。
@@ -19,10 +21,10 @@
 | 設計／版本 | 最新設計摘要 | 尺寸 W×H×D（mm） | STL 檔案 | PLA 實心估重 |
 |:---|:---|:---|:---|---:|
 | **AERIS · BOOX v10** | 110 mm長鞘，支撐錐面、筆尖避空，5磁孔 | 68 × 110 × 16 | [AERIS_v10.stl](assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl) | 22.2 g |
-| **AURA SCREEN · v4** | 縮短10 mm、靠近機殼2 mm；支撐錐面、獨立筆尖避空 | 103.5 × 104.54 × 14.9 | [AURA_SCREEN_v4.stl](assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl) | 19.2 g |
+| **AURA SCREEN · v4** | 縮短10 mm、靠近機殼2 mm；支撐錐面、獨立筆尖避空 | 103.5 × 104.54 × 14.9 | [AURA_SCREEN_v4_BED_DOWN.stl](assets/downloads/print-ready/AURA_SCREEN_v4_BED_DOWN.stl) | 19.2 g |
 | **AXIS · 側滑 v3（暫定）** | 14 mm 窄軌滑夾，無刻字，3 磁孔；筆型與夾口配合待實測 | 14 × 67.5 × 9.18 | [AXIS.stl](assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl) | 3.2 g |
 | **ECLIPSE · BOOX v9** | 68 mm 圓弧快取環，3 磁孔，緊湊縱向收納 | 68 × 68 × 16.05 | [ECLIPSE.stl](assets/stl/v9/KM_Arc_BOOX_vertical.stl) | 12.5 g |
-| **NEXUS SCREEN · v2 flat** | 朝屏幕雙 C 夾，水平同層直臂、無 L 形落差 | 105.5 × 65 × 12.45 | [NEXUS_SCREEN_v2_flat.stl](assets/stl/screen-facing/NEXUS_SCREEN.stl) | 12.1 g |
+| **NEXUS SCREEN · v2 flat** | 朝屏幕雙 C 夾，水平同層直臂、無 L 形落差 | 105.5 × 65 × 12.45 | [NEXUS_SCREEN_v2_BED_DOWN.stl](assets/downloads/print-ready/NEXUS_SCREEN_v2_BED_DOWN.stl) | 12.1 g |
 | **ORBIT · Open Spine Compact** | 106 mm 開放背骨、雙側開 C 夾、筆尖保護杯，5 磁孔 | 68 × 106 × 16.1 | [ORBIT.stl](assets/stl/open_spine/A_Open_Spine_Compact.stl) | 18.0 g |
 
 估重按 STL 原尺寸（mm）、PLA 密度 1.24 g/cm³、100% 實心模型體積計算，六款各一件合計約 **87.2 g**；未計支撐、底邊、排料、磁石與磁環。這不是切片耗料結果，低填充率亦不能直接按比例乘算；PETG 等材料須按實際密度與切片設定重新估算。

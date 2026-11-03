@@ -1,7 +1,7 @@
 {
   "AURA_SCREEN_v4": {
-    "source": "assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl",
-    "sha256": "bfe9c619a6233f5ce410ee7b3a7de53c31703ef1108281b0f399b6ed426da8e0",
+    "source": "assets/downloads/print-ready/AURA_SCREEN_v4_BED_DOWN.stl",
+    "sha256": "84915a9231ccbfc8a559779a642445079758ff16f98988130fa29a708a312768",
     "floor_y_mm": -67.45,
     "bore_radii_at_0_5_2_4mm_above_floor_mm": [
       0.8,
@@ -17,7 +17,8 @@
     "extraction_clear": true,
     "physical_retention_verified": false,
     "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
-    "minimum_new_seat_wall_mm": 1.5
+    "minimum_new_seat_wall_mm": 1.5,
+    "measurement_frame": "normalized to original assembly coordinates using the inverse rigid print transform"
   },
   "AURA_v4": {
     "source": "assets/downloads/Tapered_Seats_20261103/AURA_v4.stl",
@@ -60,8 +61,8 @@
     "minimum_new_seat_wall_mm": 1.5
   },
   "AURA_DUO_SCREEN_v3": {
-    "source": "assets/downloads/Tapered_Seats_20261103/AURA_DUO_SCREEN_v3.stl",
-    "sha256": "e0faa762287c551d338c7f8953e26c9b5c364d49ae2005e054921ea0c85a46a5",
+    "source": "assets/downloads/print-ready/AURA_DUO_SCREEN_v3_BED_DOWN.stl",
+    "sha256": "dcdb00d15e4f1cb37c58df75f5742748f7b9e6298d2b5786fc5c037c1f7a3b14",
     "floor_y_mm": -67.75,
     "bore_radii_at_0_5_2_4mm_above_floor_mm": [
       0.8,
@@ -77,7 +78,8 @@
     "extraction_clear": true,
     "physical_retention_verified": false,
     "finding": "Tapered inner support and separate nib relief; nominal pen and extraction clear. Physical fit unverified.",
-    "minimum_new_seat_wall_mm": 1.5
+    "minimum_new_seat_wall_mm": 1.5,
+    "measurement_frame": "normalized to original assembly coordinates using the inverse rigid print transform"
   },
   "AERIS_v10": {
     "source": "assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl",

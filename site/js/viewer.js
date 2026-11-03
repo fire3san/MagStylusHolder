@@ -285,7 +285,9 @@
     }
 
     document.querySelectorAll('.model-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.model === key);
+      const selected = btn.dataset.model === key;
+      btn.classList.toggle('active', selected);
+      btn.setAttribute('aria-pressed', String(selected));
     });
   }
 
@@ -350,6 +352,7 @@
       const button = document.createElement('button');
       button.className = 'model-btn';
       button.dataset.model = key;
+      button.setAttribute('aria-pressed', String(key === currentModelKey));
       if (key === currentModelKey) button.classList.add('active');
       const displayName = isEn ? (info.name_en || info.name) : info.name;
       button.textContent = displayName.split(' · ')[0];

@@ -1,0 +1,55 @@
+{
+  "source": "assets/downloads/Tapered_Seats_20261103/AURA_DUO_SCREEN_v3.stl",
+  "file": "AURA_DUO_SCREEN_v3_BED_DOWN.stl",
+  "source_sha256": "e0faa762287c551d338c7f8953e26c9b5c364d49ae2005e054921ea0c85a46a5",
+  "sha256": "dcdb00d15e4f1cb37c58df75f5742748f7b9e6298d2b5786fc5c037c1f7a3b14",
+  "rotation": "180 degrees about X; rigid rotation only",
+  "transform_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      3.4000000953674316
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "watertight": true,
+  "connected_solids": 1,
+  "bounds_mm": [
+    [
+      -60.55,
+      -32.5,
+      0.0
+    ],
+    [
+      32.5,
+      82.04,
+      14.89979
+    ]
+  ],
+  "extents_mm": [
+    93.05,
+    114.54,
+    14.89979
+  ],
+  "planar_bed_contact_area_mm2": 3726.404,
+  "bottom_z_mm": 0.0,
+  "volume_difference_mm3": -6.05e-05
+}

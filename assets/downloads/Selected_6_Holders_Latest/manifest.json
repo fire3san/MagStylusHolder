@@ -1,13 +1,13 @@
 [
   {
-    "file": "AURA_SCREEN_v4.stl",
-    "source": "assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl",
-    "sha256": "bfe9c619a6233f5ce410ee7b3a7de53c31703ef1108281b0f399b6ed426da8e0"
+    "file": "AURA_SCREEN_v4_BED_DOWN.stl",
+    "source": "assets/downloads/print-ready/AURA_SCREEN_v4_BED_DOWN.stl",
+    "sha256": "84915a9231ccbfc8a559779a642445079758ff16f98988130fa29a708a312768"
   },
   {
-    "file": "NEXUS_SCREEN_v2_flat.stl",
-    "source": "assets/stl/screen-facing/NEXUS_SCREEN.stl",
-    "sha256": "585adab4c21a5734599934a9f162df8493d916055fb9407f8619d3cbaadb8e12"
+    "file": "NEXUS_SCREEN_v2_BED_DOWN.stl",
+    "source": "assets/downloads/print-ready/NEXUS_SCREEN_v2_BED_DOWN.stl",
+    "sha256": "a8922c220f10ea5cf31b51482f902a491a9d821fd76191cc6dfaada5f14e7905"
   },
   {
     "file": "AERIS.stl",

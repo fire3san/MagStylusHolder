@@ -4,12 +4,16 @@ import hashlib
 import json
 import shutil
 import zipfile
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+subprocess.run([sys.executable, str(ROOT / 'scripts/build-print-orientation.py')],
+               check=True, stdout=subprocess.DEVNULL)
 PACK = ROOT / 'assets/downloads/Selected_6_Holders_Latest'
 MODELS = [
-    ('AURA_SCREEN_v4.stl', 'assets/downloads/Tapered_Seats_20261103/AURA_SCREEN_v4.stl'),
-    ('NEXUS_SCREEN_v2_flat.stl', 'assets/stl/screen-facing/NEXUS_SCREEN.stl'),
+    ('AURA_SCREEN_v4_BED_DOWN.stl', 'assets/downloads/print-ready/AURA_SCREEN_v4_BED_DOWN.stl'),
+    ('NEXUS_SCREEN_v2_BED_DOWN.stl', 'assets/downloads/print-ready/NEXUS_SCREEN_v2_BED_DOWN.stl'),
     ('AERIS.stl', 'assets/downloads/Tapered_Seats_20261103/AERIS_v10.stl'),
     ('ECLIPSE.stl', 'assets/stl/v9/KM_Arc_BOOX_vertical.stl'),
     ('AXIS.stl', 'assets/stl/side/03_Apple_Pencil_Original_5x1_NoText_PROVISIONAL.stl'),
@@ -19,6 +23,12 @@ PACK.mkdir(parents=True, exist_ok=True)
 # Remove the superseded screen file from these generated current-only copies.
 (PACK / 'AURA_SCREEN_v3.stl').unlink(missing_ok=True)
 (ROOT / 'output/latest/selected-six/AURA_SCREEN_v3.stl').unlink(missing_ok=True)
+(PACK / 'AURA_SCREEN_v4.stl').unlink(missing_ok=True)
+(ROOT / 'output/latest/selected-six/AURA_SCREEN_v4.stl').unlink(missing_ok=True)
+for folder in [PACK, ROOT / 'output/latest/selected-six', ROOT / 'site/assets/downloads/Selected_6_Holders_Latest']:
+    (folder / 'NEXUS_SCREEN_v2_flat.stl').unlink(missing_ok=True)
+for obsolete in ['AURA_SCREEN_v3.stl', 'AURA_SCREEN_v4.stl']:
+    (ROOT / 'site/assets/downloads/Selected_6_Holders_Latest' / obsolete).unlink(missing_ok=True)
 manifest = []
 for filename, source in MODELS:
     shutil.copy2(ROOT / source, PACK / filename)
@@ -30,10 +40,11 @@ for filename, source in MODELS:
 AURA SCREEN v4: retains the 10 mm shortening and 2 mm inward move, with a
 supported tapered inner seat, more than 1.5 mm modeled nib clearance and at
 least 1.5 mm material around the new seat. Dimensions: 103.50 × 104.54 × 14.90 mm.
+AURA_SCREEN_v4_BED_DOWN.stl uses the flat-base-down print orientation.
 AERIS uses the v10 tapered-seat revision. Pen-tip length is assumed at 10 mm;
 physical fit remains to be tested. Full checks are in Tapered_Seats_20261103.
 
-NEXUS SCREEN remains v2 flat; ECLIPSE remains BOOX v9. AXIS and ORBIT retain
+NEXUS SCREEN remains v2 flat, now also supplied in the bed-down orientation; ECLIPSE remains BOOX v9. AXIS and ORBIT retain
 their existing geometry. Earlier versioned packs remain available.
 
 Units: mm. Print at original scale. Six main parts only: no magnets, ring,

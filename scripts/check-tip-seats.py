@@ -38,7 +38,7 @@ if REVISION_CHECKS.is_file():
     for key, name, x, z, floor, tip, diameter, length in SHEATHS:
         if key in revisions:
             d = revisions[key]
-            assert CATALOG[key]['path'].endswith(d['file'])
+            assert CATALOG[key]['path'].endswith(d['file']) or CATALOG[key]['path'].endswith(d['revision'] + '_BED_DOWN.stl')
             name, x, z = d['revision'], d['pen_axis_x_mm'], d['pen_axis_z_mm']
             floor, tip = d['internal_floor_y_mm'], d['modeled_pen_tip_y_mm']
         updated.append((key, name, x, z, floor, tip, diameter, length))
@@ -85,6 +85,10 @@ font = ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf', 18)
 for key, name, x, z, expected_floor, tip_y, pen_d, pen_length in SHEATHS:
     path = ROOT / CATALOG[key]['path']
     part = trimesh.load_mesh(path)
+    bed_down = path.name.endswith('_BED_DOWN.stl')
+    if bed_down:
+        orientation = json.loads((path.parent / (path.stem.removesuffix('_BED_DOWN') + '_orientation.json')).read_text())
+        part.apply_transform(np.linalg.inv(np.asarray(orientation['transform_matrix'])))
     s = solid(part)
     assert s.status() == mf.Error.NoError and len(s.decompose()) == 1
     assert part.is_watertight
@@ -119,6 +123,8 @@ for key, name, x, z, expected_floor, tip_y, pen_d, pen_length in SHEATHS:
         assert tip_gap > 1.5
         result['minimum_new_seat_wall_mm'] = revisions[key]['minimum_new_seat_wall_mm']
     results[name] = result
+    if bed_down:
+        result['measurement_frame'] = 'normalized to original assembly coordinates using the inverse rigid print transform'
     # Actual cutaway, with the pen proxy overlaid on the opening.
     half = s ^ mf.Manifold.cube((200, 400, 200), True).translate((x - 100, 0, 0))
     center = np.array([floor + 3, z, x])
