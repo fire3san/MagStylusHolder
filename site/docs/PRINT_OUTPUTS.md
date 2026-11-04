@@ -26,8 +26,9 @@ axial prototype and now live together in `archive/axial/v1/`. Old `output/vN/`
 directories moved to `archive/axial/vN/`. Side and open-spine versions retain
 their source, STL, render, review and guide files in each version folder.
 All 384 moved files were checked by SHA-256 before updating documented paths.
-Previously tracked histories remain trackable; generated latest files and
-previously local later builds remain ignored by Git.
+The latest/README.md index is tracked and links directly to every current STL.
+Generated STL copies, ZIPs and images remain ignored; current public files are
+tracked in assets/. Previously tracked histories remain trackable.
 
 Refresh the current deliverables from the repository root:
 
@@ -45,3 +46,7 @@ assets, then rebuild; do not edit the generated latest copies independently.
 The product catalog `js/models.js` and static product card both select the
 same AURA SCREEN v4 STL. Other models keep their existing revisions. The v3
 internal seat assumes a 10 mm pen tip, so physical seating still needs checking.
+
+Individual downloads are listed first in the product page download section.
+Refresh their links, the latest index and flat local STL copies with
+`.venv/bin/python scripts/sync-model-downloads.py`.

@@ -12,7 +12,8 @@ generate_sd_images.py
 *.pdf
 FullSizeRender.jpg
 Screenshot*
-/output/latest/
+/output/latest/*
+!/output/latest/README.md
 /output/archive/axial/v8/
 /output/archive/axial/v9/
 /output/archive/side/

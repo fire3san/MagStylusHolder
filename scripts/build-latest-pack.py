@@ -85,4 +85,6 @@ for relative in ['assets/downloads/Selected_6_Holders_Latest',
 for relative in ['assets/downloads/Selected_6_Holders_Latest.zip',
                  'assets/downloads/Print_Feedback_v3.zip']:
     shutil.copy2(ROOT / relative, ROOT / 'site' / relative)
+subprocess.run([sys.executable, str(ROOT / 'scripts/sync-model-downloads.py')], check=True)
+subprocess.run([sys.executable, str(ROOT / 'scripts/sync-site.py')], check=True)
 print('Current six-model pack, product render, site assets and output/latest refreshed.')
